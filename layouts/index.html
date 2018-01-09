@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	{{ partial "head.html" . }}
+
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	{{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
+		{{ partial "slider.html" . }}
+	{{ end }}
+
+	{{ if and (isset .Site.Params "wrapper") (.Site.Params.wrapper.enable) }}
+		{{ partial "wrapper.html" . }}
+	{{ end }}
+
+	{{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
+		{{ partial "feature.html" . }}
+	{{ end }}
+
+
+	{{ if and (isset .Site.Data "service") (.Site.Data.service.enable) }}
+		{{ partial "service.html" . }}
+	{{ end }}
+
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" .Site.Params.call }}
+	{{ end }}
+
+	{{ if .Site.Data.testimonial.enable }}
+		{{ partial "testimonial.html" . }}
+	{{ end }}
+
+	{{ partial "footer.html" . }}
+
+</body>
+</html>

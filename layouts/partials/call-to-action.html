@@ -1,0 +1,18 @@
+<!-- Call to action Start -->
+{{ with .Site.Params.call }}
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>{{ .title }}</h2>
+          <p>{{ .paragraph }}</p>
+          {{ with .button }}
+          <a class="btn btn-default btn-call-to-action" href="{{ .url }}" >{{ .text }}</a>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}

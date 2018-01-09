@@ -1,0 +1,21 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/spf13/hugoThemes#themetoml for an example
+
+name = "Airspace Hugo"
+license = "Copyright 2016 Themefisher"
+licenselink = "https://github.com/karju-dev/airspace-hugo/blob/master/LICENSE.md"
+description = "Hugo porting for the Themefisher's Airspace theme"
+homepage = "http://karju-dev.github.io/airspace-example-site"
+tags = ["blog", "company", "portfolio", "projects", "responsive"]
+features = ["blog", "company", "responsive"]
+min_version = 0.19
+
+[author]
+  name = "Giacomo Mariani"
+  homepage = "https://karju-dev.github.io"
+
+# If porting an existing theme
+[original]
+  name = "airspace"
+  homepage = "https://themefisher.com/products/airspace-free-bootstrap-website-template/"
+  repo = "https://github.com/themefisher/airspace-free-html5-agency-template"

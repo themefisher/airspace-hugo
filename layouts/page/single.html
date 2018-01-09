@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+	
+	{{ if isset .Params "id" }}
+		{{ partial .Params.id . }}
+	{{ else }}
+		<main>{{ .Content }}</main>
+	{{ end }}
+
+	{{ partial "call-to-action.html" . }}
+
+	{{ partial "footer.html" . }}
+
+	
+</body>
+</html>

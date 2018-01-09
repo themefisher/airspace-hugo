@@ -1,0 +1,25 @@
+.<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	{{ partial "global-header.html" .Site.Params.blog }}
+
+	<main>
+		{{ range .Data.Pages }}
+		<div class="post-area">
+			<a href="{{ .Permalink }}" class="bold">{{ .Title }}</a>
+			<p class="post-date">{{ .Date.Format .Site.Params.date_format }}</p>
+			<p>{{ .Summary }}</p>
+		</div>
+		{{ end }}
+	</main>
+
+	{{ partial "footer.html" . }}
+
+</body>
+</html>

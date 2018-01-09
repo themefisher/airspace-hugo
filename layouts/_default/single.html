@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	<div class="post">
+	  <!-- Wrapper Start -->
+	  <section id="intro" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+	            <h1>{{ .Params.title }}</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold">{{ .Params.author }}</span> on <span class="bold">{{ .Date.Format .Site.Params.date_format }}</span></p>
+	            </div>
+	            <hr />
+	            <p>{{ .Content }}</p>
+	          </div>
+	        </div><!-- .col-md-7 close -->
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a href="{{ $.Site.BaseURL }}/blog">Back to blog</a>
+	</p>
+
+	{{ partial "call-to-action.html" . }}
+
+	{{ partial "footer.html" . }}
+</body>
+</html>
