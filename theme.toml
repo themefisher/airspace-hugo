@@ -11,8 +11,8 @@ features = ["blog", "company", "responsive"]
 min_version = 0.19
 
 [author]
-  name = "Giacomo Mariani"
-  homepage = "https://karju-dev.github.io"
+  name = "Themefisher"
+  homepage = "https://themefisher.com"
 
 # If porting an existing theme
 [original]
