@@ -22,7 +22,7 @@
 	{{ end }}
 
 
-	{{ if and (isset .Site.Data "service") (.Site.Data.service.enable) }}
+	{{ if and .Site.Data.service .Site.Data.service.enable }}
 		{{ partial "service.html" . }}
 	{{ end }}
 
