@@ -16,7 +16,7 @@ theme = "airspace-hugo"
   [[menu.header]]
     weight = 4
     name = "Service"
-    url = "#"
+    url = "/service"
   [[menu.header]]
     weight = 5
     name = "Contact"
