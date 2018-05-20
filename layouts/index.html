@@ -27,7 +27,7 @@
 	{{ end }}
 
 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
-		{{ partial "call-to-action.html" .Site.Params.call }}
+		{{ partial "call-to-action.html" . }}
 	{{ end }}
 
 	{{ if .Site.Data.testimonial.enable }}

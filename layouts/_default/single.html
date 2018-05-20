@@ -30,7 +30,9 @@
 	  <a href="{{ $.Site.BaseURL }}/blog">Back to blog</a>
 	</p>
 
-	{{ partial "call-to-action.html" . }}
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	{{ end }}
 
 	{{ partial "footer.html" . }}
 </body>
