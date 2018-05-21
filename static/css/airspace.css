@@ -6,9 +6,18 @@
  * 
  */
 
+/*
+ * To stay compliant with the General Data Protection Regulation (GDPR) aka
+ * Datenschutz-Grundverordnung (DSGVO) we do not use `fonts.googleapis.com`
+ * nor `fonts.gstatic.com`. Please use `airspace-local-fonts.css`.
+ * The corresponding fonts were downloaded and put in the fonts directory.
+ *
+ *
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(http://fonts.googleapis.com/css?family=Volkhov:400italic);
+*/
+
 /* var text-decoration */
 /*--
 	Common Css
