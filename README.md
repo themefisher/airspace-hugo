@@ -1,5 +1,5 @@
 # _Airspace_ for Hugo
-![screenshot](/images/screenshot.png "Home of the website")
+![screenshot](https://github.com/themefisher/airspace-hugo/raw/master/images/screenshot.png "Home of the website")
 
 ## Usage
 Create a new Hugo site by typing
