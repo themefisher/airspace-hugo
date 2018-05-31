@@ -2,7 +2,7 @@
 
 name = "Airspace Hugo"
 license = "MIT"
-licenselink = "https://github.com/themefisher/airspace-hugo/blob/master/LICENSE.md"
+licenselink = "https://github.com/themefisher/airspace-hugo/blob/master/LICENSE"
 description = "Hugo port of the Themefisher’s Airspace theme"
 homepage = "https://github.com/themefisher/airspace-hugo"
 tags = ["blog", "bootstrap", "company", "portfolio", "projects", "responsive"]
@@ -11,7 +11,7 @@ min_version = 0.19
 
 [author]
   name = "Themefisher"
-  homepage = "https://themefisher.com"
+  homepage = "https://themefisher.com/"
 
 [original]
   name = "Airspace"
