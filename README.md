@@ -5,7 +5,8 @@ Airspace is a clean, unique, and free bootstrap website template, contributed to
 
 Airspace uses HTML5/CSS3, JavaScript, jQuery, and the [Twitter Bootstrap 3 framework](https://getbootstrap.com/docs/3.3/), assuring the best viewing experience on major web browsers including IE9/IE10/IE11, Firefox, Safari, Opera and Chrome, for any screen sizes of desktop and mobile devices.
 
-And now, the Airspace theme has been ported to [Hugo](https://gohugo.io/), and made freely available to all!
+And now, Airspace has been ported to [Hugo] thanks to the great work of Giacomo Mariani (@karjudev)!
+Giacomo was inspired by the [Jekyll port](https://github.com/ndrewtl/airspace-jekyll) by Andrew Lee (@ndrewtl).
 
 ## Usage
 

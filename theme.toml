@@ -10,7 +10,7 @@ features = ["blog", "company", "responsive"]
 min_version = 0.19
 
 [author]
-  name = "Themefisher"
+  name = "Giacomo Mariani (@karjudev) for Themefisher"
   homepage = "https://themefisher.com/"
 
 [original]
