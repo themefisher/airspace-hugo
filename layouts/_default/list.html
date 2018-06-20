@@ -13,7 +13,7 @@
 		{{ range .Data.Pages }}
 		<div class="post-area">
 			<a href="{{ .Permalink }}" class="bold">{{ .Title }}</a>
-			<p class="post-date">{{ .Date.Format .Site.Params.date_format }}</p>
+			<p class="post-date">{{ .Date.Format .Site.Params.dateFormat }}</p>
 			<p>{{ .Summary }}</p>
 		</div>
 		{{ end }}
