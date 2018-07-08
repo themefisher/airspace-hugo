@@ -1,5 +1,5 @@
 # _Airspace_ for Hugo
-![screenshot](https://github.com/themefisher/airspace-hugo/raw/master/images/screenshot.png "Home of the website")
+![screenshot](https://cloud.githubusercontent.com/assets/10640964/24954873/edf64134-1fa2-11e7-8a89-9424ddd15d29.jpg "Home of the website")
 
 Airspace is a clean, unique, and free bootstrap website template, contributed to the community by [Themefisher]. Built with refined business as well as corporate elements, and saturated with rich typography, Airspace is lightweight, fast-loading, responsive and W3C-validated, delivering a great first impression to visitors.
 
