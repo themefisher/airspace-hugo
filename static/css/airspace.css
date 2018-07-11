@@ -57,6 +57,11 @@ a:focus,
 a:active {
   text-decoration: none !important;
 }
+
+.section{
+  padding: 100px 0;
+}
+
 .section-title {
   margin-bottom: 70px;
 }
@@ -70,6 +75,25 @@ a:active {
   font-style: italic;
   color: #666;
 }
+
+.btn-main, .btn-transparent, .btn-small {
+    background: #655E7A;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 14px 35px;
+    text-transform: uppercase;
+    border-radius: 0;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.btn-main:hover, .btn-transparent:hover, .btn-small:hover {
+    background: #353240;
+    color: #fff;
+}
+
 /*--
 	Header Start
 --*/
@@ -757,6 +781,25 @@ font header .navbar-default .navbar-nav li a:hover {
   text-align: center;
   display: inline-block;
   padding: 40px 0px;
+}
+/* Blog */
+.blog-post{
+  margin-bottom: 50px;
+}
+
+.blog-post img{
+  margin-bottom: 15px;
+}
+.blog-post p{
+  margin: 15px 0 20px;
+}
+
+.post-title{
+  color: #655E7A;
+  font-size: 25px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
 }
 /*---------------------------------------------
 					Contact Close

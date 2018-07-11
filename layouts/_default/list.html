@@ -7,17 +7,30 @@
 
 	{{ partial "header.html" . }}
 
-	{{ partial "global-header.html" .Site.Params.blog }}
+	{{ partial "global-header.html" . }}
 
-	<main>
-		{{ range .Data.Pages }}
-		<div class="post-area">
-			<a href="{{ .Permalink }}" class="bold">{{ .Title }}</a>
-			<p class="post-date">{{ .Date.Format .Site.Params.dateFormat }}</p>
-			<p>{{ .Summary }}</p>
+	<section class="blog section">
+		<div class="container">
+			<div class="row">
+				{{ range (.Paginator 6).Pages }}
+				<div class="col-md-6">
+					<article class="blog-post">
+						{{ with .Params.image }}
+						<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
+						<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+						<p>
+							{{ .Summary }}
+						</p>
+						<a href="{{ .Permalink }}" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				{{ end }}
+			</div>
+			<div class="col-12 text-center">
+				{{ template "_internal/pagination.html" . }}
+			</div>
 		</div>
-		{{ end }}
-	</main>
+	</section>
 
 	{{ partial "footer.html" . }}
 
