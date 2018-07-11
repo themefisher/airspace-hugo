@@ -27,10 +27,8 @@ Now take a look at the exampleSite folder and you're ready to go!
 
 ## License
 
-While the [original Airspace generic HTML template](https://themefisher.com/products/airspace-free-bootstrap-website-template/) is under the [Creative Commons Attribution 3.0 (CC-BY-3.0) License](https://themefisher.com/license/),  
-**_Airspace_ for Hugo** has been specifically licensed under the [MIT License](https://github.com/themefisher/airspace-hugo/blob/master/LICENSE), as our token of appreciation to the [Hugo] community.
-
-If you like what you see in **_Airspace_ for Hugo**, please spread the word!
+This Template is released under [Creative Commons Attribution 3.0 (CC-BY-3.0) License](https://creativecommons.org/licenses/by/3.0/)
+If you want to remove the credit simply make a [donation](https://www.paypal.me/Themefisher), so that we can run our contribution to hugo community.
 
 ## About Themefisher
 
@@ -39,3 +37,5 @@ Visit us at https://themefisher.com/ to see other great-looking themes and inspi
 
 [Hugo]: https://gohugo.io/
 [Themefisher]: https://themefisher.com/
+
+## We are available for Hiring of your next HUGO project. Drop Us a mail [themefisher@gmail.com](mailto:themefisher@gmail.com)
