@@ -27,8 +27,8 @@ Now take a look at the exampleSite folder and you're ready to go!
 
 ## License
 
-This Template is released under [Creative Commons Attribution 3.0 (CC-BY-3.0) License](https://creativecommons.org/licenses/by/3.0/)
-If you want to remove the credit simply make a [donation](https://www.paypal.me/Themefisher), so that we can run our contribution to hugo community.
+This Template is released under [Creative Commons Attribution 3.0 (CC-BY-3.0) License](https://creativecommons.org/licenses/by/3.0/).
+If you want to remove the credit, simply make a [donation](https://www.paypal.me/Themefisher) so that we can run our contribution to the Hugo community.
 
 ## About Themefisher
 
