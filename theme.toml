@@ -1,7 +1,7 @@
 # theme.toml for the Airspace Hugo theme
 
 name = "Airspace Hugo"
-license = "MIT"
+license = "CC BY 3.0"
 licenselink = "https://github.com/themefisher/airspace-hugo/blob/master/LICENSE"
 description = "Hugo port of the Themefisher’s Airspace theme"
 homepage = "https://github.com/themefisher/airspace-hugo"
