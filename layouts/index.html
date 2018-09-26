@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	
 	{{ partial "head.html" . }}
-
 </head>
 <body>
 
@@ -17,24 +15,34 @@
 		{{ partial "wrapper.html" . }}
 	{{ end }}
 
-	{{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
-		{{ partial "feature.html" . }}
-	{{ end }}
-
-
-	{{ if and .Site.Data.service .Site.Data.service.enable }}
-		{{ partial "service.html" . }}
-	{{ end }}
-
 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
 		{{ partial "call-to-action.html" . }}
 	{{ end }}
-
-	{{ if .Site.Data.testimonial.enable }}
-		{{ partial "testimonial.html" . }}
+	
+	{{ if .Site.Data.journey.enable }}
+		{{ partial "journey.html" . }}
 	{{ end }}
+	
+	{{ if and .Site.Data.service .Site.Data.service.enable }}
+		{{ partial "service.html" . }}
+	{{ end }}
+	
+	{{ if and .Site.Data.approach .Site.Data.approach.enable }}
+		{{ partial "approach.html" . }}
+	{{ end }}
+
+	{{ if and (isset .Site.Params "individual") (.Site.Params.individual.enable) }}
+		{{ partial "individual.html" . }}
+	{{ end }}
+
+	{{ if and (isset .Site.Params "institutional") (.Site.Params.institutional.enable) }}
+		{{ partial "institutional.html" . }}
+	{{ end }}
+
+
 
 	{{ partial "footer.html" . }}
 
 </body>
 </html>
+

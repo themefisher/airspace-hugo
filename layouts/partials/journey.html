@@ -1,0 +1,31 @@
+<!-- Content Start -->
+<section id="journey">
+  <div class="container">
+    <!-- Header -->
+    <div class="row">
+	<div class="col-md-6">
+		<div class="section-title text-left">
+		<h2><br></h2>
+		<p>Your journey with us</p>
+		</div>
+		<div class="journey-carousel">
+          <div id="journey-slider" class="owl-carousel">
+            {{ range .Site.Data.journey.people }}
+            <div>
+                <img src="{{ $.Site.BaseURL }}{{ .icon }}" width="25%" height="25%" alt="IMG">
+                <h5>{{ .title }}</h5>
+				<p>{{ .text }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+		</div>
+	<div class="col-md-6">
+			<div class="section-title text-right">
+				<h2>{{ .Site.Data.journey.title }}</h2>
+				<p>{{ .Site.Data.journey.paragraph }}</p>
+			</div>
+		</div>
+    </div>
+  </div>
+</section>

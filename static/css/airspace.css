@@ -219,6 +219,13 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 1.8;
 }
 /*--
+	Approach Start
+--*/
+#approach {
+  text-align: center;
+  padding: 20px 0;
+}
+/*--
 	call-to-action Start
 --*/
 #call-to-action {
@@ -300,67 +307,64 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 10px 20px;
 }
 /*--
-	content Start
+	journey Start
 --*/
-#testimonial {
-  padding: 100px 0;
+
+#journey {
+  padding: 50px 0;
 }
-#testimonial .block h2 {
+#journey .block h2 {
   line-height: 27px;
   color: #5C5C5C;
-  padding-top: 110px;
+  padding-top: 60px;
+  margin: 0;
 }
-#testimonial .block p {
+#journey .block p {
   padding-top: 50px;
   color: #7B7B7B;
 }
-#testimonial .counter-box li {
-  width: 50%;
+#journey .block img {
+  padding-left: 40px;
+  width: 100%;
+}
+#journey .section-title {
+  margin-bottom: 0px;
+}
+#journey .section-title p {
+  padding-top: 0px;
+}
+#journey .journey-carousel {
   float: left;
-  text-align: center;
-  margin: 30px 0 30px;
-}
-#testimonial .counter-box li i {
-  font-size: 35px;
-}
-#testimonial .counter-box li h4 {
-  font-size: 30px;
-  font-weight: bold;
-}
-#testimonial .counter-box li span {
-  color: #555;
-}
-#testimonial .testimonial-carousel {
   text-align: center;
   width: 75%;
   border: 1px solid #DEDEDE;
-  padding: 24px;
-  margin: 0 auto;
+  padding: 25px;
+  margin: 0;
 }
-#testimonial .testimonial-carousel img {
+#journey .journey-carousel img {
   padding-bottom: 38px;
 }
-#testimonial .testimonial-carousel p {
+#journey .journey-carousel p {
   line-height: 28px;
   font-weight: 300;
   padding-bottom: 20px;
 }
-#testimonial .testimonial-carousel .user img {
+#journey .journey-carousel .user img {
   padding-bottom: 0px;
   border-radius: 500px;
 }
-#testimonial .testimonial-carousel .user p {
+#journey .journey-carousel .user p {
   padding-bottom: 0;
   font-size: 12px;
   line-height: 20px;
   color: #353241;
 }
-#testimonial .testimonial-carousel .user p span {
+#journey .journey-carousel .user p span {
   display: block;
   color: #353241;
   font-weight: 600;
 }
-#testimonial .testimonial-carousel .owl-carousel .owl-pagination div {
+#journey .journey-carousel .owl-carousel .owl-pagination div {
   border: 1px solid #1D1D1D;
   border-radius: 500px;
   display: inline-block;
@@ -368,7 +372,7 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-right: 15px;
   width: 10px;
 }
-#testimonial .testimonial-carousel .owl-carousel .owl-pagination div.active {
+#journey .journey-carousel .owl-carousel .owl-pagination div.active {
   background: #5C5C5C;
   font-size: 30px;
   display: inline-block;
@@ -683,8 +687,8 @@ font header .navbar-default .navbar-nav li a:hover {
 	contact-form Start
 --*/
 #contact-form {
-  padding-top: 70px;
-  padding-bottom: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 #contact-form .block form .form-group {
   padding-bottom: 15px;

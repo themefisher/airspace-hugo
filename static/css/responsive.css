@@ -210,6 +210,15 @@ px      68    160    252    */
   #service .thumbnail {
     padding-bottom: 70px;
   }
+   /*--
+	approach Start 
+--*/
+  #approach {
+    padding-top: 10px;
+  }
+  #approach .thumbnail {
+    padding-bottom: 10px;
+  }
   /*--
 	call-to-action Start 
 --*/
