@@ -6,9 +6,9 @@
 <body>
 
 	{{ partial "header.html" . }}
-
-	{{ partial "global-header.html" .}}
-
+	
+	{{ partial "blog-header.html" . }}
+	
 	<section class="blog section">
 		<div class="container">
 			<div class="row">
@@ -32,6 +32,10 @@
 		</div>
 	</section>
 
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	{{ end }}
+	
 	{{ partial "footer.html" . }}
 
 </body>

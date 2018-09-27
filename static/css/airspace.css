@@ -311,16 +311,16 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #journey {
-  padding: 50px 0;
+  padding: 50px;
 }
 #journey .block h2 {
   line-height: 27px;
   color: #5C5C5C;
-  padding-top: 60px;
+  padding-top: 0px;
   margin: 0;
 }
 #journey .block p {
-  padding-top: 50px;
+  padding-top: 0px;
   color: #7B7B7B;
 }
 #journey .block img {
@@ -334,7 +334,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 0px;
 }
 #journey .journey-carousel {
-  float: left;
+  float: right;
   text-align: center;
   width: 75%;
   border: 1px solid #DEDEDE;
@@ -832,8 +832,8 @@ font header .navbar-default .navbar-nav li a:hover {
 footer {
   background: #F5F5F5;
   text-align: center;
-  padding-top: 48px;
-  padding-bottom: 55px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 footer p {
   font-size: 13px;
@@ -844,7 +844,7 @@ footer a {
   color: #595959;
 }
 footer .footer-manu {
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 footer .footer-manu ul {
   margin: 0px;
