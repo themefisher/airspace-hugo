@@ -24,11 +24,11 @@
 	{{ end }}
 
 
+  {{ partial "leadership.html" . }}
+
 	{{ if and (isset .Site.Params "approach") (.Site.Params.approach.enable) }}
 		{{ partial "approach.html" . }}
 	{{ end }}
-
-
 
 	{{ partial "footer.html" . }}
 

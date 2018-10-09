@@ -324,7 +324,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #7B7B7B;
 }
 #journey .block img {
-  padding-left: 40px;
+  padding-left: 0px;
   width: 100%;
 }
 #journey .section-title {
@@ -334,9 +334,9 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 0px;
 }
 #journey .journey-carousel {
-  float: right;
+  float: center;
   text-align: center;
-  width: 75%;
+  width: 100%;
   border: 1px solid #DEDEDE;
   padding: 25px;
   margin: 0;
@@ -378,6 +378,32 @@ font header .navbar-default .navbar-nav li a:hover {
   display: inline-block;
   border: 0px;
 }
+
+
+/*--
+	leadership Start
+--*/
+
+#leadership {
+  padding: 50px;
+}
+#bio-float-left{
+    float: left;
+    width: 25%;
+    margin: 2%;
+}
+
+#bio-float-left img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#bio-float-right{
+    float: right;
+    width: 25%;
+}
+
+
 /*--
 	features Start
 --*/
@@ -860,4 +886,16 @@ footer .footer-manu ul li a {
 }
 footer .footer-manu ul li a:hover {
   color: #000;
+}
+
+.hwrap h4 {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    line-height: 0;
+    padding: 0;
+}
+
+.hwrap h4 span {
+    background: #fff;
+    padding: 0 15px;
 }
