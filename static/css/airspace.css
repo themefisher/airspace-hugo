@@ -77,7 +77,7 @@ a:active {
 }
 
 .btn-main, .btn-transparent, .btn-small {
-    background: #655E7A;
+    background: #023572;
     color: #fff;
     display: inline-block;
     font-size: 14px;
@@ -90,7 +90,7 @@ a:active {
 }
 
 .btn-main:hover, .btn-transparent:hover, .btn-small:hover {
-    background: #353240;
+    background: #000000;
     color: #fff;
 }
 
@@ -118,7 +118,7 @@ header .navbar-default .navbar-nav {
 header .navbar-default .navbar-nav li a {
   color: #333333;
   padding: 10px 26px;
-  font-size: 15px;
+  font-size: 18px;
 }
 font header .navbar-default .navbar-nav li a:hover {
   color: #000;
@@ -130,13 +130,14 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider Start
 --*/
 #slider {
-  background: url("../img/slider-bg.jpg") no-repeat;
+  /*background: url("../img/slider-bg.jpg") no-repeat;*/
   background-size: cover;
   background-attachment: fixed;
   background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  padding: 240px 0 100px 0;
   position: relative;
 }
+
 #slider:before {
   content: "";
   position: absolute;
@@ -146,15 +147,17 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #8b86a3, #322e40);
-  opacity: 0.8;
+  background: #023572;
+  /*background: linear-gradient(to top, #023572 50%, #FFFFFF);*/
+  opacity: 1;
 }
 #slider .block {
-  color: #E3E3E4;
+  /*color: #E3E3E4;*/
+  color: #FFFFFF;
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 45px;
   line-height: 60px;
   letter-spacing: 10px;
@@ -164,7 +167,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 23px;
   line-height: 40px;
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 3px;
 }
 /*--
@@ -232,10 +235,10 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 70px 0px;
+  padding: 50px 0px;
   position: relative;
   text-align: center;
-  color: #fff;
+  color: #023572;
 }
 #call-to-action:before {
   content: "";
@@ -246,8 +249,8 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
-  opacity: 0.8;
+  background: #D0D0CF;
+  opacity: 0.9;
 }
 #call-to-action h2 {
   padding-bottom: 20px;
@@ -256,16 +259,20 @@ font header .navbar-default .navbar-nav li a:hover {
   font-size: 30px;
 }
 #call-to-action p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.6;
 }
 #call-to-action .btn-call-to-action {
   padding: 15px 35px;
   border: none;
-  background-color: #fff;
+  background-color: #023572;
   font-size: 15px;
-  color: #333333;
+  color: #FFFFFF;
   margin-top: 30px;
+}
+#call-to-action .btn-call-to-action:hover {
+  background-color: #000000;
+  color: #FFFFFF;
 }
 /*--
 	Feature Start
@@ -421,8 +428,6 @@ font header .navbar-default .navbar-nav li a:hover {
 	Slider-work Start
 --*/
 #global-header {
-  background: url("../img/slider-bg.jpg") no-repeat;
-  background-size: cover;
   padding-top: 150px;
   padding-bottom: 107px;
   position: relative;
@@ -437,14 +442,18 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
-  opacity: 0.8;
+  background: #023572;
+  /*background: url("../img/slider-bg.jpg") no-repeat;*/
+  background-size: cover;
+  /*background: linear-gradient(to top, #FFFFFF, #D0D0CF);*/
+  opacity: 1;
 }
 #global-header .block {
-  color: #E3E3E4;
+  /*color: #E3E3E4;*/
+  color: #FFFFFF;
   margin: 0 auto;
-  padding-left: 90px;
-  text-align: center;
+  /*padding-left: 90px;
+  text-align: center;*/
 }
 #global-header .block h1 {
   font-weight: 100;
@@ -455,7 +464,7 @@ font header .navbar-default .navbar-nav li a:hover {
   text-transform: capitalize;
 }
 #global-header .block p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
   word-spacing: 3px;
@@ -685,7 +694,7 @@ font header .navbar-default .navbar-nav li a:hover {
   right: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, #928dab, #1f1c2c 70%);
+  background: #322e40;
   opacity: 0.8;
 }
 #slider-contact .block {
@@ -741,12 +750,17 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-form .block button {
   width: 100%;
   height: 60px;
-  background: #47424C;
+  background: #023572;
   border: none;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
+#contact-form .block button:hover {
+  background: #000000;
+  color: #fff;
+}
+
 /*--
 	wrapper-contact Start
 --*/
@@ -825,7 +839,7 @@ font header .navbar-default .navbar-nav li a:hover {
 }
 
 .post-title{
-  color: #655E7A;
+  color: #000000;
   font-size: 25px;
   font-weight: 600;
   display: block;
