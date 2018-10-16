@@ -17,7 +17,7 @@
 							{{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
 	            <h1>{{ .Params.title }}</h1>
 	            <div class="post-info-wrapper">
-	              <p class="italic">By <span class="bold">{{ .Params.author }}</span> on <span class="bold">{{ .Date.Format .Site.Params.dateFormat }}</span></p>
+	              <p class="italic">By <span class="bold">{{ .Params.author }}</span> on <span class="bold">{{ .Site.Params.dateFormat | default "Jan 2, 2006" | .Date.Format }}</span></p>
 	            </div>
 	            <hr />
 	            <p>{{ .Content }}</p>
