@@ -8,9 +8,13 @@
             <div class="block">
               <div class="portfolio-menu">
                 <ul>
-                    <li class="filter" data-filter="all">Everything</li>
+                  {{ $categories := slice }}
                   {{ range .Site.Data.work.portfolio }}
-                    <li class="filter" data-filter=".{{ .category }}">{{ .category }}</li>
+                    {{ $categories = $categories | append .category }}
+                  {{ end }}
+                    <li class="filter" data-filter="all">Everything</li>
+                  {{ range ( $categories | uniq ) }}
+                    <li class="filter" data-filter=".{{ . }}">{{ . }}</li>
                   {{ end }}
                 </ul>
               </div>
