@@ -222,12 +222,55 @@ font header .navbar-default .navbar-nav li a:hover {
   line-height: 1.8;
 }
 /*--
-	Approach Start
+	Schema Start
 --*/
-#approach {
-  text-align: center;
-  padding: 20px 0;
+#schema {
+  padding: 50px 50px;
 }
+
+/*--
+	Media Start
+--*/
+#media {
+  text-align: center;
+  padding: 25px 0;
+}
+
+/*--
+	advantage
+--*/
+#advantage {
+  background: url("../img/call-to-action-bg.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 25px 0px;
+  position: relative;
+  text-align: center;
+  /*color: #023572;*/
+}
+
+#advantage:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #D0D0CF;
+  opacity: 0.9;
+}
+
+#advantage h4 {
+  font-size: 22px;
+  line-height: 1.5;
+}
+#advantage p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /*--
 	call-to-action Start
 --*/
@@ -235,10 +278,9 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 50px 0px;
+  padding: 25px 0px;
   position: relative;
   text-align: center;
-  color: #023572;
 }
 #call-to-action:before {
   content: "";
@@ -252,12 +294,18 @@ font header .navbar-default .navbar-nav li a:hover {
   background: #D0D0CF;
   opacity: 0.9;
 }
-#call-to-action h2 {
+
+#call-to-action h1 {
+  color: #023572;
   padding-bottom: 20px;
-  line-height: 33px;
-  margin: 0;
   font-size: 30px;
 }
+
+#call-to-action h3 {
+  /*color: #023572;*/
+  font-size: 24px;
+}
+
 #call-to-action p {
   font-size: 18px;
   line-height: 1.6;
@@ -392,7 +440,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #leadership {
-  padding: 50px;
+  padding: 25px 0;
 }
 #bio-float-left{
     float: left;

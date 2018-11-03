@@ -10,23 +10,25 @@
 	{{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
 		{{ partial "slider.html" . }}
 	{{ end }}
+	
+	{{ if .Site.Params.schema.enable }}
+		{{ partial "schema.html" . }}
+	{{ end }}
 
-	{{ if .Site.Data.journey.enable }}
-		{{ partial "journey.html" . }}
+	{{ if .Site.Data.advantage.enable }}
+		{{ partial "advantage.html" . }}
 	{{ end }}
 	
-	{{ if and (isset .Site.Params "wrapper") (.Site.Params.wrapper.enable) }}
-		{{ partial "wrapper.html" . }}
+	{{ if and (isset .Site.Params "leadership") (.Site.Params.leadership.enable) }}
+		{{ partial "leadership.html" . }}
 	{{ end }}
-
+	
 	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
 		{{ partial "call-to-action.html" . }}
 	{{ end }}
 
-  {{ partial "leadership.html" . }}
-
-	{{ if and (isset .Site.Params "approach") (.Site.Params.approach.enable) }}
-		{{ partial "approach.html" . }}
+	{{ if and (isset .Site.Params "media") (.Site.Params.media.enable) }}
+		{{ partial "media.html" . }}
 	{{ end }}
 
 	{{ partial "footer.html" . }}
