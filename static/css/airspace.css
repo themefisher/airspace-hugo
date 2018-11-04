@@ -314,7 +314,8 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 15px 35px;
   border: none;
   background-color: #023572;
-  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   color: #FFFFFF;
   margin-top: 30px;
 }
