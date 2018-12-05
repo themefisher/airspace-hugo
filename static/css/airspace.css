@@ -233,7 +233,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #media {
   text-align: center;
-  padding: 25px 0;
+  padding: 50px 0;
 }
 
 /*--
@@ -243,7 +243,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background: url("../img/call-to-action-bg.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 25px 0px;
+  padding: 50px 0px;
   position: relative;
   text-align: center;
   /*color: #023572;*/
@@ -441,7 +441,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 
 #leadership {
-  padding: 25px 0;
+  padding: 50px 0;
 }
 #bio-float-left{
     float: left;
