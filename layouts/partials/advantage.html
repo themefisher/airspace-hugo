@@ -1,3 +1,5 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
 <!-- Content Start -->
 <section id="advantage">
 <div class="container">
@@ -6,7 +8,7 @@
 
   <div class="row"> 
   <div class="col-md-12">
-      <img src="/img/advantage/evo_advantage.png" width="auto" height="50px" alt="advantage-title">
+      <img src={{ .URL | relLangURL }}img/advantage/advantage.png width="auto" height="50px" alt="advantage-title">
       <br>
       <br>
   </div>
@@ -17,24 +19,24 @@
 	<div class="col-md-4">
 	  <div class="text-center">
 	    <img src="/img/advantage/scientific.png" width="auto" height="80px" alt="IMG">
-		  <h4>Scientific</h4>
-		  <p>{{ .Site.Data.advantage.scientific }}</p>
+		  <h4>{{ $data.advantage.scientific.title }}</h4>
+		  <p>{{ $data.advantage.scientific.body }}</p>
     </div>
 	</div>
 	
 	<div class="col-md-4">
 	  <div class="text-center">
 	    <img src="/img/advantage/human.png" width="auto" height="80px" alt="IMG">
-		  <h4>Human</h4>
-		  <p>{{ .Site.Data.advantage.human }}</p>
+		  <h4>{{ $data.advantage.human.title }}</h4>
+		  <p>{{ $data.advantage.human.body }}</p>
     </div>
 	</div>
 	
 	<div class="col-md-4">
 	  <div class="text-center">
 	    <img src="/img/advantage/affordable.png" width="auto" height="80px" alt="IMG">
-		  <h4>Affordable</h4>
-		  <p>{{ .Site.Data.advantage.affordable }}</p>
+		  <h4>{{ $data.advantage.affordable.title }}</h4>
+		  <p>{{ $data.advantage.affordable.body }}</p>
     </div>
 	</div>
 	 

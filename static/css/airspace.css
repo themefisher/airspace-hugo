@@ -58,6 +58,16 @@ a:active {
   text-decoration: none !important;
 }
 
+.lang-list{
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.lang-list a{
+  color: #0D0017;
+  font-weight: bold;
+}
+
 .section{
   padding: 100px 0;
 }
