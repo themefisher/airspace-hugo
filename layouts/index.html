@@ -9,30 +9,17 @@
 
 	{{ partial "header.html" . }}
 
-	{{ if and (isset .Site.Params "slider") (.Site.Params.slider.enable) }}
-		{{ partial "slider.html" . }}
-	{{ end }}
+	{{ partial "slider.html" . }}
 
-	{{ if and (isset .Site.Params "wrapper") (.Site.Params.wrapper.enable) }}
-		{{ partial "wrapper.html" . }}
-	{{ end }}
+	{{ partial "wrapper.html" . }}
 
-	{{ if and (isset .Site.Params "feature") (.Site.Params.feature.enable) }}
-		{{ partial "feature.html" . }}
-	{{ end }}
+	{{ partial "feature.html" . }}
 
+	{{ partial "service.html" . }}
 
-	{{ if and .Site.Data.service .Site.Data.service.enable }}
-		{{ partial "service.html" . }}
-	{{ end }}
+	{{ partial "call-to-action.html" . }}
 
-	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
-		{{ partial "call-to-action.html" . }}
-	{{ end }}
-
-	{{ if .Site.Data.testimonial.enable }}
-		{{ partial "testimonial.html" . }}
-	{{ end }}
+	{{ partial "testimonial.html" . }}
 
 	{{ partial "footer.html" . }}
 

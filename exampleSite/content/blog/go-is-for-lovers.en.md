@@ -1,6 +1,7 @@
 +++
 title = "Go is for lovers"
 date = "2015-09-17T13:47:08+02:00"
+description = "This is meta description for blog page"
 tags = ["go"]
 categories = ["programming"]
 +++

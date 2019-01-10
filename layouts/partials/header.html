@@ -1,30 +1,38 @@
 <!-- Header Start -->
 <header>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <!-- header Nav Start -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-              <img src="{{ .Site.BaseURL }}img/logo.png" alt="{{ .Site.Title }} Logo">
-            </a>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- header Nav Start -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+                <img src="{{ .Site.BaseURL }}img/logo.png" alt="{{ .Site.Title }} Logo">
+              </a>
+            </div>
+            
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="{{ .Site.BaseURL }}">{{ .Site.Params.home }}</a></li>
-              {{ range .Site.Menus.header }}
+                {{ range .Site.Menus.header }}
                 <li><a href="{{ .URL }}/">{{ .Name }}</a></li>
-              {{ end }}
+                {{ end }}
+              </ul>
+              <!-- Language List -->
+              <ul class="list-inline lang-list">
+                {{ range $.Site.Home.AllTranslations }}
+                <li class="list-inline-item"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+                {{ end }}
               </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->

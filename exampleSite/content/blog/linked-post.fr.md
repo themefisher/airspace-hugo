@@ -1,10 +1,13 @@
 +++
-title = "Linked post"
+title = "FR Linked post"
 date = "2015-10-02T21:49:20+02:00"
+description = "This is meta description for blog page"
 tags = ["golang", "programming", "theme", "hugo"]
 categories = ["programming"]
 author = "John Doe"
 +++
+
+#### France
 
 I'm a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
 

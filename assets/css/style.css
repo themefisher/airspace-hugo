@@ -32,3 +32,13 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+.lang-list{
+  display: inline-block;
+  margin-top: 15px;
+}
+
+.lang-list a{
+  color: #0D0017;
+  font-weight: bold;
+}

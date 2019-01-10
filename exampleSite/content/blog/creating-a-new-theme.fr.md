@@ -1,9 +1,13 @@
 +++
-title = "Creating a new theme"
+title = "FR Creating a new theme"
 date = "2015-06-24T13:50:46+02:00"
+description = "This is meta description for blog page"
 tags = ["theme"]
 categories = ["starting"]
 +++
+
+
+#### France
 
 ## Introduction
 
