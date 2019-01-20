@@ -23,13 +23,13 @@
                 <ul id="portfolio-contant-active">
                   {{ range $data.work.portfolio }}
                     <li class="mix {{ .category }}">
-                      <a href="{{ .url }}">
-                        <img src="{{ $.Site.BaseURL }}{{ .image }}" alt="">
+                      <a class="venobox" href="{{ $.Site.BaseURL }}{{ .imageAlt }}">
+                        <img class="img-responsive" src="{{ $.Site.BaseURL }}{{ .image }}" onerror="this.src='{{ $.Site.BaseURL }}{{ .imageAlt }}'" />
                         <div class="overly">
                           <div class="position-center">
+                            <i class="fa fa-search fz-20"></i>
                             <h2>{{ .name }}</h2>
                             <p>{{ .description }}</p>
-
                           </div>
                         </div>
                       </a>

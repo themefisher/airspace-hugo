@@ -1,5 +1,5 @@
 title = "Airspace for Hugo"
-baseURL = "https://www.example.com"
+baseURL = "https://somrat37.github.io/project-test/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
@@ -77,6 +77,8 @@ theme = "airspace-hugo"
       enable = true
       title = "Un marketing numérique & agence de design"
       subtitle = "FRANCAIS We love the Web and the work we do.<br/>We work closely with our clients to deliver the best possible solutions for their needs"
+      bgImage = "img/slider-bg.webp"
+      bgImageAlt = "img/slider-bg.jpg"
 
     [Languages.fr.params.wrapper]
       enable = true
@@ -93,6 +95,8 @@ theme = "airspace-hugo"
     [Languages.fr.params.feature]
       enable = true
       title = "FRANCAIS We believe in great ideas"
+      bgImage = "img/feature-bg.webp"
+      bgImageAlt = "img/feature-bg.jpg"
       content = "FRANCAIS Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
       [Languages.fr.params.feature.button]
         caption = "View Works"
@@ -102,6 +106,7 @@ theme = "airspace-hugo"
       enable = true
       title = "FRANCAIS We design delightful digital experiences."
       paragraph = "FRANCAIS Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+      bgImage = "img/call-to-action-bg.jpg"
 
     [Languages.fr.params.contact]
       enable = true
@@ -175,6 +180,8 @@ theme = "airspace-hugo"
     enable = true
     title = "A digital marketing &amp; design agency"
     subtitle = "We love the Web and the work we do.<br/>We work closely with our clients to deliver the best possible solutions for their needs"
+    bgImage = "img/slider-bg.webp"
+    bgImageAlt = "img/slider-bg.jpg"
 
   [Languages.en.params.wrapper]
     enable = true
@@ -191,6 +198,8 @@ theme = "airspace-hugo"
   [Languages.en.params.feature]
     enable = true
     title = "We believe in great ideas"
+    bgImage = "img/feature-bg.webp"
+    bgImageAlt = "img/feature-bg.jpg"
     content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
     [Languages.en.params.feature.button]
       caption = "View Works"
@@ -198,6 +207,7 @@ theme = "airspace-hugo"
 
   [Languages.en.params.call]
     enable = true
+    bgImage = "img/call-to-action-bg.jpg"
     title = "We design delightful digital experiences."
     paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
 

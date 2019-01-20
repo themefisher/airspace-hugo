@@ -3,36 +3,44 @@ title: Quelques uns de nos derniers projets.
 subtitle: Don’t just take our word for it. Check out some of our latest work.
 
 portfolio:
-  - category: fr-Branding
-    url: "#"
-    image: "/img/portfolio/work1.jpg"
+  - category: Branding
+    image: "/img/portfolio/work1.webp"
+    imageAlt: "/img/portfolio/work1.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
-  - category: fr-Websites
-    url: "#"
-    image: "/img/portfolio/work1.jpg"
+  - category: Websites
+    image: "/img/portfolio/work1.webp"
+    imageAlt: "/img/portfolio/work1.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
-  - category: fr-Graphics
-    url: "#"
-    image: "/img/portfolio/work2.jpg"
+  - category: Graphics
+    image: "/img/portfolio/work2.webp"
+    imageAlt: "/img/portfolio/work2.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
-  - category: fr-Design
-    url: "#"
-    image: "/img/portfolio/work3.jpg"
+  - category: Design
+    image: "/img/portfolio/work3.webp"
+    imageAlt: "/img/portfolio/work3.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
-  - category: fr-Video
-    url: "#"
-    image: "/img/portfolio/work4.jpg"
+  - category: Video
+    image: "/img/portfolio/work4.webp"
+    imageAlt: "/img/portfolio/work4.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
+  - category: Video
+    image: "/img/portfolio/work4.webp"
+    imageAlt: "/img/portfolio/work4.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+
+      
 clients:
   - image: "/img/clients/clients-logo1.png"
     url: "#"

@@ -1,6 +1,6 @@
 {{ if .Site.Params.slider.enable }}
 {{ "<!-- Slider Start -->" | safeHTML}}
-<section id="slider">
+<section id="slider" style="background-image: url('{{.Site.Params.slider.bgImage | absURL }}'),url('{{.Site.Params.slider.bgImageAlt | absURL}}');">
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">

@@ -31,6 +31,8 @@ Then clone this repository:
 
 Now take a look at the exampleSite folder and you're ready to go!
 
+> After generate the public folder, move `.htaccess` to this public folder.
+
 ## License
 
 This Template is released under [Creative Commons Attribution 3.0 (CC-BY-3.0) License](https://creativecommons.org/licenses/by/3.0/).

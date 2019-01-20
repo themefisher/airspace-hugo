@@ -20,27 +20,83 @@
 {{ .Hugo.Generator }}
 
 <!-- CSS -->
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/airspace-local-fonts.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/airspace.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/responsive.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
+<noscript>
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/venobox.css" />
+</noscript>
 {{ "<!-- Main Stylesheet -->" | safeHTML }}
 {{ $styles := resources.Get "css/style.css" | minify}}
 <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
 
+
+<script type="text/javascript">
+    var css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = '{{ .Site.BaseURL }}css/owl.carousel.css';
+    css.type = 'text/css';
+    var fastCSS = document.getElementsByTagName('link')[0];
+    fastCSS.parentNode.insertBefore(css, fastCSS);
+
+
+    var css2 = document.createElement('link');
+    css2.rel = 'stylesheet';
+    css2.href = '{{ .Site.BaseURL }}css/bootstrap.min.css';
+    css2.type = 'text/css';
+    var fastCSS2 = document.getElementsByTagName('link')[0];
+    fastCSS2.parentNode.insertBefore(css2, fastCSS2);
+
+
+    var css3 = document.createElement('link');
+    css3.rel = 'stylesheet';
+    css3.href = '{{ .Site.BaseURL }}css/font-awesome.min.css';
+    css3.type = 'text/css';
+    var fastCSS3 = document.getElementsByTagName('link')[0];
+    fastCSS3.parentNode.insertBefore(css3, fastCSS3);
+
+
+    var css4 = document.createElement('link');
+    css4.rel = 'stylesheet';
+    css4.href = '{{ .Site.BaseURL }}css/venobox.css';
+    css4.type = 'text/css';
+    var fastCSS4 = document.getElementsByTagName('link')[0];
+    fastCSS4.parentNode.insertBefore(css4, fastCSS4);
+
+
+    var css6 = document.createElement('link');
+    css6.rel = 'stylesheet';
+    css6.href = '{{ .Site.BaseURL }}css/ionicons.min.css';
+    css6.type = 'text/css';
+    var fastCSS6 = document.getElementsByTagName('link')[0];
+    fastCSS6.parentNode.insertBefore(css6, fastCSS6);
+
+
+    var css7 = document.createElement('link');
+    css7.rel = 'stylesheet';
+    css7.href = '{{ .Site.BaseURL }}css/animate.css';
+    css7.type = 'text/css';
+    var fastCSS7 = document.getElementsByTagName('link')[0];
+    fastCSS7.parentNode.insertBefore(css7, fastCSS7);
+
+
+    var css9 = document.createElement('link');
+    css9.rel = 'stylesheet';
+    css9.href = '{{ .Site.BaseURL }}css/syntax.css';
+    css9.type = 'text/css';
+    var fastCSS9 = document.getElementsByTagName('link')[0];
+    fastCSS9.parentNode.insertBefore(css9, fastCSS9);
+</script>
+
 <!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/plugins.js"></script>
-<script src="{{ .Site.BaseURL }}js/min/waypoints.min.js"></script>
-<script src="{{ .Site.BaseURL }}js/jquery.counterup.js"></script>
+<script src="{{ .Site.BaseURL }}js/jquery-1.10.2.min.js"></script>
+<script async src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+<script async src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
+<script async src="{{ .Site.BaseURL }}js/plugins.js"></script>
+<script async src="{{ .Site.BaseURL }}js/venobox.min.js"></script>
 
 
 {{ "<!-- Main Script -->" | safeHTML }}

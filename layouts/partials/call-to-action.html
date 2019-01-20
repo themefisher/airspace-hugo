@@ -1,6 +1,6 @@
 <!-- Call to action Start -->
-{{ with .Site.Params.call }}
-<section id="call-to-action">
+<section id="call-to-action" style="background-image: url('{{ .Site.Params.call.bgImage | absURL }}');">
+  {{ with .Site.Params.call }}
   <div class="container">
     <div class="row">
       <div class="col-md-12">
