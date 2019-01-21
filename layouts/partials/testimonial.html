@@ -1,4 +1,7 @@
+
+
 {{ $data := index .Site.Data .Site.Language.Lang }}
+{{ if $data.testimonial.enable }}
 <!-- Content Start -->
 <section id="testimonial">
   <div class="container">
@@ -11,6 +14,7 @@
     </div>
 
     <div class="row">
+      {{ if $data.testimonial.number.enable }}
       <div class="col-md-6">
         <div class="block">
           <!-- Content -->
@@ -27,6 +31,8 @@
           </ul>
         </div>
       </div>
+      {{ end }}
+      {{ if $data.testimonial.peoples.enable }}
       <div class="col-md-6">
         <div class="testimonial-carousel">
           <div id="testimonial-slider" class="owl-carousel">
@@ -43,6 +49,8 @@
           </div>
         </div>
       </div>
+      {{ end }}
     </div>
   </div>
 </section>
+{{ end }}
