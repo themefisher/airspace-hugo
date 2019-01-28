@@ -1,8 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
-{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 
 
 <!-- robots -->
@@ -18,78 +16,16 @@
 <title>{{ .Title }}</title>
 
 {{ .Hugo.Generator }}
-
-<!-- CSS -->
-<noscript>
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
-    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/venobox.css" />
-</noscript>
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/venobox.css" />
 {{ "<!-- Main Stylesheet -->" | safeHTML }}
-{{ $styles := resources.Get "css/style.css" | minify}}
-<link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
 
-
-<script type="text/javascript">
-    var css = document.createElement('link');
-    css.rel = 'stylesheet';
-    css.href = '{{ .Site.BaseURL }}css/owl.carousel.css';
-    css.type = 'text/css';
-    var fastCSS = document.getElementsByTagName('link')[0];
-    fastCSS.parentNode.insertBefore(css, fastCSS);
-
-
-    var css2 = document.createElement('link');
-    css2.rel = 'stylesheet';
-    css2.href = '{{ .Site.BaseURL }}css/bootstrap.min.css';
-    css2.type = 'text/css';
-    var fastCSS2 = document.getElementsByTagName('link')[0];
-    fastCSS2.parentNode.insertBefore(css2, fastCSS2);
-
-
-    var css3 = document.createElement('link');
-    css3.rel = 'stylesheet';
-    css3.href = '{{ .Site.BaseURL }}css/font-awesome.min.css';
-    css3.type = 'text/css';
-    var fastCSS3 = document.getElementsByTagName('link')[0];
-    fastCSS3.parentNode.insertBefore(css3, fastCSS3);
-
-
-    var css4 = document.createElement('link');
-    css4.rel = 'stylesheet';
-    css4.href = '{{ .Site.BaseURL }}css/venobox.css';
-    css4.type = 'text/css';
-    var fastCSS4 = document.getElementsByTagName('link')[0];
-    fastCSS4.parentNode.insertBefore(css4, fastCSS4);
-
-
-    var css6 = document.createElement('link');
-    css6.rel = 'stylesheet';
-    css6.href = '{{ .Site.BaseURL }}css/ionicons.min.css';
-    css6.type = 'text/css';
-    var fastCSS6 = document.getElementsByTagName('link')[0];
-    fastCSS6.parentNode.insertBefore(css6, fastCSS6);
-
-
-    var css7 = document.createElement('link');
-    css7.rel = 'stylesheet';
-    css7.href = '{{ .Site.BaseURL }}css/animate.css';
-    css7.type = 'text/css';
-    var fastCSS7 = document.getElementsByTagName('link')[0];
-    fastCSS7.parentNode.insertBefore(css7, fastCSS7);
-
-
-    var css9 = document.createElement('link');
-    css9.rel = 'stylesheet';
-    css9.href = '{{ .Site.BaseURL }}css/syntax.css';
-    css9.type = 'text/css';
-    var fastCSS9 = document.getElementsByTagName('link')[0];
-    fastCSS9.parentNode.insertBefore(css9, fastCSS9);
-</script>
 
 <!-- Js -->
 <script src="{{ .Site.BaseURL }}js/jquery-1.10.2.min.js"></script>
@@ -97,22 +33,7 @@
 <script async src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
 <script async src="{{ .Site.BaseURL }}js/plugins.js"></script>
 <script async src="{{ .Site.BaseURL }}js/venobox.min.js"></script>
-
-
-{{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/main.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
-
-{{ "<!-- google analitycs -->" | safeHTML }}
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
-    ga('send', 'pageview');
-</script>
-
+<script async src="{{ .Site.BaseURL }}js/main.js"></script>
 <!--
 /*
  * Airspace

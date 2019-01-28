@@ -28,12 +28,6 @@
                 <li><a href="{{ .URL }}/">{{ .Name }}</a></li>
                 {{ end }}
               </ul>
-              <!-- Language List -->
-              <ul class="list-inline lang-list">
-                {{ range $.Site.Home.AllTranslations }}
-                <li class="list-inline-item"><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-                {{ end }}
-              </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>

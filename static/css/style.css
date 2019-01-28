@@ -137,7 +137,15 @@ a:active {
   background: #353240;
   color: #fff;
 }
-
+.btn-solid-border {
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+.btn-solid-border:hover {
+  border: 1px solid #655E7A;
+  background: #655E7A;
+}
 /*--
 	Header Start
 --*/

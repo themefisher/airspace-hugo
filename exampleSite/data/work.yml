@@ -1,41 +1,36 @@
 enable: true
-title: Quelques uns de nos derniers projets.
+title: Just some of our latest projects.
 subtitle: Don’t just take our word for it. Check out some of our latest work.
 
+# google support the latest technology for image optimization. you can also optimize your image from https://www.ps2pdf.com/convert-jpg-to-webp here.
 portfolio:
   - category: Branding
-    image: "/img/portfolio/work1.webp"
-    imageAlt: "/img/portfolio/work1.jpg"
+    image: "/img/portfolio/work1.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
   - category: Websites
-    image: "/img/portfolio/work1.webp"
-    imageAlt: "/img/portfolio/work1.jpg"
+    image: "/img/portfolio/work1.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
   - category: Graphics
-    image: "/img/portfolio/work2.webp"
-    imageAlt: "/img/portfolio/work2.jpg"
+    image: "/img/portfolio/work2.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
   - category: Design
-    image: "/img/portfolio/work3.webp"
-    imageAlt: "/img/portfolio/work3.jpg"
+    image: "/img/portfolio/work3.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
   - category: Video
-    image: "/img/portfolio/work4.webp"
-    imageAlt: "/img/portfolio/work4.jpg"
+    image: "/img/portfolio/work4.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
   - category: Video
-    image: "/img/portfolio/work4.webp"
-    imageAlt: "/img/portfolio/work4.jpg"
+    image: "/img/portfolio/work4.jpg"
     name: Tesla Motors
     description: >
       Labore et dolore magna aliqua. Ut enim ad
