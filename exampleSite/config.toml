@@ -5,236 +5,96 @@ theme = "airspace-hugo"
 
 # The site's parameters
 [params]
-
-  # Google Analitycs
-  googleAnalitycsID = "Your ID"
-  description = "Airspace Hugo theme"
-  author = "Somrat"
+  home = "Home"
   
-  
-  # If you want to remove the copyright text you need a Themefisher license.
-  # This license is offered with a 50% discount for all Hugo users.
-  # For information see https://github.com/gohugoio/hugoThemes/issues/260
+  [menu]
 
-# Multilangual : FR / EN
-[Languages]
-    ############ 1 - Site en FRANCAIS
-  
-
-  [Languages.fr]
-  languageName = "Fr"
-  weight = 1
-  languageCode = "fr-fr"
-  title = "FRANCAIS Airspace Hugo"
-  dateFormat = "2 January 2006"
-  home = "FR-Home"
-
-    
-  [Languages.fr.menu]
-
-    [[Languages.fr.menu.header]]
-      weight = 2
-      name = "FR-Work"
-      url = "/fr/work"
-    [[Languages.fr.menu.header]]
-      weight = 3
-      name = "FR-Blog"
-      url = "/fr/blog"
-    [[Languages.fr.menu.header]]
-      weight = 4
-      name = "FR-Service"
-      url = "/fr/service"
-    [[Languages.fr.menu.header]]
-      weight = 5
-      name = "FR-Contact"
-      url = "/fr/contact"
-
-    [[Languages.fr.menu.footer]]
-      weight = 1
-      name = "FR-About us"
-      url = "#"
-    [[Languages.fr.menu.footer]]
-      weight = 2
-      name = "FR-Contact us"
-      url = "#"
-    [[Languages.fr.menu.footer]]
-      weight = 3
-      name = "FR-How it works"
-      url = "#"
-    [[Languages.fr.menu.footer]]
-      weight = 4
-      name = "FR-Blog"
-      url = "#"
-    [[Languages.fr.menu.footer]]
-      weight = 5
-      name = "FR-Terms"
-      url = "#"
-
-
-  [Languages.fr.params]
-
-    [Languages.fr.params.slider]
-      enable = true
-      title = "Un marketing numérique & agence de design"
-      subtitle = "FRANCAIS We love the Web and the work we do.<br/>We work closely with our clients to deliver the best possible solutions for their needs"
-      bgImage = "img/slider-bg.webp"
-      bgImageAlt = "img/slider-bg.jpg"
-      btnText = "Discover Our Projects"
-      url = "#"
-
-    [Languages.fr.params.wrapper]
-      enable = true
-      image = "img/wrapper-img.png"
-      title = "FRANCAIS About Us"
-      italic = "FRANCAIS Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-      paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id"
-
-    [Languages.fr.params.blog]
-      enable = true
-      title = "FRANCAIS Get The Latest On What We're doing"
-      subtitle = "FRANCAIS Catch up with us, anytime and anywhere"
-
-    [Languages.fr.params.feature]
-      enable = true
-      title = "FRANCAIS We believe in great ideas"
-      bgImage = "img/feature-bg.webp"
-      bgImageAlt = "img/feature-bg.jpg"
-      content = "FRANCAIS Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
-      [Languages.fr.params.feature.button]
-        caption = "View Works"
-        url = "#"
-
-    [Languages.fr.params.call]
-      enable = true
-      title = "FRANCAIS We design delightful digital experiences."
-      paragraph = "FRANCAIS Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
-      bgImage = "img/call-to-action-bg.jpg"
-      [Languages.fr.params.call.button]
-        url = "#"
-        text = "tell us your story"
-
-    [Languages.fr.params.contact]
-      enable = true
-      title = "FRANCAIS Drop us a note"
-      subtitle = "Don’t just take our word for it. Check out some of our latest work."
-      [Languages.fr.params.contact.form]
-        name = "Your name"
-        email = "Your email"
-        subject = "Your subject"
-        message = "Your message"
-        button = "Send message"
-      [Languages.fr.params.contact.box]
-        title = "Stop by for a visit"
-        address = "North Main Street, Brooklyn Australia"
-        email = "Email: contact@mail.com"
-        phone = "Phone: +88 01672 506 744"
-      [Languages.fr.params.contact.gmaps]
-        title = "We Also Count in Google Maps"
-
-  ######## english language
-  [Languages.en]
-  languageName = "En"
-    weight = 2
-    languageCode = "en-us"
-    title = "Airspace Hugo"
-    dateFormat = "January 2, 2006"
-    home = "Home"
-
-    
-  [Languages.en.menu]
-
-    [[Languages.en.menu.header]]
+    [[menu.header]]
       weight = 2
       name = "Work"
       url = "/work"
-    [[Languages.en.menu.header]]
-      weight = 3
-      name = "Blog"
-      url = "/blog"
-    [[Languages.en.menu.header]]
+    [[menu.header]]
       weight = 4
       name = "Service"
       url = "/service"
-    [[Languages.en.menu.header]]
+    [[menu.header]]
       weight = 5
       name = "Contact"
       url = "/contact"
 
-    [[Languages.en.menu.footer]]
+    [[menu.footer]]
       weight = 1
       name = "About us"
       url = "#"
-    [[Languages.en.menu.footer]]
+    [[menu.footer]]
       weight = 2
       name = "Contact us"
       url = "#"
-    [[Languages.en.menu.footer]]
+    [[menu.footer]]
       weight = 3
       name = "How it works"
       url = "#"
-    [[Languages.en.menu.footer]]
+    [[menu.footer]]
       weight = 4
       name = "Blog"
       url = "#"
-    [[Languages.en.menu.footer]]
+    [[menu.footer]]
       weight = 5
       name = "Terms"
       url = "#"
 
-  [Languages.en.params.slider]
+  [params.slider]
     enable = true
     title = "A digital marketing &amp; design agency"
     subtitle = "We love the Web and the work we do.<br/>We work closely with our clients to deliver the best possible solutions for their needs"
-    bgImage = "img/slider-bg.webp"
-    bgImageAlt = "img/slider-bg.jpg"
+    bgImage = "img/slider-bg.jpg"
     btnText = "Discover Our Projects"
     url = "#"
 
-  [Languages.en.params.wrapper]
+  [params.wrapper]
     enable = true
     image = "img/wrapper-img.png"
     title = "About Us"
     italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
     paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id"
 
-  [Languages.en.params.blog]
+  [params.blog]
     enable = true
     title = "Get The Latest On What We're doing"
     subtitle = "Catch up with us, anytime and anywhere"
 
-  [Languages.en.params.feature]
+  [params.feature]
     enable = true
     title = "We believe in great ideas"
-    bgImage = "img/feature-bg.webp"
-    bgImageAlt = "img/feature-bg.jpg"
+    bgImage = "img/feature-bg.jpg"
     content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
-    [Languages.en.params.feature.button]
+    [params.feature.button]
       caption = "View Works"
       url = "#"
 
-  [Languages.en.params.call]
+  [params.call]
     enable = true
     bgImage = "img/call-to-action-bg.jpg"
     title = "We design delightful digital experiences."
     paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
-    [Languages.en.params.call.button]
+    [params.call.button]
       url = "#"
       text = "tell us your story"
 
-  [Languages.en.params.contact]
+  [params.contact]
     enable = true
     title = "Drop us a note"
     subtitle = "Don’t just take our word for it. Check out some of our latest work."
-    [Languages.en.params.contact.form]
+    [params.contact.form]
       name = "Your name"
       email = "Your email"
       subject = "Your subject"
       message = "Your message"
       button = "Send message"
-    [Languages.en.params.contact.box]
+    [params.contact.box]
       title = "Stop by for a visit"
       address = "North Main Street, Brooklyn Australia"
       email = "Email: contact@mail.com"
       phone = "Phone: +88 01672 506 744"
-    [Languages.en.params.contact.gmaps]
+    [params.contact.gmaps]
       title = "We Also Count in Google Maps"
