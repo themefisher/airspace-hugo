@@ -1,0 +1,45 @@
+enable: true
+title: Our Services
+subtitle: >
+  Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics
+content:
+
+  - icon: ion-coffee
+    name: Branding
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-compass
+    name: Web Design
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-image
+    name: App Design
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-bug
+    name: Start Up
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-headphone
+    name: Logo Design
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-leaf
+    name: Development
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-planet
+    name: Brand Identity
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+
+  - icon: ion-earth
+    name: Brand Identity
+    text: >
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
