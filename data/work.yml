@@ -1,0 +1,63 @@
+enable: true
+title: Just some of our latest projects.
+subtitle: Don’t just take our word for it. Check out some of our latest work.
+
+# google support the latest technology for image optimization. you can also optimize your image from https://www.ps2pdf.com/convert-jpg-to-webp here.
+portfolio:
+  - category: Branding
+    image: "/img/portfolio/work1.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+  - category: Websites
+    image: "/img/portfolio/work1.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+  - category: Graphics
+    image: "/img/portfolio/work2.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+  - category: Design
+    image: "/img/portfolio/work3.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+  - category: Video
+    image: "/img/portfolio/work4.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+  - category: Video
+    image: "/img/portfolio/work4.jpg"
+    name: Tesla Motors
+    description: >
+      Labore et dolore magna aliqua. Ut enim ad
+
+      
+clients:
+  - image: "/img/clients/clients-logo1.png"
+    url: "#"
+  - image: "/img/clients/clients-logo2.png"
+    url: "#"
+  - image: "/img/clients/clients-logo3.png"
+    url: "#"
+  - image: "/img/clients/clients-logo4.png"
+    url: "#"
+  - image: "/img/clients/clients-logo5.png"
+    url: "#"
+  - image: "/img/clients/clients-logo4.png"
+    url: "#"
+  - image: "/img/clients/clients-logo3.png"
+    url: "#"
+  - image: "/img/clients/clients-logo2.png"
+    url: "#"
+  - image: "/img/clients/clients-logo1.png"
+    url: "#"
+  - image: "/img/clients/clients-logo2.png"
+    url: "#"
+  - image: "/img/clients/clients-logo3.png"
+    url: "#"
+  - image: "/img/clients/clients-logo4.png"
+    url: "#"
