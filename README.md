@@ -1,9 +1,8 @@
 # _Airspace_ for Hugo
 ![screenshot](https://user-images.githubusercontent.com/37659754/51828946-dfa69600-2316-11e9-983c-403f85c152ff.jpg "Home of the website")
 
-Airspace is a clean, unique, and free bootstrap website template, contributed to the community by [Themefisher]. Built with refined business as well as corporate elements, and saturated with rich typography, Airspace is lightweight, fast-loading, responsive and W3C-validated, delivering a great first impression to visitors.
+Airspace is a clean, unique, business website template. Built with refined business as well as corporate elements, and saturated with rich typography, Airspace is lightweight, fast-loading, responsive and W3C-validated, delivering a great first impression to visitors.
 
-Airspace uses HTML5/CSS3, JavaScript, jQuery, and the [Bootstrap 3 framework](https://getbootstrap.com/docs/3.3/), assuring the best viewing experience on major web browsers including IE9/IE10/IE11, Firefox, Safari, Opera and Chrome, for any screen sizes of desktop and mobile devices.
 
 ## Main features
 
@@ -25,9 +24,11 @@ Airspace uses HTML5/CSS3, JavaScript, jQuery, and the [Bootstrap 3 framework](ht
 * **Video Documentation** Video documentation is included in the premium version .
 * **Support** With premium version you will get one month priority support.
 
+[Checkout Pro Version](https://themefisher.com/products/airspace-hugo/) |
+
 ## Useful Links
 
-[Installation](https://gohugo.io/getting-started/installing/) | [Pro Version](http://demo.themefisher.com/airspace-hugo) | [More Themes](https://themefisher.com/hugo-themes/)  
+[Installation](https://gohugo.io/getting-started/installing/) | [Pro Version](https://themefisher.com/products/airspace-hugo/) | [More Themes](https://themefisher.com/hugo-themes/)  
 
 
 ## Hire Us
