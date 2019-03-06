@@ -21,7 +21,7 @@ Airspace is a clean, unique, business website template. Built with refined busin
 - [Reporting Issues](#reporting-issues)
 - [Technical Support or Questions](#technical-support-or-questions)
 - [Licensing](#licensing)
-- [More Hugo Themes](http://demo.themefisher.com/hugo-themes/)
+- [More Hugo Themes](http://themefisher.com/hugo-themes/)
 
 ## Demo
 
