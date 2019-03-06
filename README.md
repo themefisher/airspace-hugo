@@ -1,17 +1,47 @@
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/themefisher/airspace-hugo.svg)](https://github.com/themefisher/airspace-hugo/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/themefisher/airspace-hugo.svg)](https://github.com/themefisher/airspace-hugo/issues) 
+[![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/themefisher/airspace-hugo.svg?maxAge=2592000)]() 
+[![GitHub forks](https://img.shields.io/github/forks/themefisher/airspace-hugo.svg)](https://github.com/themefisher/airspace-hugo/network)
+![license](https://img.shields.io/badge/license-MIT-blue.svg)
+
+</div>
+
 # _Airspace_ for Hugo
 ![screenshot](https://user-images.githubusercontent.com/37659754/51828946-dfa69600-2316-11e9-983c-403f85c152ff.jpg "Home of the website")
 
 Airspace is a clean, unique, business website template. Built with refined business as well as corporate elements, and saturated with rich typography, Airspace is lightweight, fast-loading, responsive and W3C-validated, delivering a great first impression to visitors.
 
+## Table of Contents
 
-## Main features
+- [Demo](#demo)
+- [Installation](#npm-install)
+- [Premium Features](#premium-features)
+- [Reporting Issues](#reporting-issues)
+- [Technical Support or Questions](#technical-support-or-questions)
+- [Licensing](#licensing)
+- [More Hugo Themes](http://demo.themefisher.com/hugo-themes/)
 
-* Fully Responsive Ready.
-* Powered by bootstrap css framework.
-* Parallax effect.
-* Shortable portfolio.
-* Multipage.
-* Documented codes.
+## Demo
+
+| Portfolio  | Service  | Blog  | Contact  |
+|---|---|---|---|
+| ![Portfolio page](https://user-images.githubusercontent.com/37659754/53851035-78e85c80-3fe7-11e9-8589-8a0524071d60.png)  | ![Service page](https://user-images.githubusercontent.com/37659754/53851287-789c9100-3fe8-11e9-9eab-6f1df32d521b.png) | ![Blog page](https://user-images.githubusercontent.com/37659754/53851263-66baee00-3fe8-11e9-974c-fea4d5dabd95.png) | ![Contact page](https://user-images.githubusercontent.com/37659754/53851317-8f42e800-3fe8-11e9-8ba5-8a5a58b4ec1e.png)
+
+[Live Demo](http://demo.themefisher.com/airspace-hugo/).
+
+## Installation
+
+Navigate to your themes folder in your Hugo site and use the following commands:
+
+```
+$ mkdir themes
+$ cd themes
+$ git clone https://github.com/Gethugothemes/dot-hugo-documentation-theme.git
+```
+
+[View Video Documentation For Installation](http://demo.themefisher.com/airspace-hugo/blog/installation/).
 
 ## Premium features
 
@@ -24,12 +54,21 @@ Airspace is a clean, unique, business website template. Built with refined busin
 * **Video Documentation** Video documentation is included in the premium version .
 * **Support** With premium version you will get one month priority support.
 
-[Checkout Pro Version](https://themefisher.com/products/airspace-hugo/) |
+[Checkout Pro Version](https://themefisher.com/products/airspace-hugo/)
 
-## Useful Links
+## Reporting Issues
 
-[Installation](https://gohugo.io/getting-started/installing/) | [Pro Version](https://themefisher.com/products/airspace-hugo/) | [More Themes](https://themefisher.com/hugo-themes/)  
+We use GitHub Issues as the official bug tracker for the Airspace Template. Please Search [existing issues](https://github.com/themefisher/airspace-hugo/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/airspace-hugo/issues)
 
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.  
+
+## Licensing
+
+- Copyright 2019 Themefisher (https://themefisher.com/)
+- Licensed under MIT (https://github.com/themefisher/airspace-hugo/blob/master/LICENSE)
 
 ## Hire Us
 We are available for Hiring of your next HUGO project. Drop Us a mail [themefisher@gmail.com](mailto:themefisher@gmail.com)
