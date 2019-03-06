@@ -1,5 +1,6 @@
 <div align="center">
 
+# _Airspace_ for Hugo
 [![GitHub stars](https://img.shields.io/github/stars/themefisher/airspace-hugo.svg)](https://github.com/themefisher/airspace-hugo/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/themefisher/airspace-hugo.svg)](https://github.com/themefisher/airspace-hugo/issues) 
 [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/themefisher/airspace-hugo.svg?maxAge=2592000)]() 
@@ -8,7 +9,6 @@
 
 </div>
 
-# _Airspace_ for Hugo
 ![screenshot](https://user-images.githubusercontent.com/37659754/51828946-dfa69600-2316-11e9-983c-403f85c152ff.jpg "Home of the website")
 
 Airspace is a clean, unique, business website template. Built with refined business as well as corporate elements, and saturated with rich typography, Airspace is lightweight, fast-loading, responsive and W3C-validated, delivering a great first impression to visitors.
