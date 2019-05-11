@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	{{ partial "global-header.html" . }}
+
+	<section class="blog section">
+		<div class="container">
+			<div class="row">
+				{{ range (.Paginator 6).Pages }}
+				<div class="col-md-6">
+					<article class="blog-post">
+						{{ with .Params.image }}
+						<img src="{{ . | absURL }}" class="img-responsive" alt="post-thumb"> {{ end }}
+						<a class="post-title" href="{{ .Permalink }}">{{ .Title }}</a>
+						<p>
+							{{ .Summary }}
+						</p>
+						<a href="{{ .Permalink }}" class="btn btn-main">Read More</a>
+					</article>
+				</div>
+				{{ end }}
+			</div>
+			<div class="col-12 text-center">
+				{{ template "_internal/pagination.html" . }}
+			</div>
+		</div>
+	</section>
+
+	{{ partial "footer.html" . }}
+
+</body>
+</html>

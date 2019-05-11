@@ -39,7 +39,7 @@ Navigate to your themes folder in your Hugo site and use the following commands:
 ```
 $ mkdir themes
 $ cd themes
-$ git clone https://github.com/Gethugothemes/dot-hugo-documentation-theme.git
+$ git clone git@github.com:themefisher/airspace-hugo.git
 ```
 
 [Full Documentation](http://demo.themefisher.com/airspace-hugo/blog/installation/).

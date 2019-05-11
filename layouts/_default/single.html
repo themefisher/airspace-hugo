@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{{ partial "head.html" . }}
+</head>
+<body>
+
+	{{ partial "header.html" . }}
+
+	<div class="post">
+	  <!-- Wrapper Start -->
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							{{ with .Params.image }}<img src="{{ . | absURL }}" width="100%" alt="post-image"> {{ end }}
+	            <h1>{{ .Params.title }}</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold">{{ .Params.author }}</span> on <span class="bold">{{ .Site.Params.dateFormat | default "Jan 2, 2006" | .Date.Format }}</span></p>
+	            </div>
+	            <hr />
+	            <p>{{ .Content }}</p>
+	          </div>
+	        </div><!-- .col-md-7 close -->
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="{{ $.Site.BaseURL }}/blog">Back to blog</a>
+	</p>
+
+	{{ if and (isset .Site.Params "call") (.Site.Params.call.enable) }}
+		{{ partial "call-to-action.html" . }}
+	{{ end }}
+
+	{{ partial "footer.html" . }}
+</body>
+</html>
