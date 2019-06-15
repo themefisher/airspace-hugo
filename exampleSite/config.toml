@@ -12,19 +12,19 @@ theme = "airspace-hugo"
     [[menu.header]]
       weight = 2
       name = "Work"
-      url = "/work"
+      url = "work"
     [[menu.header]]
       weight = 3
       name = "Blog"
-      url = "/blog"
+      url = "blog"
     [[menu.header]]
       weight = 4
       name = "Service"
-      url = "/service"
+      url = "service"
     [[menu.header]]
       weight = 5
       name = "Contact"
-      url = "/contact"
+      url = "contact"
 
     [[menu.footer]]
       weight = 1
@@ -33,15 +33,15 @@ theme = "airspace-hugo"
     [[menu.footer]]
       weight = 2
       name = "Contact us"
-      url = "#"
+      url = "contact"
     [[menu.footer]]
       weight = 3
       name = "How it works"
-      url = "#"
+      url = "work"
     [[menu.footer]]
       weight = 4
       name = "Blog"
-      url = "#"
+      url = "blog"
     [[menu.footer]]
       weight = 5
       name = "Terms"
