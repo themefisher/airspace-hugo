@@ -1,3 +1,4 @@
+{{ if .Site.Params.call.enable }}
 <!-- Call to action Start -->
 <section id="call-to-action" style="background-image: url('{{ .Site.Params.call.bgImage | absURL }}');">
   {{ with .Site.Params.call }}
@@ -15,4 +16,5 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}
