@@ -1,26 +1,20 @@
-{{ partial "global-header.html" . }}
-
-{{ if .Site.Data.service.enable }}
-<!-- Service Start -->
-<section id="service">
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.service.service }}
+<section class="service">
   <div class="container">
-
-    <!-- Intro -->
     <div class="row">
       <div class="section-title">
-        <h2>{{ .Site.Data.service.title }}</h2>
-        <p>{{ .Site.Data.service.subtitle }}</p>
+        <h2>{{ .title | markdownify }}</h2>
+        <p>{{ .description | markdownify }}</p>
       </div>
     </div>
-
-    <!-- Content -->
     <div class="row">
-      {{ range .Site.Data.service.content }}
+      {{ range .service_item }}
       <div class="col-sm-6 col-md-3">
         <div class="service-item">
-          <i class="{{ .icon }}"></i>
-          <h4>{{ .name }}</h4>
-          <p>{{ .text }}</p>
+          <i class="icon {{ .icon }}"></i>
+          <h4>{{ .name | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
         </div>
       </div>
       {{ end }}

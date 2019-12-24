@@ -1,0 +1,130 @@
+.coming-soon {
+  background: url("../images/backgrounds/coming-soon.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $light;
+  display: flex;
+  align-items: center;
+
+  @include mobile-xs {
+    padding: 50px 0;
+  }
+
+  @include mobile {
+    padding: 50px 0;
+  }
+
+  height:100vh;
+
+  .block {
+    h1 {
+      line-height: 65px;
+      font-size: 55px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 0;
+
+      @include mobile-xs {
+        font-size: 40px;
+        line-height: 50px;
+      }
+
+      @include mobile {
+        font-size: 40px;
+        line-height: 50px;
+      }
+    }
+
+    p {
+      color: $light;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .count-down {
+      margin-top: 50px;
+
+      .syotimer-cell {
+        width: 25%;
+        padding: 15px;
+        display: inline-block;
+
+        @include mobile-xs {
+          width: 50%;
+          margin-bottom: 10px;
+        }
+
+        @include mobile {
+          width: 50%;
+        }
+
+        background:rgba(101, 94, 122, 0.48);
+
+        .syotimer-cell__value {
+          font-size: 80px;
+          line-height: 80px;
+          text-align: center;
+          position: relative;
+          font-weight: bold;
+
+          @include mobile-xs {
+            font-size: 50px;
+          }
+        }
+
+        .syotimer-cell__unit {
+          font-weight: normal;
+        }
+      }
+
+      ul {
+        li {
+          @include tablet {
+            font-size: 50px;
+          }
+
+          @include mobile {
+            font-size: 50px;
+          }
+
+          @include mobile-xs {
+            font-size: 40px;
+          }
+
+          &:before {
+            content: ":";
+            font-size: 20pt;
+            opacity: 0.7;
+            position: absolute;
+            right: 0px;
+            top: 0px;
+          }
+
+          &:last-child {
+            &:before {
+              content: '';
+            }
+          }
+        }
+      }
+
+      div:after {
+        content: " "attr(data-interval-text);
+        font-size: 20px;
+        font-weight: normal;
+        text-transform: capitalize;
+        display: block;
+      }
+    }
+
+    .copyright-text {
+      font-size: 12px;
+
+      a {
+        color: $light;
+        font-weight: 600;
+      }
+    }
+  }
+
+}

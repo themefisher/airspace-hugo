@@ -1,0 +1,26 @@
+.feature {
+	background: url("../img/featue-bg.jpg");
+	background-position: 50% 94px;
+	display: block;
+	position: relative;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	padding: 100px 0;
+
+	h2 {
+		margin-bottom: 30px;
+	}
+
+	p {
+		color: #8d8f92;
+		margin-bottom: 20px;
+	}
+
+	.btn-view-works {
+		background: #655E7A;
+		color: #fff;
+		padding: 10px 20px;
+	}
+}

@@ -1,49 +1,25 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <title>{{ .Site.Title }}</title>
 
+  {{ "<!-- mobile responsive meta -->" | safeHTML }}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+  {{ hugo.Generator }}
 
-<!-- robots -->
-<!-- you may configure it in the front matter of the page or in site params -->
-{{ if or (isset .Params "robots") (isset .Site.Params "robots") }}
-<meta name="robots" content="{{ with .Params.robots }}{{ . }}{{ else }}{{ .Site.Params.robots }}{{ end }}">
-{{ end }}
+  {{ "<!-- plugins -->" | safeHTML }}
+  {{ range .Site.Params.plugins.css }}
+  <link rel="stylesheet" href="{{ .link | absURL }}">
+  {{ end }}
 
-<!-- Place favicon.ico and apple-touch-icon.png in the root directory
-     or place appropriate <link .../> etc in favicon.html partial -->
-{{ partial "favicon.html" . }}
+  {{ "<!-- Main Stylesheet -->" | safeHTML }}
+  {{ $styles := resources.Get "scss/style.scss" | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
 
-<title>{{ .Title }}</title>
+  {{ "<!--Favicon-->" | safeHTML }}
+  <link rel="shortcut icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
+  <link rel="icon" href="{{ `images/favicon.png` | absURL }}" type="image/x-icon">
 
-{{ hugo.Generator }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/owl.carousel.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/bootstrap.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/ionicons.min.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/animate.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css" />
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/venobox.css" />
-{{ "<!-- Main Stylesheet -->" | safeHTML }}
-<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css" />
-
-
-<!-- Js -->
-<script src="{{ .Site.BaseURL }}js/jquery-1.10.2.min.js"></script>
-<script async src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
-<script async src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
-<script async src="{{ .Site.BaseURL }}js/plugins.js"></script>
-<script async src="{{ .Site.BaseURL }}js/venobox.min.js"></script>
-<script async src="{{ .Site.BaseURL }}js/main.js"></script>
-<!--
-/*
- * Airspace
- * Ported to Hugo by Giacomo Mariani
- * https://github.com/karju-dev/airspace-hugo
- * Based on the original Jakyll porting by Andrew Lee
- * https://github.com/luminousrubyist/airspace-jekyll
- * Designed and Developed by ThemeFisher
- * https://themefisher.com/
- *
- */
--->
-{{- partial "head_custom.html" . }}
+</head>

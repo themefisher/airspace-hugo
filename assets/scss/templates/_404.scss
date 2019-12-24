@@ -1,0 +1,41 @@
+.page-404 {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	text-align:center;
+	h1 {
+		font-size:300px;
+		font-weight:bold;
+		line-height:300px;
+		margin-top:30px;
+		@include mobile {
+			font-size:130px;
+			line-height:150px;
+		}
+		@include mobile-xs {
+			font-size:100px;
+			line-height:100px;
+		}
+		@include tablet {
+			font-size:150px;
+			line-height:200px;
+		}
+	}
+	h2 {
+		text-transform:uppercase;
+		font-size: 20px;
+		letter-spacing:4px;
+		font-weight: bold;
+		margin-top:30px;
+	}
+	.copyright-text {
+		margin-top: 50px;
+		font-size: 12px;
+		a{
+			font-weight: 600;
+		}
+	}
+	.btn-main {
+		margin-top: 40px;
+	}
+}

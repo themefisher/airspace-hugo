@@ -1,0 +1,236 @@
+.shopping {
+  .widget-title {
+    font-weight: 400;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+}
+
+
+.checkout {
+  .block {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+// Checkout Page
+.checkout-form {
+  .form-group {
+    position: relative;
+    margin-bottom: 8px;
+
+    label {
+      position: absolute;
+      top: 18px;
+      left: 15px;
+      right: auto;
+      bottom: auto;
+      color: #888;
+      font-size: 10px;
+      font-weight: 400;
+      text-transform: uppercase;
+      opacity: 1 !important;
+      width: 85px;
+    }
+
+    input {
+      border-radius: 0;
+      display: block;
+      padding: 6px 10px 5px 100px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      height: 50px;
+    }
+  }
+
+  .checkout-country-code {
+    .form-group {
+      float: left;
+    }
+
+    .form-group:first-child {
+      width: calc(45% - 2px);
+      margin-right: 4px;
+    }
+
+    .form-group:last-child {
+      width: calc(55% - 2px);
+    }
+
+  }
+}
+
+.shopping.cart {
+  .product-list {
+    .table {
+      .cart-amount {
+        th {
+          background: #f9f9f9;
+          padding: 10px;
+          text-transform: uppercase;
+        }
+      }
+
+      >tbody>tr>td {
+        vertical-align: middle;
+      }
+    }
+
+    .product-info {
+      a {
+        margin-left: 10px;
+        color: $black;
+        font-weight: 600;
+      }
+    }
+
+    .product-remove {
+      color: $alert;
+    }
+  }
+
+  .account-details {
+    margin-top: 30px;
+
+    legend {
+      font-weight: 600;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .btn-pay {
+      margin: 20px 0;
+    }
+  }
+}
+
+
+.product-checkout-details {
+  .product-card {
+    >a {
+      padding-right: 20px;
+    }
+
+    .price {
+      margin-top: 15px;
+    }
+
+    .media-object {
+      width: 80px;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .remove {
+      font-size: 12px;
+      cursor: pointer;
+    }
+  }
+
+  .discount-code {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    margin: 20px 0 10px;
+    padding: 10px 0;
+
+    p {
+      margin: 0;
+
+      a {
+        font-weight: 400;
+        color: #555;
+      }
+    }
+  }
+
+  .summary-prices {
+    border-style: solid;
+    border-color: $border-color;
+    border-width: 0px 0 1px 0;
+    padding-bottom: 10px;
+
+    li {
+      padding: 5px 0;
+
+      span+span {
+        float: right;
+      }
+    }
+  }
+
+  .summary-total {
+    margin-top: 5px;
+
+    >span {
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    span+span {
+      float: right;
+    }
+  }
+
+  .verified-icon {
+    margin-top: 25px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+
+// End Checkout Page
+
+
+// purchase confirmation page 
+.purchase-confirmation {
+  .purchase-confirmation-details {
+    padding: 20px;
+    border: 1px solid $border-color;
+
+    .table {
+      margin: 0;
+      color: #444;
+
+      b,
+      strong {
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Empty Cart
+.empty-cart {
+  .block {
+    i {
+      font-size: 50px;
+    }
+  }
+}
+
+.success-msg {
+  .block {
+    i {
+      font-size: 40px;
+      background: $success;
+      color: $light;
+      width: 60px;
+      height: 60px;
+      border-radius: 100px;
+      display: inline-block;
+      line-height: 60px;
+    }
+  }
+}

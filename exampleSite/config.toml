@@ -1,104 +1,205 @@
-title = "Airspace for Hugo"
+################################# Default configuration ###################
 baseURL = "https://examplesite.com"
-languageCode = "en-us"
+title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
+# post pagination
+paginate = "4"
+# post excerpt
+summaryLength = "30"
+# disqus short name
+disqusShortname = "" # get your shortname form here : https://disqus.com
+# default content language
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+# disable language
+disableLanguages = []
 
-# The site's parameters
-[params]
-  home = "Home"
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  link = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  link = "plugins/Ionicons/css/ionicons.min.css"
+  [[params.plugins.css]]
+  link = "plugins/magnific-popup/magnific-popup.css"
+  [[params.plugins.css]]
+  link = "plugins/slick/slick.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  link = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  link = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  link = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+  [[params.plugins.js]]
+  link = "plugins/shuffle/shuffle.min.js"
+  [[params.plugins.js]]
+  link = "plugins/google-map/gmap.js"
+
   
-  [menu]
+############################## navigation ###############################
+[menu]
+  
+  # main menu
+  [[menu.main]]
+  name = "About"
+  URL = "about"
+  weight = 1
+  
+  [[menu.main]]
+  name = "Project"
+  URL = "project"
+  weight = 2
+  
+  [[menu.main]]
+  name = "Service"
+  URL = "service"
+  weight = 3
 
-    [[menu.header]]
-      weight = 2
-      name = "Work"
-      url = "work"
-    [[menu.header]]
-      weight = 3
-      name = "Blog"
-      url = "blog"
-    [[menu.header]]
-      weight = 4
-      name = "Service"
-      url = "service"
-    [[menu.header]]
-      weight = 5
-      name = "Contact"
-      url = "contact"
+  [[menu.main]]
+  weight = 4
+  name = "Pages"
+  hasChildren = true
 
-    [[menu.footer]]
-      weight = 1
-      name = "About us"
-      url = "#"
-    [[menu.footer]]
-      weight = 2
-      name = "Contact us"
-      url = "contact"
-    [[menu.footer]]
-      weight = 3
-      name = "How it works"
-      url = "work"
-    [[menu.footer]]
-      weight = 4
-      name = "Blog"
-      url = "blog"
-    [[menu.footer]]
-      weight = 5
-      name = "Terms"
-      url = "#"
+    [[menu.main]]
+    parent = "Pages"
+    name = "FAQ"
+    URL = "faq"
 
-  [params.slider]
-    enable = true
-    title = "A digital marketing &amp; design agency"
-    subtitle = "We love the Web and the work we do.<br/>We work closely with our clients to deliver the best possible solutions for their needs"
-    bgImage = "img/slider-bg.jpg"
-    btnText = "Discover Our Projects"
-    url = "#"
+    [[menu.main]]
+    parent = "Pages"
+    name = "Pricing"
+    URL = "pricing"
+    
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 5
 
-  [params.wrapper]
-    enable = true
-    image = "img/wrapper-img.png"
-    title = "About Us"
-    italic = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics"
-    paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id"
+  
+  # footer menu
+  [[menu.footer]]
+  name = "About"
+  URL = "about"
+  weight = 1
+  
+  [[menu.footer]]
+  name = "Project"
+  URL = "project"
+  weight = 2
+  
+  [[menu.footer]]
+  name = "Service"
+  URL = "service"
+  weight = 3
+  
+  [[menu.footer]]
+  name = "Pricing"
+  URL = "pricing"
+  weight = 4
+  
+  [[menu.footer]]
+  name = "FAQ"
+  URL = "faq"
+  weight = 5
+  
+  [[menu.footer]]
+  name = "Contact"
+  URL = "contact"
+  weight = 6
 
-  [params.blog]
-    enable = true
-    title = "Get The Latest On What We're doing"
-    subtitle = "Catch up with us, anytime and anywhere"
 
-  [params.feature]
-    enable = true
-    title = "We believe in great ideas"
-    bgImage = "img/feature-bg.jpg"
-    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
-    [params.feature.button]
-      caption = "View Works"
-      url = "#"
+#################### default parameters ################################
+[params]
+logo = "images/logo.png"
+home = "Home"
+# Meta data
+description = "This is meta description"
+author = "Themefisher"
+# Contact Information
+mobile = "0124857985320"
+email = "demo@email.com"
+location = "North Main Street,Brooklyn Australia"
+# contact form action
+contact_form_action = "#" # contact form works with : https://formspree.io
+# Google Analitycs
+google_analitycs_id = "Your ID"
 
-  [params.call]
-    enable = true
-    bgImage = "img/call-to-action-bg.jpg"
-    title = "We design delightful digital experiences."
-    paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
-    [params.call.button]
-      url = "#"
-      text = "tell us your story"
+  # Preloader
+  [params.preloader]
+  enable = true
+  preloader = "" # use .png , .svg or .gif format
 
-  [params.contact]
-    enable = true
-    title = "Drop us a note"
-    subtitle = "Don’t just take our word for it. Check out some of our latest work."
-    [params.contact.form]
-      name = "Your name"
-      email = "Your email"
-      subject = "Your subject"
-      message = "Your message"
-      button = "Send message"
-    [params.contact.box]
-      title = "Stop by for a visit"
-      address = "North Main Street, Brooklyn Australia"
-      email = "Email: contact@mail.com"
-      phone = "Phone: +88 01672 506 744"
-    [params.contact.gmaps]
-      title = "We Also Count in Google Maps"
+  # search
+  [params.search]
+  enable = true
+
+  # Navigation get start button
+  [params.nav_button]
+  enable = true
+  label = "Get A Quote"
+  link = "contact"
+
+  # google map
+  [params.gmap]
+  enable = true
+  gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+  map_latitude = "51.5223477"
+  map_longitude = "-0.1622023"
+  map_marker = "images/marker.png"
+
+  
+############################# social site ########################
+[[params.social]]
+icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+
+################################# language ################################
+[Languages]
+
+  ################################ English Language ########################
+  [Languages.en]
+  languageName = "En"
+  languageCode = "en-us"
+  contentDir = "content/english"
+  weight = 1
+  home = "Home"
+  # copyright
+  copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+
+  ################################ France Language ########################
+  [Languages.fr]
+  languageName = "Fr"
+  languageCode = "fr-fr"
+  contentDir = "content/french"
+  weight = 2
+  home = "Accueil"
+  # copyright
+  copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"

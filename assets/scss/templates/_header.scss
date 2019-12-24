@@ -1,0 +1,33 @@
+/*--
+	Header Start 
+--*/
+
+header{
+	background: #fff;
+	padding: 20px 0;
+	.navbar{
+		margin-bottom: 0px;
+		border: 0px;
+	}
+	.navbar-brand {
+		padding-top: 5px;
+	}
+	.navbar-default{
+		background: none;
+		border: 0px;
+		.navbar-nav{
+			  padding-top: 10px;
+			li{
+			  a{
+			  	color: #333333;
+			  	padding: 10px 26px;
+			  	font-size: 15px;
+			  	font
+			  	&:hover{
+			  		color: #000;
+			  	}
+			  }
+			}
+		}
+	}
+}

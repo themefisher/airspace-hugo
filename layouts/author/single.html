@@ -1,0 +1,77 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="section" style="background: #f5f5f5;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<div class="text-center">
+					<figure>
+						{{ if .Params.Photo }}
+						<img style="border-radius: 50%;" class="img-fluid" src="{{.Params.Photo}}">
+						{{else if .Params.Email}}
+						<img style="border-radius: 50%;" class="img-fluid"
+							src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
+						{{ end }}
+						<figcaption>
+							<h5 class="font-weight-bold">
+								{{ .Params.Name }}
+							</h5>
+						</figcaption>
+					</figure>
+					<hr>
+					{{ .Content }}
+					<hr>
+					<ul class="list-inline">
+						{{ range .Params.Social }}
+						<li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL}}"><i
+									class="{{ .icon }}"></i></a></li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title text-center">
+					<h2>{{ i18n "posted_by" }} {{ .Title }}</h2>
+				</div>
+			</div>
+			{{ range where .Site.RegularPages "Params.author" .Title }}
+			<div class="col-md-6">
+				<div class="post">
+					<div class="post-thumb">
+						<a href="{{ .Permalink }}">
+							<img class="img-responsive" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+						</a>
+					</div>
+					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+					<div class="post-meta">
+						<ul>
+							<li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
+              <li><i class="ion-android-people"></i> {{ i18n "posted_by" }} <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a></li>
+              <li><i class="ion-pricetags"></i> 
+                {{ range $index, $elements:= .Params.Tags }}
+                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
+								{{ end }}
+              </li>
+						</ul>
+					</div>
+					<div class="post-content">
+						<p>{{ .Summary }}</p>
+						<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+					</div>
+				</div>
+			</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+{{ end }}
