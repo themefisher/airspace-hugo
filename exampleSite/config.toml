@@ -128,7 +128,7 @@ location = "North Main Street,Brooklyn Australia"
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
 # Google Analitycs
-google_analitycs_id = "Your ID"
+google_analitycs_id = "" # Your ID
 
 # Preloader
 [params.preloader]
