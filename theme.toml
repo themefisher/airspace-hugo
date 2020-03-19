@@ -7,7 +7,7 @@ description = "Hugo port of the Themefisher’s Airspace theme"
 homepage = "https://gethugothemes.com/products/airspace-hugo-theme/"
 tags = ["blog",'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'white', 'light', 'multilingual', "bootstrap", "company", "portfolio", "projects", "responsive", "themefisher"]
 features = ["blog", "company", "responsive", "seo-friendly"]
-min_version = "0.60.0"
+min_version = "0.64.0"
 
 [author]
   name = "Themefisher"
