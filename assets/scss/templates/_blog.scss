@@ -74,6 +74,23 @@
       line-height: 26px;
     }
 
+    ul {
+      color: #7B7B7B;
+      font-size: 15px;
+      padding: 10px 20px;
+      font-family: $primary-font;
+      list-style: circle;
+    }
+
+    blockquote {
+      margin-top: 20px;
+      font-size: 18px;
+      border-color: $primary-color;
+      padding: 10px 20px;
+      text-align: left;
+      color: #777;
+    }
+
     .btn-main {
       padding: 10px 20px;
       margin: 15px 0;
