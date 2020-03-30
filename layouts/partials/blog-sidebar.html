@@ -1,7 +1,7 @@
 <aside class="sidebar">
   <!-- Widget Latest Posts -->
   <div class="widget widget-latest-post">
-    <h4 class="widget-title">Latest Posts</h4>
+    <h4 class="widget-title">{{ i18n "latest_posts" }}</h4>
     {{ range first 4 (where .Site.Pages "Type" "post") }}
     <div class="media">
       <a class="pull-left" href="{{ .Permalink }}">
@@ -18,7 +18,7 @@
 
   <!-- Widget Category -->
   <div class="widget widget-category">
-    <h4 class="widget-title">Categories</h4>
+    <h4 class="widget-title">{{ i18n "categories" }}</h4>
     {{- if isset .Site.Taxonomies "categories" }}
     {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
     <ul class="widget-category-list">
@@ -32,7 +32,7 @@
 
   <!-- Widget tag -->
   <div class="widget widget-tag">
-    <h4 class="widget-title">Tags</h4>
+    <h4 class="widget-title">{{ i18n "tags" }}</h4>
     {{- if isset .Site.Taxonomies "tags" }}
     {{- if not (eq (len .Site.Taxonomies.tags) 0) }}
     <ul class="widget-tag-list">

@@ -18,7 +18,13 @@
   translation: Posted By
 - id: read_more
   translation: Continue Reading
+- id: latest_posts
+  translation: Derniers articles
 - id: page_prev
   translation: Précédent
 - id: page_next
   translation: Suivant
+- id: tags
+  translation: Mots clefs
+- id: categories
+  translation: Catégories
