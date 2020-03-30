@@ -18,3 +18,7 @@
   translation: Posted By
 - id: read_more
   translation: Continue Reading
+- id: page_prev
+  translation: Précédent
+- id: page_next
+  translation: Suivant
