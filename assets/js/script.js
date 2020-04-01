@@ -1,10 +1,10 @@
+// Preloader js    
+$(window).on('load', function () {
+	$('.preloader').fadeOut(100);
+});
+
 $(document).ready(function () {
 	'use strict';
-
-	// Preloader js    
-	$(window).on('load', function () {
-		$('.preloader').fadeOut(100);
-	});
 
 	// Shuffle js filter and masonry
 	var containerEl = document.querySelector('.shuffle-wrapper');
