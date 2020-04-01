@@ -43,7 +43,13 @@
 					<h2>{{ i18n "posted_by" }} {{ .Title }}</h2>
 				</div>
 			</div>
-			{{ range where .Site.RegularPages "Params.author" .Title }}
+			{{ $authored_pages := newScratch }}
+			{{ if $.Site.Params.multi_author }}
+			{{ .Scratch.Set "authored_pages" (where .Site.RegularPages "Params.author" "intersect" (slice .Title)) }}
+			{{ else }}
+			{{ .Scratch.Set "authored_pages" (where .Site.RegularPages "Params.author" .Title) }}
+			{{ end }}
+			{{ range (.Scratch.Get "authored_pages") }}
 			<div class="col-md-6">
 				<div class="post">
 					<div class="post-thumb">
@@ -55,7 +61,14 @@
 					<div class="post-meta">
 						<ul>
 							<li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
-              <li><i class="ion-android-people"></i> {{ i18n "posted_by" }} <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a></li>
+              <li><i class="ion-android-people"></i>
+                {{ i18n "posted_by" }}
+                {{if $.Site.Params.multi_author}}
+                {{ range $index, $elements:= .Params.Author }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+                {{else}}
+                <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
+                {{end}}
+              </li>
               <li><i class="ion-pricetags"></i> 
                 {{ range $index, $elements:= .Params.Tags }}
                 {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
