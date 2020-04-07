@@ -604,3 +604,11 @@ input[type="tel"] {
 #error {
   display: none;
 }
+
+.sticky-top{
+  position: sticky;
+  top: 0;
+  @include desktop {
+    position: static;
+  }
+}
