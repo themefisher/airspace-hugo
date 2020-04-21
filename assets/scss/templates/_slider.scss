@@ -2,10 +2,16 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: 10% 0%;
-  padding: 200px 0 280px 0;
+  background-position: center center;
+  padding: 170px 0 200px;
   position: relative;
   @extend .overly;
+  @include tablet {
+    padding: 150px 0;
+    h1{
+      font-size: 35px;
+    }
+  }
 
   .block {
     color: #E3E3E4;
