@@ -1,0 +1,12 @@
+<div class="widget widget-category">
+    <h4 class="widget-title">{{ i18n "categories" }}</h4>
+    {{- if isset .Site.Taxonomies "categories" }}
+    {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
+    <ul class="widget-category-list">
+      {{- range $name, $items := .Site.Taxonomies.categories }}
+      <li><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+    {{- end }}
+  </div>
