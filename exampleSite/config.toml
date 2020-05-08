@@ -43,6 +43,7 @@ link = "plugins/google-map/gmap.js"
 
 [params.widgets]
 sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+homepage = ["homepage_banner", "homepage_about" , "homepage_portfolio", "homepage_service" , "homepage_cta" , "homepage_funfacts"]
 
 
 ############################## navigation ###############################

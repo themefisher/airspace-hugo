@@ -1,0 +1,22 @@
+<!-- banner -->
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.banner }}
+<section class="slider" style="background-image: url('{{ .bg_image | absURL }}');">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h1>{{ .title | markdownify }}</h1>
+          <p>{{ .content | markdownify }}</p>
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" target="_blank" class="btn btn-main animated fadeInUp">{{ .label }}</a>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+<!-- /banner -->

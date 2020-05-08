@@ -1,0 +1,45 @@
+{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ with $data.homepage.funfacts }}
+<!-- Content Start -->
+<section class="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>{{ .title | markdownify }}</h2>
+        <p>{{ .description | markdownify }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="block">
+          <ul class="counter-box clearfix">
+            {{ range .funfact_item }}
+            <li class="counter-item">
+              <i class="{{ .icon }}"></i>
+              <h4 class="count" data-count="{{ .count }}">0</h4>
+              <span>{{ .name | markdownify }}</span>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        <div class="testimonial-carousel text-center">
+          <div class="testimonial-slider owl-carousel">
+            {{ range .testimonial_slider }}
+            <div>
+              <i class="ion-quote"></i>
+              <p>"{{ .content | markdownify }}"</p>
+              <div class="user">
+                <img src="{{ .image | relURL }}" alt="client">
+                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end}}
