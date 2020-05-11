@@ -38,7 +38,13 @@ link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
 
-  
+
+############################## widgets ###############################
+
+[params.widgets]
+sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+
+
 ############################## navigation ###############################
 
 # main menu
