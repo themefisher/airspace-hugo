@@ -7,6 +7,7 @@
   position: relative;
   @extend .overly;
   @include tablet {
+    background-attachment: scroll;
     padding: 150px 0;
     h1{
       font-size: 35px;
