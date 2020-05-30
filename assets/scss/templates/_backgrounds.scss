@@ -2,9 +2,17 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+
+	@include tablet {
+		background-attachment: scroll;
+	}
 }
 
 .bg-2 {
 	background-size: cover;
 	background-attachment: fixed;
+
+	@include tablet {
+		background-attachment: scroll;
+	}
 }
