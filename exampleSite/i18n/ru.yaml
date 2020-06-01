@@ -1,0 +1,30 @@
+- id: last_update
+  translation: Последнее изменение
+- id: phone
+  translation: Телефон
+- id: email
+  translation: Email
+- id: location
+  translation: Адрес
+- id: buy_now
+  translation: Купить сейчас
+- id: address_title
+  translation: Загляните к нам
+- id: submit
+  translation: Отправить
+- id: all
+  translation: Все
+- id: posted_by
+  translation: Опубликовал
+- id: read_more
+  translation: Читать далее
+- id: latest_posts
+  translation: Недавние публикации
+- id: page_prev
+  translation: Назад
+- id: page_next
+  translation: Вперёд
+- id: tags
+  translation: Теги
+- id: categories
+  translation: Категории
