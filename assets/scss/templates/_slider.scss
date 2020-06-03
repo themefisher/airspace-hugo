@@ -5,7 +5,6 @@
   background-position: center center;
   padding: 170px 0 200px;
   position: relative;
-  @extend .overly;
   @include tablet {
     background-attachment: scroll;
     padding: 150px 0;
