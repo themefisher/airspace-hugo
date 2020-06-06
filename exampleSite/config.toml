@@ -1,5 +1,5 @@
 ################################# Default configuration ###################
-baseURL = "https://examplesite.com"
+baseURL = "http://demo.themefisher.com/airspace-hugo/"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
 # post pagination
