@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $data := index .Site.Data .Site.Language.Lang }}
+{{ $data := index site.Data site.Language.Lang }}
 
 <!-- banner -->
 {{ if $data.homepage.banner.enable }}
