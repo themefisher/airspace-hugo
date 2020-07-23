@@ -19,8 +19,6 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="{{ site.BaseURL | absLangURL }}">{{ site.Params.home }}</a></li>
-
               {{ range site.Menus.main }}
               {{ if .HasChildren }}
               <li class="dropdown">
@@ -28,12 +26,12 @@
                   aria-expanded="false">{{ .Name }} <span class="ion-ios-arrow-down"></span></a>
                 <ul class="dropdown-menu">
                   {{ range .Children }}
-                  <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+                  <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
                   {{ end }}
                 </ul>
               </li>
               {{ else }}
-              <li><a href="{{ .URL | absLangURL }}">{{ .Name }}</a></li>
+              <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
               {{ end }}
               {{ end }}
 
@@ -62,7 +60,6 @@
                 </select>
               </li>
               {{ end }}
-
             </ul>
           </div><!-- /.navbar-collapse -->
         </nav>
