@@ -53,6 +53,8 @@ Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) 
 ## Installation
 At the top we have shown an easy hugo installation. but still if you think you want to go with the traditional way then use the following commands:
 
+**Note : You must use `hugo-extended` version to compile SCSS**
+
 ```
 $ git clone git@github.com:themefisher/airspace-hugo.git
 $ cd airspace-hugo/exampleSite/
