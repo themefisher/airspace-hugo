@@ -11,6 +11,15 @@ disqusShortname = "" # get your shortname form here : https://disqus.com
 # disable language
 disableLanguages = []
 
+################################# Outputs #################################
+# hugo outputs
+[outputs]
+home = [ "HTML", "RSS"]
+
+# render unsafe html
+[markup.goldmark.renderer]
+unsafe = true
+
 
 #################################### Plugins ##############################
 
