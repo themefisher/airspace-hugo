@@ -1,0 +1,70 @@
+.navigation {
+  background: #fff;
+  padding: 20px 0;
+
+  .navbar {
+    margin-bottom: 0px;
+    border: 0px;
+  }
+
+  .navbar-brand {
+    padding-top: 5px;
+  }
+
+  .navbar {
+    background: none;
+    border: 0px;
+
+    .navbar-nav {
+      padding-top: 10px;
+
+      >li {
+        >a {
+          color: #5C5C5C;
+          padding: 10px 15px;
+
+          font : {
+            weight: 500;
+            size: 14px;
+          }
+
+          text-transform:uppercase;
+
+          &:hover,
+          &:focus {
+            color: #000;
+            background: transparent;
+          }
+        }
+
+        select {
+          margin: 10px 15px;
+        }
+      }
+    }
+
+    .dropdown-menu {
+      border-radius: 0;
+      border: none;
+      left: -5px;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
+
+      a {
+        font-weight: normal;
+        color: #808080;
+        padding: 10px 20px;
+        @include transition (all, 0.3s, ease);
+
+        &:hover {
+          background: $primary-color;
+          color: $light;
+          padding-left: 25px;
+        }
+      }
+    }
+  }
+}
+
+.nav .open>a {
+  background: transparent;
+}

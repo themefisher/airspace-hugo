@@ -1,0 +1,125 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.about.about.enable }}
+{{ with $data.about.about }}
+<section class="about section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="about-img">
+          <img class="img-responsive" src="{{ .image | relURL }}">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h2 class="mt-40">{{ .title | markdownify }}</h2>
+        {{ .content | markdownify }}
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+    <div class="row counter-box text-center mt-50">
+      {{ range .funfacts }}
+      <div class="col-md-2">
+        <div class="counter-item">
+          <i class="{{ .icon }}"></i>
+          <h4 class="count" data-count="{{ .count }}">0</h4>
+          <span>{{ .name }}</span>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if $data.about.features.enable }}
+{{ with $data.about.features }}
+<section class="about-feature bg-dark section dark-service">
+  <div class="container">
+    {{ with .title }}
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title">
+          <h2>{{ . | markdownify }}</h2>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+    <div class="row">
+      {{ range .feature_item }}
+      <div class="col-md-4">
+        <div class="service-item">
+          <i class="{{ .icon }}"></i>
+          <h4>{{ .name | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<section class="testimonial section-sm">
+  <div class="container">
+    <div class="row">
+      {{ if $data.about.testimonial.enable }}
+      <div class="col-md-6">
+        <div class="testimonial-carousel text-center">
+          <div class="testimonial-slider owl-carousel">
+            {{ range $data.homepage.funfacts.testimonial_slider }}
+            <div>
+              <i class="ion-quote"></i>
+              <p>"{{ .content | markdownify }}"</p>
+              <div class="user">
+                <img src="{{ .image | relURL }}" alt="client">
+                <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+      {{ if $data.about.mission_vision.enable }}
+      {{ with $data.about.mission_vision }}
+      <div class="col-md-6">
+        <div class="tabCommon">
+          <ul class="nav nav-tabs">
+            {{ range $index, $elements := .tabs }}
+            <li {{ if eq $index 0}} class="active" {{ end }}><a href="#{{.name | urlize}}"
+                data-toggle="tab">{{.name}}</a></li>
+            {{ end }}
+          </ul>
+          <div class="tab-content">
+            {{ range $index, $elements := .tabs }}
+            <div id="{{.name | urlize}}" class="tab-pane fade {{ if eq $index 0}} active in {{ end }}">
+              <p>{{ .content | markdownify }}</p>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- Call to action -->
+{{ if $data.about.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}

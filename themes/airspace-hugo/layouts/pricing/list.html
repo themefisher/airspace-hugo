@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.pricing.pricing.enable }}
+{{ with $data.pricing.pricing }}
+<section class="pricing-table section bg-gray">
+  <div class="container">
+    <div class="row">
+      <!-- single pricing table -->
+      {{ range .pricing_table }}
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <div class="pricing-item text-center">
+          <div class="price-title">
+            <h3>{{ .name }}</h3>
+            <strong class="value">{{ .price }}</strong>
+            <p>{{ .content | markdownify }}</p>
+          </div>
+          <ul>
+            {{ range .services }}
+            <li>{{ . | markdownify }}</li>
+            {{ end }}
+          </ul>
+          <a class="btn btn-small" href="{{ .link | safeURL }}">{{ i18n "buy_now" }}</a>
+        </div>
+      </div>
+      {{ end }}
+      <!-- end single pricing table -->
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Call to action -->
+{{ if $data.pricing.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}

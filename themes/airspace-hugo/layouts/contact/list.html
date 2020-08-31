@@ -1,0 +1,63 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<section class="contact-form">
+  <div class="container">
+    <div class="row">
+      <form method="POST" action="{{ .Site.Params.contact_form_action | safeURL }}">
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group">
+              <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+              <input name="user_subject" type="text" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="block">
+            <div class="form-group-2">
+              <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="contact-box row">
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <h2>{{ i18n "address_title" }}</h2>
+          <ul class="address-block">
+            <li><i class="ion-ios-location-outline"></i>{{i18n "location"}}: {{ .Site.Params.location }}</li>
+            <li><i class="ion-ios-email-outline"></i>{{i18n "email"}}: {{ .Site.Params.email }}</li>
+            <li><i class="ion-ios-telephone-outline"></i>{{i18n "phone"}}: {{ .Site.Params.phone }}</li>
+          </ul>
+          <ul class="social-icons">
+            {{ range .Site.Params.social }}
+            <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ if .Site.Params.gmap.enable }}
+      <div class="col-md-6 col-sm-12">
+        <div class="block">
+          <div class="google-map">
+            <div class="map" id="map_canvas" data-latitude="{{ .Site.Params.gmap.map_latitude }}" data-longitude="{{ .Site.Params.gmap.map_longitude }}" data-marker="{{ .Site.Params.gmap.map_marker | relURL }}" data-marker-name="{{ .Site.Title }}"></div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

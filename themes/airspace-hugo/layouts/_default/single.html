@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="page-wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="post post-single">
+					<h2 class="post-title">{{ .Title }}</h2>
+					<div class="post-meta">
+						<ul>
+              <li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
+              <li><i class="ion-android-people"></i>
+                {{ i18n "posted_by" }}
+                {{if $.Site.Params.multi_author}}
+                {{ range $index, $elements:= .Params.Author }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
+                {{else}}
+                <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
+                {{end}}
+              </li>
+              <li><i class="ion-pricetags"></i> 
+                {{ range $index, $elements:= .Params.Tags }}
+                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
+								{{ end }}
+              </li>
+            </ul>
+					</div>
+					<div class="post-thumb">
+						<img class="img-responsive" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+					</div>
+					<div class="post-content post-excerpt">
+						{{ .Content }}
+					</div>
+					<div class="post-comments">
+						{{ template "_internal/disqus.html" . }}
+					</div>
+				</div>
+			</div>
+      <div class="col-md-4">
+        {{ partial "blog-sidebar.html" . }}
+      </div>
+		</div>
+	</div>
+</section>
+
+{{ end }}

@@ -1,0 +1,57 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+{{ if $data.service.about.enable }}
+{{ with $data.service.about }}
+<section class="service-about section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>{{ .title | markdownify }}</h2>
+        <p class="mt-30">{{ .content | markdownify }}</p>
+      </div>
+      <div class="col-md-6">
+        <img class="img-responsive" src="{{ .image | absURL }}">
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+{{ if $data.service.featured_service.enable }}
+{{ with $data.service.featured_service }}
+<section class="service-arrow">
+  <div class="container-fluid">
+    <div class="row">
+      {{ range .service_item }}
+      <div class="col-md-4 bg-primary bg-{{ .color }}">
+        <div class="block">
+          <i class="{{ .icon }}"></i>
+          <h3>{{ .name | markdownify }}</h3>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
+<!-- Service -->
+{{ if $data.service.service.enable }}
+{{ partial "service.html" . }}
+{{ end }}
+<!-- /service -->
+
+<!-- Call to action -->
+{{ if $data.service.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+<!-- /Call to action -->
+
+{{ end }}

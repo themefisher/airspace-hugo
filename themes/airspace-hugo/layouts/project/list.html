@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<!-- Portfolio Start -->
+<section class="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="portfolio-menu">
+            <div class="btn-group btn-group-toggle justify-content-center" data-toggle="buttons">
+              <label class="btn btn-sm btn-primary active">
+                <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
+              </label>
+              {{ $categories := slice }}
+              {{ range .Data.Pages }}
+              {{ $categories = $categories | append .Params.Category }}
+              {{ end }}
+              {{ range ( $categories | uniq ) }}
+              <label class="btn btn-sm btn-primary">
+                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . | humanize }}
+              </label>
+              {{ end }}
+            </div>
+          </div>
+          <div class="row shuffle-wrapper">
+            {{ range .Data.Pages }}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
+              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+              <div class="portfolio-hover">
+                <div class="portfolio-content">
+                  <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+                  <p>{{ .Params.Description }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}

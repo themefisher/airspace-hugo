@@ -1,6 +1,6 @@
 ################################# Default configuration ###################
 baseURL = "https://examplesite.com"
-title = "Airspace | Creative Agency Hugo Template"
+title = "SEP 2020 | Semana de Engenharia de Produção UFC"
 theme = "airspace-hugo"
 # post pagination
 paginate = "4"

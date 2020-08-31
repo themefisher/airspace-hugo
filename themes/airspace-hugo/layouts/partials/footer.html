@@ -1,0 +1,42 @@
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="footer-manu">
+					<ul>
+            {{ range .Site.Menus.footer }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+            {{ end }}
+					</ul>
+				</div>
+				<p class="copyright">{{ .Site.Params.copyright | markdownify }}</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- Google Map API -->
+{{ if .Site.Params.gmap.enable }}
+<script src="{{ .Site.Params.gmap.gmap_api | safeURL }}"></script>
+{{ end }}
+
+<!-- JS Plugins -->
+{{ range .Site.Params.plugins.js}}
+<script src="{{ .link | absURL }}"></script>
+{{ end }}
+
+<!-- Main Script -->
+{{ $script := resources.Get "js/script.js" | minify}}
+<script src="{{ $script.Permalink }}"></script>
+
+<!-- google analitycs -->
+{{ with .Site.Params.google_analitycs_id }}
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', '{{ . }}', 'auto');
+  ga('send', 'pageview');
+</script>
+{{ end }}

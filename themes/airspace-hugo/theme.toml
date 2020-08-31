@@ -1,0 +1,19 @@
+# theme.toml for the Airspace Hugo theme
+
+name = "Airspace Hugo"
+license = "CC BY 3.0"
+licenselink = "https://creativecommons.org/licenses/by/3.0/"
+description = "Hugo port of the Themefisher’s Airspace theme"
+homepage = "https://gethugothemes.com/products/airspace-hugo-theme/"
+tags = ["blog",'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'white', 'light', 'multilingual', "bootstrap", "company", "portfolio", "projects", "responsive", "themefisher"]
+features = ["blog", "company", "responsive", "seo-friendly"]
+min_version = "0.64.0"
+
+[author]
+  name = "Themefisher"
+  homepage = "https://themefisher.com/"
+
+[original]
+  name = "Airspace"
+  homepage = "https://themefisher.com/products/airspace-free-bootstrap-website-template/"
+  repo = "https://github.com/themefisher/airspace-free-html5-agency-template"

@@ -1,0 +1,24 @@
+.instagram-feed {
+	a {
+		margin:6px;
+		margin-right: 10px;
+		display: inline-block;
+		margin-bottom: 10px;
+		width: 23.5%;
+		@include tablet {
+			width: 49%;
+			margin:3px;
+		}
+		@include mobile {
+			width: 100%;
+			margin:3px;
+		}
+		&:hover img {
+			filter: grayscale(10);
+		}
+		img {
+			width: 100%;
+
+		}
+	}
+}
