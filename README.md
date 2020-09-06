@@ -61,7 +61,7 @@ $ cd airspace-hugo/exampleSite/
 $ hugo server --themesDir ../..
 ```
 
-[Full Documentation](https://documentation.themefisher.com/docs/airspace-hugo/).
+[Full Documentation](https://docs.gethugothemes.com/airspace-hugo/).
 
 ## Main features
 
