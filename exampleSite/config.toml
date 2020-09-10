@@ -14,7 +14,7 @@ disableLanguages = []
 ################################# Outputs #################################
 # hugo outputs
 [outputs]
-home = [ "HTML", "RSS"]
+home = ["HTML"]
 
 # render unsafe html
 [markup.goldmark.renderer]
