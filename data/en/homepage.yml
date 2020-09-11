@@ -1,13 +1,13 @@
 ############################### Banner ##############################
 banner:
   enable : true
-  bg_image : "images/petprod4.png"
-  title : "SEP vai ser foda"
-  content : "We love the Web and the work we do.We work closely with our clients to deliver  the best possible solutions for their needs"
+  bg_image : "images/bgsep.png"
+  title : "SEP 2020 | Semana de Engenharia de Produção UFC"
+  content : "A Semana de Engenharia de Produção está de volta para sua décima sétima edição! Com muitas mudanças em novos contextos, não fique por fora das novidades! Siga o nosso site e redes sociais para ficar sempre atualizado."
   button:
     enable : true
-    label : "Discover Our Project"
-    link : "project"
+    label : "Inscreva-se"
+    link : "pricing"
 
 ############################# About #################################
 about:

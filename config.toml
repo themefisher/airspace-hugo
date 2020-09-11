@@ -48,39 +48,24 @@ URL = "about"
 weight = 1
 
 [[menu.main]]
-name = "Project"
+name = "Programação"
 URL = "project"
 weight = 2
 
 [[menu.main]]
-name = "Service"
-URL = "service"
+name = "Blog"
+URL = "blog"
 weight = 3
 
 [[menu.main]]
-name = "Blog"
-URL = "blog"
+name = "Inscrições"
+URL = "pricing"
 weight = 4
 
 [[menu.main]]
-weight = 5
-name = "Pages"
-hasChildren = true
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "FAQ"
-  URL = "faq"
-
-  [[menu.main]]
-  parent = "Pages"
-  name = "Pricing"
-  URL = "pricing"
-  
-[[menu.main]]
-name = "Contact"
+name = "Contato"
 URL = "contact"
-weight = 6
+weight = 5
 
 
 # footer menu
@@ -95,24 +80,19 @@ URL = "project"
 weight = 2
 
 [[menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[menu.footer]]
 name = "Pricing"
 URL = "pricing"
-weight = 4
+weight = 3
 
 [[menu.footer]]
 name = "FAQ"
 URL = "faq"
-weight = 5
+weight = 4
 
 [[menu.footer]]
 name = "Contact"
 URL = "contact"
-weight = 6
+weight = 5
 
 
 #################### default parameters ################################
