@@ -57,6 +57,7 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 #################### default parameters ################################
 [params]
 logo = "images/logo.png"
+logo_width = "150px"
 # Meta data
 description = "This is meta description"
 author = "Themefisher"
