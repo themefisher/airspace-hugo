@@ -3,6 +3,7 @@ banner:
   enable : true
   bg_image : "images/bgsep.png"
   title : "SEP 2020 | Semana de Engenharia de Produção UFC"
+  subtitle: "1 à 4 de dezembro"
   content : "A Semana de Engenharia de Produção está de volta para sua décima sétima edição! Com muitas mudanças em novos contextos, não fique por fora das novidades! Siga o nosso site e redes sociais para ficar sempre atualizado."
   button:
     enable : true
@@ -51,7 +52,7 @@ service:
 
 ############################ call to action ###########################
 cta:
-  enable : true
+  enable : false
   bg_image : "images/call-to-action-bg.jpg"
   title : "We design delightful digital experiences."
   content : "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
@@ -62,7 +63,7 @@ cta:
 
 ############################# Funfacts ###############################
 funfacts:
-  enable : true
+  enable : false
   title : "Fun Facts About Us"
   description : "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the
           blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"

@@ -8,8 +8,9 @@ paginate = "4"
 summaryLength = "30"
 # disqus short name
 disqusShortname = "" # get your shortname form here : https://disqus.com
+DefaultContentLanguage = "pt"
 # disable language
-disableLanguages = []
+disableLanguages = ["en","fr"]
 
 
 #################################### Plugins ##############################
@@ -157,13 +158,22 @@ link = "#"
 icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
 
+################################ Portugues Language ########################
+[Languages.pt]
+languageName = "Pt"
+languageCode = "pt-br"
+contentDir = "content/portugues"
+weight = 1
+home = "Home"
+# copyright
+copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
 
 ################################ English Language ########################
 [Languages.en]
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
-weight = 1
+weight = 2
 home = "Home"
 # copyright
 copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
@@ -173,7 +183,7 @@ copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Ri
 languageName = "Fr"
 languageCode = "fr-fr"
 contentDir = "content/french"
-weight = 2
+weight = 3
 home = "Accueil"
 # copyright
 copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
