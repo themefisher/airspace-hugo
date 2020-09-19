@@ -71,27 +71,27 @@ weight = 5
 
 # footer menu
 [[menu.footer]]
-name = "About"
+name = "Sobre"
 URL = "about"
 weight = 1
 
 [[menu.footer]]
-name = "Project"
+name = "Programação"
 URL = "project"
 weight = 2
 
 [[menu.footer]]
-name = "Pricing"
-URL = "pricing"
+name = "Blog"
+URL = "blog"
 weight = 3
 
 [[menu.footer]]
-name = "FAQ"
-URL = "faq"
+name = "Inscrições"
+URL = "pricing"
 weight = 4
 
 [[menu.footer]]
-name = "Contact"
+name = "Contato"
 URL = "contact"
 weight = 5
 
