@@ -62,6 +62,17 @@ weight = 3
 name = "Inscrições"
 URL = "pricing"
 weight = 4
+hasChildren = true
+	
+	[[menu.main]]
+  	parent = "Inscrições"
+  	name = "Perguntas Frequentes"
+  	URL = "faq"
+
+	[[menu.main]]
+  	parent = "Inscrições"
+  	name = "Inscreva-se"
+  	URL = "pricing"
 
 [[menu.main]]
 name = "Contato"
@@ -101,11 +112,11 @@ weight = 5
 logo = "images/logo.png"
 # Meta data
 description = "This is meta description"
-author = "Themefisher"
+author = "PET Produção"
 # Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
+phone = "997752232 | 988030808"
+email = "sep.ufc@gmail.com"
+location = "Campus do Pici | Universidade Federal do Ceará"
 # contact form action
 contact_form_action = "#" # contact form works with : https://formspree.io
 # Google Analitycs
@@ -126,7 +137,7 @@ link = "contact"
 
 # google map
 [params.gmap]
-enable = true
+enable = false
 gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
@@ -136,27 +147,23 @@ map_marker = "images/marker.png"
 ############################# social site ########################
 [[params.social]]
 icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+link = "sep.ufc@gmail.com"
 
 [[params.social]]
 icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "https://www.linkedin.com/company/sepufc/"
+
+[[params.social]]
+icon = "ion-social-whatsapp-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
 
 [[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+icon = "ion-social-instagram-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "https://www.instagram.com/sepufc/?igshid=1q29s3ejgy89f"
 
 [[params.social]]
 icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
+link = "https://www.facebook.com/sepufc"
 
 ################################ Portugues Language ########################
 [Languages.pt]
@@ -166,7 +173,7 @@ contentDir = "content/portugues"
 weight = 1
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2020 [PET Produção](https://petprod.ufc.br) Todos os direitos reservados"
 
 ################################ English Language ########################
 [Languages.en]
@@ -176,7 +183,7 @@ contentDir = "content/english"
 weight = 2
 home = "Home"
 # copyright
-copyright = "Copyright &copy; 2019 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2019 [PET Produção](https://petprod.ufc.br) All Rights Reserved"
 
 ################################ France Language ########################
 [Languages.fr]
