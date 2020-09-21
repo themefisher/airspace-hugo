@@ -1,6 +1,6 @@
 ---
-title: "Our Project"
-description: "this is meta description"
+title: "Nossas Propostas"
+description: "Conteúdos que você pode esperar ver nessa edição da SEP!"
 draft: false
-bg_image: "images/featue-bg.jpg"
+bg_image: "images/company/conteudo.png"
 ---

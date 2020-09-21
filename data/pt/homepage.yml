@@ -1,7 +1,7 @@
 ############################### Banner ##############################
 banner:
   enable : true
-  bg_image : "images/bgsep.png"
+  bg_image : "images/sep.png"
   title : "SEP 2020 | Semana de Engenharia de Produção UFC"
   subtitle: "1 à 4 de dezembro"
   content : "A Semana de Engenharia de Produção está de volta para sua décima sétima edição! Com muitas mudanças em novos contextos, não fique por fora das novidades! Siga o nosso site e redes sociais para ficar sempre atualizado."
@@ -9,7 +9,6 @@ banner:
     enable : true
     label : "Inscreva-se"
     link : "pricing"
-
 ############################# About #################################
 about:
   enable : true

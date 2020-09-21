@@ -1,10 +1,10 @@
 ---
-title: "Frequently Asked Questions"
-description: "this is meta description"
-subtitle : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, repudiandae."
+title: "Perguntas Frequentes"
+description: "Tem alguma dúvida sobre o evento? Procure saber se ela já não está respondida aqui."
+subtitle : "Sua dúvida não foi respondida aqui? Envie ela por meio deste formulário: https://forms.gle/kgcus3HgNSr3kt6c9"
 date: 2020-03-23T13:05:29+06:00
 draft: false
-bg_image: "images/featue-bg.jpg"
+bg_image: "images/company/faq.png"
 ---
 
 ### Welcome to Airspace!
