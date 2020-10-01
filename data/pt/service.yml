@@ -39,7 +39,7 @@ featured_service:
 ############################# Service ###############################
 service:
   enable : true
-  title : "Patrocinios!"
+  title : "Patrocinadores"
   description : "Nossos lindos patrocinadores."
   service_item:
     # service item loop

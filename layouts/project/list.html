@@ -46,4 +46,30 @@
   </div>
 </section>
 
+
+<section class="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="row shuffle-wrapper">
+            {{ range .Data.Pages }}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
+              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+              <div class="portfolio-hover">
+                <div class="portfolio-content">
+                  <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+                  <p>{{ .Params.Description }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 {{ end }}

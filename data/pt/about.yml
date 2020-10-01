@@ -35,7 +35,7 @@ about:
     # funfacts loop
     - icon : "ion-ios-wineglass-outline" #ionicon pack v2 : https://ionicons.com/v2/
       name : "Awards Winner"
-      count : "10"
+      count : "15"
       
     # funfacts loop
     - icon : "ion-ios-chatboxes-outline" #ionicon pack v2 : https://ionicons.com/v2/
@@ -53,35 +53,60 @@ features:
   title : "We are indepented Design & Development Agency"
   feature_item:
     # feature item loop
-    - icon : "ion-ios-color-filter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "IOS App Development"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "José Candido"
+      content: "Coordenador de Pesquisa e Desenvolvimento"
+      
       
     # feature item loop
-    - icon : "ion-ios-unlocked-outline" #ionicon pack v2 : https://ionicons.com/v2/
-      name : "App Secutity"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Edgar Queiroz"
+      content: "Assessor de Pesquisa e Desenvolvimento"
+      
       
     # feature item loop
-    - icon : "ion-ios-game-controller-b-outline" #ionicon pack v2 : https://ionicons.com/v2/
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
       name : "Games Development"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Assessor de Pesquisa e Desenvolvimento"
       
     # feature item loop
-    - icon : "ion-ios-mic-outline" #ionicon pack v2 : https://ionicons.com/v2/
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
       name : "Animation and Editing"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Assessor de Pesquisa e Desenvolvimento"
       
     # feature item loop
-    - icon : "ion-ios-lightbulb-outline" #ionicon pack v2 : https://ionicons.com/v2/
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
       name : "UI/UX Design"
-      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+      content: "Assessor de Pesquisa e Desenvolvimento"
       
     # feature item loop
-    - icon : "ion-ios-star-outline" #ionicon pack v2 : https://ionicons.com/v2/
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
       name : "Branding"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
     
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+
+    - image : "images/teams/team-1.jpg" #ionicon pack v2 : https://ionicons.com/v2/
+      name : "Branding"
+      content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
+
 
 #################################### testimonial & mission vision #######################################
 testimonial:
@@ -92,7 +117,7 @@ mission_vision:
   enable : true
   tabs:
     # tab item loop
-    - name : "Vision"
+    - name : "Visão"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis ducimus facere repellat
       harum, eius cupiditate, aliquam aut deserunt. Nemo illo ex impedit autem quod nobis architecto, velit
       quasi, aut voluptas porro natus. Fuga magnam perspiciatis fugit, placeat possimus officia non ducimus
@@ -103,7 +128,7 @@ mission_vision:
       temporibus eos sequi alias hic nemo."
       
     # tab item loop
-    - name : "Mission"
+    - name : "Missão"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis ducimus facere repellat
       harum, eius cupiditate, aliquam aut deserunt. Nemo illo ex impedit autem quod nobis architecto, velit
       quasi, aut voluptas porro natus. Fuga magnam perspiciatis fugit, placeat possimus officia non ducimus
@@ -114,7 +139,7 @@ mission_vision:
       temporibus eos sequi alias hic nemo."
       
     # tab item loop
-    - name : "Approach"
+    - name : "Valores"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nobis ducimus facere repellat
       harum, eius cupiditate, aliquam aut deserunt. Nemo illo ex impedit autem quod nobis architecto, velit
       quasi, aut voluptas porro natus. Fuga magnam perspiciatis fugit, placeat possimus officia non ducimus

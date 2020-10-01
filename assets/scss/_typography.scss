@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
 @import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
-
+@import url(https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 
@@ -19,7 +22,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+  font-family: Raleway;
 }
 
 h1,
@@ -36,7 +39,7 @@ h1 {
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 h3 {

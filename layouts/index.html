@@ -11,8 +11,7 @@
       <div class="col-md-12">
         <div class="block">
           <h1>{{ .title | markdownify }}</h1>
-		  <iframe src="http://free.timeanddate.com/countdown/i7hgbi14/n491/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs150/szw320/szh135/tatSEP%20%7C%202020/tacfff/tptSEP%20%7C%202020/tpcfff/macfff/mpcfff/iso2020-12-01T00:00:00/bat2/bacfff" allowTransparency="true" frameborder="0" width="159" height="97"></iframe>
-
+<iframe src="http://free.timeanddate.com/countdown/i7hgbi14/n491/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs150/szw320/szh135/tatSEP%20%7C%202020/tacfff/tptSEP%20%7C%202020/tpcfff/macfff/mpcfff/iso2020-12-01T00:00:00/bat2/bacfff" allowTransparency="true" frameborder="0" width="159" height="97"></iframe>
           <p>{{ .content | markdownify }}</p>
           {{ if .button.enable }}
           {{ with .button }}
@@ -27,6 +26,32 @@
 {{ end }}
 {{ end }}
 <!-- /banner -->
+
+
+<section class="portfolio-work">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div class="row shuffle-wrapper">
+            {{ range .Data.Pages }}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
+              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+              <div class="portfolio-hover">
+                <div class="portfolio-content">
+                  <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
+                  <p>{{ .Params.Description }}</p>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 {{ if $data.homepage.about.enable }}
 {{ with $data.homepage.about }}
@@ -55,28 +80,32 @@
 {{ end }}
 {{ end }}
 
-{{ if $data.homepage.portfolio.enable }}
-{{ with $data.homepage.portfolio }}
-<!-- portfolio -->
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}')">
+{{ if $data.homepage.about2.enable }}
+{{ with $data.homepage.about2 }}
+<!-- about -->
+<section  class="about section">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-md-offset-6">
-        <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
-        {{ .content | markdownify }}
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
-        {{ end }}
-        {{ end }}
+      <div class="col-md-5 col-sm-12">
+        <div class="block" >
+          <img src="{{ .image | relURL }}" class="img-responsive" alt="Img">
+        </div>
       </div>
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ .title | markdownify }}</h2>
+            <p>{{ .description | markdownify }}</p>
+          </div>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>      
     </div>
   </div>
 </section>
-<!-- /portfolio -->
+<!-- /about -->
 {{ end }}
 {{ end }}
-
 
 
 <!-- Service -->
