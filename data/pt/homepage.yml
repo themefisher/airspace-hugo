@@ -1,7 +1,7 @@
 ############################### Banner ##############################
 banner:
   enable : true
-  bg_image : "images/bgsep.png"
+  bg_image : "images/bgsep2.png"
   title : "SEP 2020 | Semana de Engenharia de Produção UFC"
   content : "A Semana de Engenharia de Produção está de volta para sua décima sétima edição! Com muitas mudanças em novos contextos, não fique por fora das novidades! Siga o nosso site e redes sociais para ficar sempre atualizado."
   button:
@@ -52,9 +52,9 @@ service:
 ############################ call to action ###########################
 cta:
   enable : false
-  bg_image : "images/call-to-action-bg.jpg"
-  title : "We design delightful digital experiences."
-  content : "Read more about what we do and our philosophy of design. Judge for yourself The work and results <br> we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+  bg_image : "images/cta.png"
+  title : "Escute o PETCast Produção!"
+  content : "Em antecipação à Semana de Engenharia de Produção, o PET Produção UFC produz conteúdo em áudio sobre as áreas da Engenharia de Produção, abordando aspectos teóricos e práticos com a participação de grandes nomes das áreas!"
   button:
     enable : true
     label : "Tell Us Your Story"

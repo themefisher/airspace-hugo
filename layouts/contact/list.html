@@ -7,24 +7,26 @@
 <section class="contact-form">
   <div class="container">
     <div class="row">
+	<form
+  action="https://formspree.io/f/xyybzoyg"
+  method="POST">
       <form method="POST" action="{{ .Site.Params.contact_form_action | safeURL }}">
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group">
-              <input name="user_name" type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input name="user_email" type="text" class="form-control" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-              <input name="user_subject" type="text" class="form-control" placeholder="Subject">
+                <label>
+    Seu email:
+    <input type="text" name="_replyto">
             </div>
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group-2">
-              <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+               <label>
+    Sua mensagem:
+    <textarea name="message"></textarea>
+  </label>
             </div>
             <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
           </div>
