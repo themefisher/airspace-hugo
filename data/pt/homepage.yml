@@ -2,7 +2,7 @@
 banner:
   enable : true
   bg_image : "images/bgsep2.png"
-  title : "SEP 2020 | Semana de Engenharia de Produção UFC"
+  title : "SEP XVII | Semana de Engenharia de Produção UFC"
   content : "A Semana de Engenharia de Produção está de volta para sua décima sétima edição! Com muitas mudanças em novos contextos, não fique por fora das novidades! Siga o nosso site e redes sociais para ficar sempre atualizado."
   button:
     enable : true
