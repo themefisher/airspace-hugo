@@ -7,8 +7,8 @@ In this tutorial we will show you to make your website live without buying any h
 
 ### What you need !!
 
-1. Git acccount (Ex: Github, Gitlab etc ) . In our case we use github.
-2. [Netlify](https://bit.ly/netlify-account) account to host files and add custom domain .
+1. Git acccount (Ex: Github, Gitlab etc ). In our case we use github.
+2. [Netlify](https://bit.ly/netlify-account) account to host files and add custom domain.
 3. [Forestry](https://bit.ly/forestry-account) account to maintain whole project without code.
 
 
@@ -22,11 +22,11 @@ Go to your [forestry](https://bit.ly/forestry-account)  account and click on `im
 
 **Or just click this button for one click installation** [![import to forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/airspace-hugo&engine=hugo&version=0.60.1&config=exampleSite)
 
-Now mark everything as done, then go to configuration to change the base url . You can put any url but this have to similar as netlify . So for now put a name which you are going to put in netlify as netlify subdomain.
+Now mark everything as done, then go to configuration to change the base url. You can put any url but this have to similar as netlify. So for now put a name which you are going to put in netlify as netlify subdomain.
 
 ### Step 3 : Setup and host website with Netlify
 
-Here comes the last step . Go to your [netlify](https://bit.ly/netlify-account) account and click add new site . Choose your git repository to import your website in netlify .  And now you can see the forked `airspace hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
+Here comes the last step. Go to your [netlify](https://bit.ly/netlify-account) account and click add new site. Choose your git repository to import your website in netlify.  And now you can see the forked `airspace hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
 
 > If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/airspace-hugo/issues)
 
@@ -65,11 +65,11 @@ $ hugo server --themesDir ../..
 
 ## Main features
 
-* **SEO Friendly** All codes are seo friendly. There is fields to put meta data and other seo parameters in every pages.
-* **Multi Language** We have multi language support in premium version . Right now there is two language include in the theme , those are French and English. If you need more we can help you out.
-* **Google insights score 90** To rank higher in google you have score your webpage above 90 . Our template meets that requirments [Google score](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fdemo.themefisher.com%2Fairspace-hugo%2F)
+* **SEO Friendly** All codes are seo friendly. There are fields to put meta data and other seo parameters in every page.
+* **Multi Language** We have multi language support in premium version. Right now there are two languages included in the theme, they are French and English. If you need more we can help you out.
+* **Google insights score 90** To rank higher in google your webpage needs a score above 90. Our template meets that requirment [Google score](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fdemo.themefisher.com%2Fairspace-hugo%2F)
 
-* **Google Analytics** You can add you google analytics code in theme config file to connect with your google anlytics account .
+* **Google Analytics** You can add your google analytics code in theme config file to connect with your google anlytics account.
 
 ## Reporting Issues
 
