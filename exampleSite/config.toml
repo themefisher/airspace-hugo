@@ -136,7 +136,7 @@ copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Ri
 # main menu
 [[Languages.en.menu.main]]
 name = "Home"
-URL = "/"
+URL = "/fr"
 weight = 1
 
 [[Languages.en.menu.main]]
