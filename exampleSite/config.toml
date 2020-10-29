@@ -1,4 +1,4 @@
-baseURL = "http://examplesite.org"
+baseURL = "https://coachvincent.netlify.app"
 disableLanguages = []
 disqusShortname = ""
 paginate = "4"
