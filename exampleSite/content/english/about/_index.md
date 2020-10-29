@@ -1,7 +1,7 @@
 ---
 title: About Me
 description: this is meta description
-bg_image: images/featue-bg.jpg
+bg_image: "/images/me_fsquat.svg"
 
 ---
 ### Vem är jag?
