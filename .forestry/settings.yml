@@ -1,7 +1,7 @@
 ---
 new_page_extension: html
 auto_deploy: false
-admin_path: ''
+admin_path: https://github.com/Safire-AI/airspace-hugo
 webhook_url: 
 sections: 
 upload_dir: static/uploads
