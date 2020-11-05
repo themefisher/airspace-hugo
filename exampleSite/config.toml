@@ -2,6 +2,7 @@
 baseURL = "http://examplesite.org"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
+themesDir = "../.."
 # post pagination
 paginate = "4"
 # post excerpt
@@ -29,7 +30,7 @@ link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/Ionicons/css/ionicons.min.css"
 [[params.plugins.css]]
-link = "plugins/magnific-popup/magnific-popup.css"
+link = "plugins/magnific-popup/magnific-popup.min.css"
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
 
@@ -41,7 +42,7 @@ link = "plugins/bootstrap/bootstrap.min.js"
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
 [[params.plugins.js]]
-link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
+link = "plugins/magnific-popup/magnific-popup.min.js"
 [[params.plugins.js]]
 link = "plugins/shuffle/shuffle.min.js"
 [[params.plugins.js]]
