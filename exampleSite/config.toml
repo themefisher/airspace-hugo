@@ -27,26 +27,54 @@ unsafe = true
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
+page = "/"
+attributes = "media='screen'"
+
 [[params.plugins.css]]
 link = "plugins/Ionicons/css/ionicons.min.css"
+page = "/"
+attributes = ""
+
 [[params.plugins.css]]
 link = "plugins/magnific-popup/magnific-popup.min.css"
+page = "/"
+attributes = ""
+
 [[params.plugins.css]]
 link = "plugins/slick/slick.css"
+page = "/"
+attributes = ""
 
 # JS Plugins
 [[params.plugins.js]]
 link = "plugins/jQuery/jquery.min.js"
+page = "/"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.min.js"
+page = "/"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/slick/slick.min.js"
+page = "/"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/magnific-popup/magnific-popup.min.js"
+page = "/"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/shuffle/shuffle.min.js"
+page = "/"
+attributes = ""
+
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
+page = "contact/"
+attributes = ""
 
 
 ############################### widgets #################################
@@ -137,7 +165,7 @@ copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Ri
 # main menu
 [[Languages.en.menu.main]]
 name = "Home"
-URL = "/fr"
+URL = "/"
 weight = 1
 
 [[Languages.en.menu.main]]
@@ -151,17 +179,12 @@ URL = "project"
 weight = 3
 
 [[Languages.en.menu.main]]
-name = "Service"
-URL = "service"
+name = "Blog"
+URL = "blog"
 weight = 4
 
 [[Languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
 weight = 5
-
-[[Languages.en.menu.main]]
-weight = 6
 name = "Pages"
 hasChildren = true
 
@@ -174,11 +197,16 @@ hasChildren = true
   parent = "Pages"
   name = "Pricing"
   URL = "pricing"
+
+  [[Languages.en.menu.main]]
+  parent = "Pages"
+  name = "Service"
+  URL = "service"
   
 [[Languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
-weight = 7
+weight = 6
 
 
 # footer menu
@@ -240,17 +268,12 @@ URL = "project"
 weight = 3
 
 [[Languages.fr.menu.main]]
-name = "Un service"
-URL = "service"
+name = "Blog"
+URL = "blog"
 weight = 4
 
 [[Languages.fr.menu.main]]
-name = "Blog"
-URL = "blog"
 weight = 5
-
-[[Languages.fr.menu.main]]
-weight = 6
 name = "Pages"
 hasChildren = true
 
@@ -263,11 +286,16 @@ hasChildren = true
   parent = "Pages"
   name = "Tarification"
   URL = "pricing"
+
+  [[Languages.fr.menu.main]]
+  parent = "Pages"
+  name = "Un service"
+  URL = "service"
   
 [[Languages.fr.menu.main]]
 name = "Contact"
 URL = "contact"
-weight = 7
+weight = 6
 
 
 # footer menu

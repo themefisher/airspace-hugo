@@ -23,8 +23,13 @@
 {{ end }}
 
 <!-- JS Plugins -->
+{{ $permalink:= .Permalink }}
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}"></script>
+{{ if eq $permalink (.page | urlize | absURL ) }}
+<script src="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}></script>
+{{ else if eq .page "/"}}
+<script src="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}></script>
+{{ end }}
 {{ end }}
 
 <!-- Main Script -->
