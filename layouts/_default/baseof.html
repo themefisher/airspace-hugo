@@ -3,10 +3,10 @@
 {{- partial "head.html" . -}}
 
 <body>
-	{{- partial "preloader.html" . -}}
-	{{- partial "header.html" . -}}
+	{{- partialCached "preloader.html" . -}}
+	{{- partialCached "header.html" . -}}
 	{{- block "main" . }}{{- end }}
-	{{- partial "footer.html" . -}}
+	{{- partialCached "footer.html" . -}}
 </body>
 
 </html>

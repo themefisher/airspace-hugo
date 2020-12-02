@@ -9,13 +9,8 @@
   {{ hugo.Generator }}
 
   {{ "<!-- plugins -->" | safeHTML }}
-  {{ $permalink:= .Permalink }}
   {{ range site.Params.plugins.css}}
-  {{ if eq $permalink (.page | urlize | absURL ) }}
   <link rel="stylesheet" href="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}>
-  {{ else if eq .page "/"}}
-  <link rel="stylesheet" href="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}>
-  {{ end }}
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
