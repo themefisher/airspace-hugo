@@ -64,7 +64,7 @@ attributes = ""
 
 [[params.plugins.js]]
 link = "plugins/google-map/gmap.js"
-attributes = ""
+attributes = "defer"
 
 
 ############################### widgets #################################
@@ -105,7 +105,7 @@ link = "contact"
 # google map
 [params.gmap]
 enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"
+gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
 map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
