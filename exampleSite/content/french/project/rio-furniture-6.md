@@ -6,9 +6,9 @@ bg_image: "/images/screen-shot-2020-12-29-at-21-16-51.png"
 category: Video
 information:
 - label: Client
-  info: Jannie Kelonsky
+  info: Frederic Herbin
 - label: What We Did
-  info: Website Redesign
+  info: Création d'un site internet
 - label: Tools Used
   info: Photoshop,Illustrator
 - label: Completed on
