@@ -9,8 +9,8 @@ information:
   info: Frederic Herbin
 - label: Travail effectué
   info: Création d'un site web vitrine
-- label: Tools Used
-  info: Photoshop,Illustrator
+- label: Outils utilisés
+  info: Photoshop, Illustrator
 - label: Completed on
   info: 17th March 2014
 - label: Skills
