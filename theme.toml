@@ -5,7 +5,7 @@ license = "MIT"
 licenselink = "https://github.com/themefisher/airspace-hugo/blob/master/LICENSE"
 description = "Hugo port of the Themefisher’s Airspace theme"
 homepage = "https://gethugothemes.com/products/airspace-hugo-theme/"
-tags = ["blog",'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'white', 'light', 'multilingual', "bootstrap", "company", "portfolio", "projects", "responsive", "themefisher"]
+tags = ["blog",'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'white', 'light', 'multilingual', "bootstrap", "company", "portfolio", "projects", "responsive", "themefisher", "gethugothemes"]
 features = ["blog", "company", "responsive", "seo-friendly"]
 min_version = "0.64.0"
 
