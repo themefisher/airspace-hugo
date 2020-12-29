@@ -11,7 +11,7 @@ information:
   info: Création d'un site web vitrine
 - label: Outils utilisés
   info: Photoshop, Illustrator
-- label: Completed on
+- label: Terminé le
   info: 17th March 2014
 - label: Skills
   info: HTML5 / PHP / CSS3
