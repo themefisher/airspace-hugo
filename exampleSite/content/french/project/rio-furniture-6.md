@@ -13,10 +13,8 @@ information:
   info: Photoshop, Illustrator
 - label: Terminé le
   info: 17th March 2014
-- label: Skills
-  info: HTML5 / PHP / CSS3
-- label: Client
-  info: Jannie Kelonsky
+- label: Technologie
+  info: 'HTML5 / JS / CSS3 / Bootstrap '
 
 ---
 ## Behance Website Redesign
