@@ -7,7 +7,7 @@ category: Video
 information:
 - label: Client
   info: Frederic Herbin
-- label: What We Did
+- label: Travail effectué
   info: Création d'un site web vitrine
 - label: Tools Used
   info: Photoshop,Illustrator
