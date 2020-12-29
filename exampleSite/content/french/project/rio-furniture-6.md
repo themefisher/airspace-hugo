@@ -2,7 +2,7 @@
 title: La Mésonette
 description: Site vitrine des gîtes de La Mésonette
 image: "/images/screen-shot-2020-12-29-at-21-16-51.png"
-bg_image: "/images/screen-shot-2020-12-29-at-21-16-51.png"
+bg_image: "/images/portfolio/work5.jpg"
 category: Video
 information:
 - label: Client
