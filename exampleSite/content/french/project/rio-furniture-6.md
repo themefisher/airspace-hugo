@@ -8,7 +8,7 @@ information:
 - label: Client
   info: Frederic Herbin
 - label: Travail effectué
-  info: Création d'un site web vitrine
+  info: Création site web vitrine
 - label: Outils utilisés
   info: Photoshop, Illustrator
 - label: Terminé le
