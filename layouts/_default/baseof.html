@@ -4,7 +4,7 @@
 
 <body>
 	{{- partialCached "preloader.html" . -}}
-	{{- partialCached "header.html" . -}}
+	{{- partial "header.html" . -}}
 	{{- block "main" . }}{{- end }}
 	{{- partialCached "footer.html" . -}}
 </body>
