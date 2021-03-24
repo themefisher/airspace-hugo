@@ -11,6 +11,3 @@ fields:
 - type: file
   name: bg_image
   label: bg_image
-- type: text
-  name: layout
-  label: layout
