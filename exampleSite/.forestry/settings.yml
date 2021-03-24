@@ -9,11 +9,9 @@ sections:
 - type: document
   path: exampleSite/content/english/_index.md
   label: Homepage (en)
-  match: "**/*"
 - type: document
   path: exampleSite/content/french/_index.md
   label: Homepage (fr)
-  match: "**/*"
 - type: heading
   label: Blog Post
 - type: directory
