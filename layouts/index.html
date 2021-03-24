@@ -1,10 +1,8 @@
 {{ define "main" }}
 
-{{ $data := index site.Data site.Language.Lang }}
-
 <!-- banner -->
-{{ if $data.homepage.banner.enable }}
-{{ with $data.homepage.banner }}
+{{ with .Params.banner }}
+{{ if .enable }}
 <section class="slider {{if .bg_overlay}}overly{{end}}" style="background-image: url('{{ .bg_image | absURL }}');">
   <div class="container">
     <div class="row">
@@ -26,8 +24,8 @@
 {{ end }}
 <!-- /banner -->
 
-{{ if $data.homepage.about.enable }}
-{{ with $data.homepage.about }}
+{{ with .Params.about }}
+{{ if .enable }}
 <!-- about -->
 <section class="about section">
   <div class="container">
@@ -53,8 +51,8 @@
 {{ end }}
 {{ end }}
 
-{{ if $data.homepage.portfolio.enable }}
-{{ with $data.homepage.portfolio }}
+{{ with .Params.portfolio }}
+{{ if .enable }}
 <!-- portfolio -->
 <section class="feature bg-2" style="background-image: url('{{ .bg_image | absURL}}')">
   <div class="container">
@@ -76,19 +74,19 @@
 {{ end }}
 
 <!-- Service -->
-{{ if $data.homepage.service.enable }}
+{{ if .Params.service.enable }}
 {{ partial "service.html" . }}
 {{ end }}
 <!-- /service -->
 
 <!-- Call to action -->
-{{ if $data.homepage.cta.enable }}
+{{ if .Params.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
 <!-- /Call to action -->
 
-{{ if $data.homepage.funfacts.enable }}
-{{ with $data.homepage.funfacts }}
+{{ with .Params.funfacts }}
+{{ if .enable }}
 <!-- Content Start -->
 <section class="testimonial">
   <div class="container">

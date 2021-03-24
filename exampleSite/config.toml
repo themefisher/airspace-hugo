@@ -2,7 +2,6 @@
 baseURL = "http://examplesite.org"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
-themesDir = "../.."
 # post pagination
 paginate = "4"
 # post excerpt

@@ -1,5 +1,5 @@
-{{ $data := index site.Data site.Language.Lang }}
-{{ with $data.service.service }}
+{{ with site.GetPage "/service"}}
+{{ with .Params.service }}
 <section class="service">
   <div class="container">
     <div class="row">
@@ -21,4 +21,5 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}

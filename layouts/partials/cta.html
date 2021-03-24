@@ -1,5 +1,5 @@
-{{ $data := index site.Data site.Language.Lang }}
-{{ with $data.homepage.cta }}
+{{ with site.GetPage "/" }}
+{{ with .Params.cta }}
 <section class="call-to-action bg-1 section-sm overly" style="background-image: url('{{.bg_image | absURL }}');">
   <div class="container">
     <div class="row">
@@ -17,4 +17,5 @@
     </div>
   </div>
 </section>
+{{ end }}
 {{ end }}

@@ -2,6 +2,9 @@
 
 {{ partial "page-title.html" . }}
 
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+
 <section class="page-wrapper">
 	<div class="container">
 		<div class="row">
@@ -43,5 +46,11 @@
 		</div>
 	</div>
 </section>
+
+<!-- regular page -->
+{{ else }}
+{{ .Render "default" }}
+{{ end }}
+<!-- /regular page -->
 
 {{ end }}

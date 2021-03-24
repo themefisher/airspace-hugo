@@ -2,10 +2,8 @@
 
 {{ partial "page-title.html" . }}
 
-{{ $data := index site.Data site.Language.Lang }}
-
-{{ if $data.about.about.enable }}
-{{ with $data.about.about }}
+{{ with .Params.about }}
+{{ if .enable }}
 <section class="about section">
   <div class="container">
     <div class="row">
@@ -40,8 +38,8 @@
 {{ end }}
 {{ end }}
 
-{{ if $data.about.features.enable }}
-{{ with $data.about.features }}
+{{ with .Params.features }}
+{{ if .enable }}
 <section class="about-feature bg-dark section dark-service">
   <div class="container">
     {{ with .title }}
@@ -72,11 +70,12 @@
 <section class="testimonial section-sm">
   <div class="container">
     <div class="row">
-      {{ if $data.about.testimonial.enable }}
+      {{ if .Params.testimonial.enable }}
+      {{ with .GetPage "/" }}
       <div class="col-md-6">
         <div class="testimonial-carousel text-center">
           <div class="testimonial-slider owl-carousel">
-            {{ range $data.homepage.funfacts.testimonial_slider }}
+            {{ range .Params.funfacts.testimonial_slider }}
             <div>
               <i class="ion-quote"></i>
               <p>"{{ .content | markdownify }}"</p>
@@ -90,9 +89,10 @@
         </div>
       </div>
       {{ end }}
+      {{ end }}
 
-      {{ if $data.about.mission_vision.enable }}
-      {{ with $data.about.mission_vision }}
+      {{ with .Params.mission_vision }}
+      {{ if .enable }}
       <div class="col-md-6">
         <div class="tabCommon">
           <ul class="nav nav-tabs">
@@ -117,7 +117,7 @@
 </section>
 
 <!-- Call to action -->
-{{ if $data.about.cta.enable }}
+{{ if .Params.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
 <!-- /Call to action -->
