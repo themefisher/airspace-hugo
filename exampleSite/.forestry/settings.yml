@@ -5,6 +5,16 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: heading
+  label: Homepage
+- type: document
+  path: exampleSite/content/english/_index.md
+  label: Homepage (en)
+  match: "**/*"
+- type: document
+  path: exampleSite/content/french/_index.md
+  label: Homepage (fr)
+  match: "**/*"
+- type: heading
   label: Blog Post
 - type: directory
   path: exampleSite/content/english/blog
@@ -59,11 +69,13 @@ sections:
   label: Other Pages (en)
   create: documents
   match: "*"
+  exclude: _index.md
 - type: directory
   path: exampleSite/content/french
   label: Other Pages (fr)
   create: documents
   match: "*"
+  exclude: _index.md
 - type: directory
   path: exampleSite/content/english
   label: All Pages (en)
