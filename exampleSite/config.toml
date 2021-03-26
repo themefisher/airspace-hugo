@@ -25,7 +25,7 @@ unsafe = true
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/css/bootstrap.min.css"
 attributes = "media='screen'"
 
 [[params.plugins.css]]
@@ -46,7 +46,7 @@ link = "plugins/jquery/jquery.min.js"
 attributes = ""
 
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/bootstrap/js/bootstrap.min.js"
 attributes = ""
 
 [[params.plugins.js]]
