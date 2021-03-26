@@ -42,7 +42,7 @@ attributes = ""
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+link = "plugins/jquery/jquery.min.js"
 attributes = ""
 
 [[params.plugins.js]]
