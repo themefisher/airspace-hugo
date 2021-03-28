@@ -29,7 +29,7 @@ link = "plugins/bootstrap/css/bootstrap.min.css"
 attributes = "media='screen'"
 
 [[params.plugins.css]]
-link = "plugins/Ionicons/css/ionicons.min.css"
+link = "plugins/ionicons/css/ionicons.min.css"
 attributes = ""
 
 [[params.plugins.css]]
@@ -191,7 +191,7 @@ hasChildren = true
   parent = "Pages"
   name = "Service"
   URL = "service"
-  
+
 [[Languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
@@ -280,7 +280,7 @@ hasChildren = true
   parent = "Pages"
   name = "Un service"
   URL = "service"
-  
+
 [[Languages.fr.menu.main]]
 name = "Contact"
 URL = "contact"
