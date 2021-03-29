@@ -141,7 +141,7 @@ link = "#"
 
 
 ################################ English Language ########################
-[Languages.en]
+[languages.en]
 languageName = "En"
 languageCode = "en-us"
 contentDir = "content/english"
@@ -152,85 +152,85 @@ copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Ri
 
 ######################### english navigation #############################
 # main menu
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "Home"
 URL = "/"
 weight = 1
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "About"
 URL = "about"
 weight = 2
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "Project"
 URL = "project"
 weight = 3
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "Blog"
 URL = "blog"
 weight = 4
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 weight = 5
 name = "Pages"
 hasChildren = true
 
-  [[Languages.en.menu.main]]
+  [[languages.en.menu.main]]
   parent = "Pages"
   name = "FAQ"
   URL = "faq"
 
-  [[Languages.en.menu.main]]
+  [[languages.en.menu.main]]
   parent = "Pages"
   name = "Pricing"
   URL = "pricing"
 
-  [[Languages.en.menu.main]]
+  [[languages.en.menu.main]]
   parent = "Pages"
   name = "Service"
   URL = "service"
-  
-[[Languages.en.menu.main]]
+
+[[languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
 
 # footer menu
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "About"
 URL = "about"
 weight = 1
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Project"
 URL = "project"
 weight = 2
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Service"
 URL = "service"
 weight = 3
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Pricing"
 URL = "pricing"
 weight = 4
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "FAQ"
 URL = "faq"
 weight = 5
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
 ################################ France Language ########################
-[Languages.fr]
+[languages.fr]
 languageName = "Fr"
 languageCode = "fr-fr"
 contentDir = "content/french"
@@ -241,79 +241,79 @@ copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Ri
 
 ######################### france navigation #############################
 # main menu
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "Accueil"
 URL = "/"
 weight = 1
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "À propos"
 URL = "about"
 weight = 2
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "Projet"
 URL = "project"
 weight = 3
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "Blog"
 URL = "blog"
 weight = 4
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 weight = 5
 name = "Pages"
 hasChildren = true
 
-  [[Languages.fr.menu.main]]
+  [[languages.fr.menu.main]]
   parent = "Pages"
   name = "FAQ"
   URL = "faq"
 
-  [[Languages.fr.menu.main]]
+  [[languages.fr.menu.main]]
   parent = "Pages"
   name = "Tarification"
   URL = "pricing"
 
-  [[Languages.fr.menu.main]]
+  [[languages.fr.menu.main]]
   parent = "Pages"
   name = "Un service"
   URL = "service"
-  
-[[Languages.fr.menu.main]]
+
+[[languages.fr.menu.main]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
 
 # footer menu
-[[Languages.fr.menu.footer]]
+[[languages.fr.menu.footer]]
 name = "About"
 URL = "about"
 weight = 1
 
-[[Languages.fr.menu.footer]]
+[[languages.fr.menu.footer]]
 name = "Project"
 URL = "project"
 weight = 2
 
-[[Languages.fr.menu.footer]]
+[[languages.fr.menu.footer]]
 name = "Service"
 URL = "service"
 weight = 3
 
-[[Languages.fr.menu.footer]]
+[[languages.fr.menu.footer]]
 name = "Pricing"
 URL = "pricing"
 weight = 4
 
-[[Languages.fr.menu.footer]]
+[[languages.fr.menu.footer]]
 name = "FAQ"
 URL = "faq"
 weight = 5
 
-[[Languages.fr.menu.footer]]
+[[languages.fr.menu.footer]]
 name = "Contact"
 URL = "contact"
 weight = 6
