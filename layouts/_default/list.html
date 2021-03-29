@@ -29,9 +29,9 @@
                 <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
                 {{end}}
               </li>
-              <li><i class="ion-pricetags"></i> 
+              <li><i class="ion-pricetags"></i>
                 {{ range $index, $elements:= .Params.Tags }}
-                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>
+                {{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>
 								{{ end }}
               </li>
             </ul>
@@ -42,7 +42,7 @@
           </div>
         </div>
         {{ end }}
-        
+
 				<!-- pagination -->
 				{{ $paginator := .Paginator }}
 				{{ $adjacent_links := 2 }}

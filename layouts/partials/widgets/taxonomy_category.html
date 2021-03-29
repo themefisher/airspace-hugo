@@ -3,8 +3,8 @@
     {{- if isset site.Taxonomies "categories" }}
     {{- if not (eq (len site.Taxonomies.categories) 0) }}
     <ul class="widget-category-list">
-      {{- range $name, $items := site.Taxonomies.categories }}
-      <li><a href="{{ `categories/` | relLangURL }}{{ $name | urlize | lower }}">{{ $name | title | humanize }}</a></li>
+      {{- range $name := site.Taxonomies.categories }}
+      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
       {{- end }}
     </ul>
     {{- end }}
