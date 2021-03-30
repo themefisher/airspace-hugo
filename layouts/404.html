@@ -4,14 +4,14 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <a href="index.html">
+        <a href="{{ "/" | relLangURL }}">
           <img src="images/logo.png" alt="site logo" />
         </a>
         <h1>404</h1>
-        <h2>Page Not Found</h2>
-        <a href="index.html" class="btn btn-main"><i class="tf-ion-android-arrow-back"></i> Go Home</a>
-        <p class="copyright-text">© 2020 <a href="https://themefisher.com/" target="_blank">themefisher.com</a> All Rights Reserved
-          <br> Get More <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
+        <h2 class="text-muted">{{ i18n "404_message" | markdownify }}</h2>
+        <a href="{{ "/" | relLangURL }}" class="btn btn-main"><i class="tf-ion-android-arrow-back"></i> {{ i18n "404_go_home" }}</a>
+        <p class="copyright-text">
+          {{ site.Params.copyright | markdownify }}
         </p>
       </div>
     </div>

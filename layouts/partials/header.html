@@ -41,7 +41,8 @@
                 <select id="select-language" onchange="location = this.value;">
                   {{ $siteLanguages := site.Languages}}
                   {{ $pageLang := .Page.Lang}}
-                  {{ range .Page.AllTranslations }}
+                  {{ $scratch := newScratch }}{{ if eq .Page.Kind "404" }}{{ $scratch.Set "translations" site.Home.AllTranslations }}{{ else }}{{ $scratch.Set "translations" .Page.AllTranslations }}{{ end }}
+                  {{ range ($scratch.Get "translations") }}
                   {{ $translation := .}}
                   {{ range $siteLanguages }}
                   {{ if eq $translation.Lang .Lang }}

@@ -1,30 +1,36 @@
-- id: last_update
-  translation: Last updated
-- id: phone
-  translation: Phone
-- id: email
-  translation: Email
-- id: location
-  translation: Location
-- id: buy_now
-  translation: Buy Now
+- id: 404_error
+  translation: "Error 404: Page not found"
+- id: 404_go_home
+  translation: To the home page
+- id: 404_message
+  translation: Sorry – this page does not seem to exist (anymore).
 - id: address_title
   translation: Stop By For A visit
-- id: submit
-  translation: Send Message
 - id: all
   translation: All
+- id: buy_now
+  translation: Buy Now
+- id: categories
+  translation: Categories
+- id: email
+  translation: Email
+- id: last_update
+  translation: Last updated
+- id: latest_posts
+  translation: Latest Posts
+- id: location
+  translation: Location
+- id: page_next
+  translation: Next
+- id: page_prev
+  translation: Prev
+- id: phone
+  translation: Phone
 - id: posted_by
   translation: Posted By
 - id: read_more
   translation: Continue Reading
-- id: latest_posts
-  translation: Latest Posts
-- id: page_prev
-  translation: Prev
-- id: page_next
-  translation: Next
+- id: submit
+  translation: Send Message
 - id: tags
   translation: Tags
-- id: categories
-  translation: Categories
