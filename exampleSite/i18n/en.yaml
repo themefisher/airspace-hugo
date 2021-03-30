@@ -1,5 +1,3 @@
-- id: 404_error
-  translation: "Error 404: Page not found"
 - id: 404_go_home
   translation: To the home page
 - id: 404_message
