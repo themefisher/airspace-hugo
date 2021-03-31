@@ -78,13 +78,15 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 [params]
 logo = "images/logo.png"
 logo_width = "150px"
-# Meta data
+# OpenGraph / Twitter Card metadata
+title = "Airspace Hugo Template"
 description = "This is meta description"
 author = "Themefisher"
-# Contact Information
+images = [ "images/logo.png" ] # First image here will be used as fallback if a page has no images of its own
+# Contact information
 mobile = "0124857985320"
 email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
+location = "North Main Street, Brooklyn Australia"
 # multi-author support (if set to true, you must use an Array in the author field)
 multi_author = false
 
