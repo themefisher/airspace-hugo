@@ -3,15 +3,23 @@
 - id: 404_message
   translation: Sorry – this page does not seem to exist (anymore).
 - id: address_title
-  translation: Stop By For A visit
+  translation: Address
 - id: all
   translation: All
 - id: buy_now
-  translation: Buy Now
+  translation: Buy now
 - id: categories
   translation: Categories
+- id: contact_form_email
+  translation: Your e-mail address
+- id: contact_form_message
+  translation: Message
+- id: contact_form_name
+  translation: Your name
+- id: contact_form_subject
+  translation: Subject
 - id: email
-  translation: Email
+  translation: E-mail
 - id: last_update
   translation: Last updated
 - id: latest_posts
@@ -19,16 +27,16 @@
 - id: location
   translation: Location
 - id: page_next
-  translation: Next
+  translation: Older
 - id: page_prev
-  translation: Prev
+  translation: Newer
 - id: phone
   translation: Phone
 - id: posted_by
-  translation: Posted By
+  translation: Posted by
 - id: read_more
-  translation: Continue Reading
+  translation: Continue reading
 - id: submit
-  translation: Send Message
+  translation: Send message
 - id: tags
   translation: Tags
