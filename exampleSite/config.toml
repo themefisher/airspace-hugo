@@ -83,8 +83,6 @@ author = "Themefisher"
 mobile = "0124857985320"
 email = "demo@email.com"
 location = "North Main Street,Brooklyn Australia"
-# contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
 # Google Analitycs
 google_analitycs_id = "" # Your ID# search
 # multi-author support (if set to true, you must use an Array in the author field)
@@ -95,11 +93,19 @@ multi_author = false
 enable = true
 preloader = "" # use .png , .svg or .gif format
 
-# Navigation get start button
-[params.nav_button]
+################################# Contact page ################################
+[params.contact]
+# Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
+address_descriptors = true
+[params.contact.form]
 enable = true
-label = "Get A Quote"
-link = "contact"
+# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
+use_netlify = false
+# Form action
+## For Formspree.io: Your Form ID URL, e.g. `https://formspree.io/f/{form_id}`
+## For Netlify Forms: Path to a custom [success page](https://docs.netlify.com/forms/setup/#success-messages)
+action = "#"
+
 
 # google map
 [params.gmap]
