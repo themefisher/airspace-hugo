@@ -10,6 +10,8 @@ summaryLength = "30"
 disqusShortname = "" # get your shortname form here : https://disqus.com
 # Disabled languages
 disableLanguages = []
+# Measurement ID (G-XXXXXXX) to enable Google Analytics
+googleAnalytics = ""
 
 ################################# Outputs #################################
 # hugo outputs
@@ -83,8 +85,6 @@ author = "Themefisher"
 mobile = "0124857985320"
 email = "demo@email.com"
 location = "North Main Street,Brooklyn Australia"
-# Google Analitycs
-google_analitycs_id = "" # Your ID# search
 # multi-author support (if set to true, you must use an Array in the author field)
 multi_author = false
 
