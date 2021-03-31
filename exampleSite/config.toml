@@ -1,80 +1,36 @@
-################################# Default configuration ###################
+################################# Basic configuration #########################
+# Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "http://examplesite.org"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
-# post pagination
+# Number of posts per page in list view
 paginate = "4"
-# post excerpt
+# Post excerpt length
 summaryLength = "30"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
 # Disabled languages
 disableLanguages = []
+# Short name to enable Disqus comments
+disqusShortname = "" # Get your shortname from here: https://disqus.com/profile/signup/
 # Measurement ID (G-XXXXXXX) to enable Google Analytics
 googleAnalytics = ""
 
-################################# Outputs #################################
-# hugo outputs
+
+################################# Output formats ##############################
+# Documentation: https://gohugo.io/templates/output-formats/#customizing-output-formats
+
 [outputs]
 home = ["HTML"]
 
-# render unsafe html
+
+################################# Markup ######################################
+# Documentation: https://gohugo.io/getting-started/configuration-markup
+
 [markup.goldmark.renderer]
+# Allow "unsafe" HTML in Markdown
 unsafe = true
 
 
-#################################### Plugins ##############################
-
-# CSS Plugins
-[[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
-attributes = "media='screen'"
-
-[[params.plugins.css]]
-link = "plugins/Ionicons/css/ionicons.min.css"
-attributes = ""
-
-[[params.plugins.css]]
-link = "plugins/magnific-popup/magnific-popup.min.css"
-attributes = ""
-
-[[params.plugins.css]]
-link = "plugins/slick/slick.css"
-attributes = ""
-
-# JS Plugins
-[[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/magnific-popup/magnific-popup.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/shuffle/shuffle.min.js"
-attributes = ""
-
-[[params.plugins.js]]
-link = "plugins/google-map/gmap.js"
-attributes = "defer"
-
-
-############################### widgets #################################
-
-[params.widgets]
-sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
-
-
-#################### default parameters ################################
+################################# Default parameters ##########################
 [params]
 logo = "images/logo.png"
 logo_width = "150px"
@@ -90,10 +46,11 @@ location = "North Main Street, Brooklyn Australia"
 # multi-author support (if set to true, you must use an Array in the author field)
 multi_author = false
 
-# Preloader
-[params.preloader]
-enable = true
-preloader = "" # use .png , .svg or .gif format
+
+################################# Sidebar widgets #############################
+[params.widgets]
+sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+
 
 ################################# Contact page ################################
 [params.contact]
@@ -109,7 +66,7 @@ use_netlify = false
 action = "#"
 
 
-# google map
+################################# Google map ##################################
 [params.gmap]
 enable = true
 gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
@@ -117,12 +74,19 @@ map_latitude = "51.5223477"
 map_longitude = "-0.1622023"
 map_marker = "images/marker.png"
 
-# cookies
+
+################################# Preloader ###################################
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif image
+
+# Cookies
 [params.cookies]
 enable = true
 expire_days = 2
 
-############################# social site ########################
+
+################################# Social Media ################################
 [[params.social]]
 icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
 link = "#"
