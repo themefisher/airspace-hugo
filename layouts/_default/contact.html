@@ -37,13 +37,14 @@
     </div>
     {{ end }}{{ end }}
     <div class="contact-box row">
+      {{ with site.Params.contact }}
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <h2>{{ i18n "address_title" }}</h2>
           <ul class="address-block">
-            <li><i class="ion-ios-location-outline"></i>{{ with site.Params.contact }}{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}{{ end }}{{ site.Params.location }}</li>
-            <li><i class="ion-ios-email-outline"></i>{{ with site.Params.contact }}{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ end }}{{ site.Params.email }}</li>
-            <li><i class="ion-ios-telephone-outline"></i>{{ with site.Params.contact }}{{ if .address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ end }}{{ site.Params.mobile }}</li>
+            {{ if isset . "location" }}<li><i class="ion-ios-location-outline"></i>{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}{{ .location }}</li>{{ end }}
+            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ .email }}</li>{{ end }}
+            {{ if isset . "phone" }}<li><i class="ion-ios-telephone-outline"></i>{{ if .address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ .phone }}</li>{{ end }}
           </ul>
           <ul class="social-icons">
             {{ range site.Params.social }}
@@ -52,6 +53,7 @@
           </ul>
         </div>
       </div>
+      {{ end }}
       {{ if site.Params.gmap.enable }}
       <div class="col-md-6 col-sm-12">
         <div class="block">

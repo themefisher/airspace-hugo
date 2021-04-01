@@ -39,10 +39,6 @@ title = "Airspace Hugo Template"
 description = "This is meta description"
 author = "Themefisher"
 images = [ "images/logo.png" ] # First image here will be used as fallback if a page has no images of its own
-# Contact information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street, Brooklyn Australia"
 # multi-author support (if set to true, you must use an Array in the author field)
 multi_author = false
 
@@ -54,6 +50,10 @@ sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 
 ################################# Contact page ################################
 [params.contact]
+# Address block
+phone = "0124857985320"
+email = "demo@email.com"
+location = "North Main Street, Brooklyn Australia"
 # Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
 address_descriptors = true
 [params.contact.form]
