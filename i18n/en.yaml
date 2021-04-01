@@ -20,6 +20,8 @@
   translation: Subject
 - id: email
   translation: E-mail
+- id: faq_toc_title
+  translation: Outline
 - id: last_update
   translation: Last updated
 - id: latest_posts

@@ -9,9 +9,8 @@
         <h2>{{ .Title }}</h2>
         <p>{{ .Params.Subtitle | markdownify }}</p>
         <p>{{ i18n "last_update" }}: {{ .Lastmod.Format "January 2, 2006" }}</p>
-        {{ with site.Params.contact.phone }}<p>{{ i18n "phone" }}: <a href="tel:{{ . }}">{{ . }}</a></p>{{ end }}
-        {{ with site.Params.contact.email }}<p>{{ i18n "email" }}: <a href="mailto:{{ . }}">{{ . }}</a></p>{{ end }}
-        {{ with site.Params.contact.location }}<p>{{ i18n "location" }}: {{ . }}</p>{{ end }}
+        <h3>{{ i18n "faq_toc_title" }}</h3>
+        <p>{{ .TableOfContents }}</p>
       </div>
       <div class="col-md-8">
         {{ .Content }}

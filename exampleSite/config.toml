@@ -29,6 +29,11 @@ home = ["HTML"]
 # Allow "unsafe" HTML in Markdown
 unsafe = true
 
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 6
+  ordered = false
+
 
 ################################# Default parameters ##########################
 [params]
