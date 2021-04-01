@@ -1,28 +1,122 @@
-################################# Default configuration ###################
+################################# Basic configuration #########################
+# Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 baseURL = "http://examplesite.org"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
-# post pagination
+# Number of posts per page in list view
 paginate = "4"
-# post excerpt
+# Post excerpt length
 summaryLength = "30"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
-# disable language
+# Disabled languages
 disableLanguages = []
+# Short name to enable Disqus comments
+disqusShortname = "" # Get your shortname from here: https://disqus.com/profile/signup/
+# Measurement ID (G-XXXXXXX) to enable Google Analytics
+googleAnalytics = ""
 
-################################# Outputs #################################
-# hugo outputs
+
+################################# Output formats ##############################
+# Documentation: https://gohugo.io/templates/output-formats/#customizing-output-formats
+
 [outputs]
-home = ["HTML"]
+home = [ "HTML" ]
 
-# render unsafe html
+
+################################# Markup ######################################
+# Documentation: https://gohugo.io/getting-started/configuration-markup
+
 [markup.goldmark.renderer]
+# Allow "unsafe" HTML in Markdown
 unsafe = true
 
+[markup.tableOfContents]
+  startLevel = 2
+  endLevel = 6
+  ordered = false
 
-#################################### Plugins ##############################
 
+################################# Default parameters ##########################
+[params]
+logo = "images/logo.png"
+logo_width = "150px"
+# OpenGraph / Twitter Card metadata
+title = "Airspace Hugo Template"
+description = "This is meta description"
+author = "Themefisher"
+images = [ "images/logo.png" ] # First image here will be used as fallback if a page has no images of its own
+
+
+################################# Sidebar widgets #############################
+[params.widgets]
+sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+
+
+################################# Contact page ################################
+[params.contact]
+# Address block
+phone = "0124857985320"
+email = "demo@email.com"
+location = "North Main Street, Brooklyn Australia"
+# Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
+address_descriptors = true
+[params.contact.form]
+enable = true
+# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
+use_netlify = false
+# Form action
+## For Formspree.io: Your Form ID URL, e.g. `https://formspree.io/f/{form_id}`
+## For Netlify Forms: Path to a custom [success page](https://docs.netlify.com/forms/setup/#success-messages)
+action = "#"
+
+
+################################# Google map ##################################
+[params.gmap]
+enable = true
+gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+
+################################# Preloader ###################################
+[params.preloader]
+enable = true
+preloader = "" # use .png , .svg or .gif image
+
+
+################################# Cookies #####################################
+[params.cookies]
+enable = true
+expire_days = 2
+
+
+################################# Social Media ################################
+[[params.social]]
+icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+[[params.social]]
+icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+link = "#"
+
+
+################################# Plugins #####################################
 # CSS Plugins
 [[params.plugins.css]]
 link = "plugins/bootstrap/css/bootstrap.min.css"
@@ -66,252 +160,259 @@ link = "plugins/google-map/gmap.js"
 attributes = "defer"
 
 
-############################### widgets #################################
-
-[params.widgets]
-sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
-
-
-#################### default parameters ################################
-[params]
-logo = "images/logo.png"
-logo_width = "150px"
-# Meta data
-description = "This is meta description"
-author = "Themefisher"
-# Contact Information
-mobile = "0124857985320"
-email = "demo@email.com"
-location = "North Main Street,Brooklyn Australia"
-# contact form action
-contact_form_action = "#" # contact form works with : https://formspree.io
-# Google Analitycs
-google_analitycs_id = "" # Your ID# search
-
-# Preloader
-[params.preloader]
-enable = true
-preloader = "" # use .png , .svg or .gif format
-
-# Navigation get start button
-[params.nav_button]
-enable = true
-label = "Get A Quote"
-link = "contact"
-
-# google map
-[params.gmap]
-enable = true
-gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
-map_latitude = "51.5223477"
-map_longitude = "-0.1622023"
-map_marker = "images/marker.png"
-
-# cookies
-[params.cookies]
-enable = true
-expire_days = 2
-
-############################# social site ########################
-[[params.social]]
-icon = "ion-social-googleplus-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-linkedin-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-dribbble-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-[[params.social]]
-icon = "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
-link = "#"
-
-
-################################ English Language ########################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
+################################# English translation #########################
+[languages.en]
+languageName = "English"
+languageCode = "en-US"
 contentDir = "content/english"
 weight = 1
-# copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). All Rights Reserved."
 
-
-######################### english navigation #############################
-# main menu
-[[Languages.en.menu.main]]
+# Main menu
+[[languages.en.menu.main]]
 name = "Home"
 URL = "/"
 weight = 1
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "About"
 URL = "about"
 weight = 2
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "Project"
 URL = "project"
 weight = 3
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "Blog"
 URL = "blog"
 weight = 4
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 weight = 5
-name = "Pages"
+name = "More"
 hasChildren = true
 
-  [[Languages.en.menu.main]]
-  parent = "Pages"
+  [[languages.en.menu.main]]
+  parent = "More"
   name = "FAQ"
   URL = "faq"
 
-  [[Languages.en.menu.main]]
-  parent = "Pages"
+  [[languages.en.menu.main]]
+  parent = "More"
   name = "Pricing"
   URL = "pricing"
 
-  [[Languages.en.menu.main]]
-  parent = "Pages"
+  [[languages.en.menu.main]]
+  parent = "More"
   name = "Service"
   URL = "service"
 
-[[Languages.en.menu.main]]
+[[languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
-
-# footer menu
-[[Languages.en.menu.footer]]
+# Footer menu
+[[languages.en.menu.footer]]
 name = "About"
 URL = "about"
 weight = 1
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Project"
 URL = "project"
 weight = 2
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Service"
 URL = "service"
 weight = 3
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Pricing"
 URL = "pricing"
 weight = 4
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "FAQ"
 URL = "faq"
 weight = 5
 
-[[Languages.en.menu.footer]]
+[[languages.en.menu.footer]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
-################################ France Language ########################
-[Languages.fr]
-languageName = "Fr"
-languageCode = "fr-fr"
+
+################################# French translation ##########################
+[languages.fr]
+languageName = "Français"
+languageCode = "fr-FR"
 contentDir = "content/french"
 weight = 2
-# copyright
-copyright = "Copyright &copy; 2020 [Themefisher](https://themefisher.com) All Rights Reserved"
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
 
-
-######################### france navigation #############################
-# main menu
-[[Languages.fr.menu.main]]
+# Main menu
+[[languages.fr.menu.main]]
 name = "Accueil"
 URL = "/"
 weight = 1
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "À propos"
 URL = "about"
 weight = 2
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "Projet"
 URL = "project"
 weight = 3
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 name = "Blog"
 URL = "blog"
 weight = 4
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
 weight = 5
-name = "Pages"
+name = "Plus"
 hasChildren = true
 
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "FAQ"
+  [[languages.fr.menu.main]]
+  parent = "Plus"
+  name = "Questions fréquentes"
   URL = "faq"
 
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
+  [[languages.fr.menu.main]]
+  parent = "Plus"
   name = "Tarification"
   URL = "pricing"
 
-  [[Languages.fr.menu.main]]
-  parent = "Pages"
-  name = "Un service"
+  [[languages.fr.menu.main]]
+  parent = "Plus"
+  name = "Service"
   URL = "service"
 
-[[Languages.fr.menu.main]]
+[[languages.fr.menu.main]]
+name = "Contact"
+URL = "contact"
+weight = 6
+
+# Footer menu
+[[languages.fr.menu.footer]]
+name = "À propos"
+URL = "about"
+weight = 1
+
+[[languages.fr.menu.footer]]
+name = "Projet"
+URL = "project"
+weight = 2
+
+[[languages.fr.menu.footer]]
+name = "Service"
+URL = "service"
+weight = 3
+
+[[languages.fr.menu.footer]]
+name = "Tarification"
+URL = "pricing"
+weight = 4
+
+[[languages.fr.menu.footer]]
+name = "Questions fréquentes"
+URL = "faq"
+weight = 5
+
+[[languages.fr.menu.footer]]
 name = "Contact"
 URL = "contact"
 weight = 6
 
 
-# footer menu
-[[Languages.fr.menu.footer]]
-name = "About"
+################################# German translation ##########################
+[languages.de]
+languageName = "Deutsch"
+languageCode = "de-DE"
+contentDir = "content/german"
+weight = 3
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Alle Rechte vorbehalten."
+
+# Main menu
+[[languages.de.menu.main]]
+name = "Startseite"
+URL = "/"
+weight = 1
+
+[[languages.de.menu.main]]
+name = "Über"
+URL = "about"
+weight = 2
+
+[[languages.de.menu.main]]
+name = "Projekt"
+URL = "project"
+weight = 3
+
+[[languages.de.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[languages.de.menu.main]]
+name = "Mehr"
+hasChildren = true
+weight = 5
+
+  [[languages.de.menu.main]]
+  parent = "Mehr"
+  name = "Häufige Fragen"
+  URL = "faq"
+
+  [[languages.de.menu.main]]
+  parent = "Mehr"
+  name = "Preise"
+  URL = "pricing"
+
+  [[languages.de.menu.main]]
+  parent = "Mehr"
+  name = "Dienstleistung"
+  URL = "service"
+
+[[languages.de.menu.main]]
+name = "Kontakt"
+URL = "contact"
+weight = 6
+
+# Footer menu
+[[languages.de.menu.footer]]
+name = "Über"
 URL = "about"
 weight = 1
 
-[[Languages.fr.menu.footer]]
-name = "Project"
+[[languages.de.menu.footer]]
+name = "Projekt"
 URL = "project"
 weight = 2
 
-[[Languages.fr.menu.footer]]
-name = "Service"
+[[languages.de.menu.footer]]
+name = "Dienstleistung"
 URL = "service"
 weight = 3
 
-[[Languages.fr.menu.footer]]
-name = "Pricing"
+[[languages.de.menu.footer]]
+name = "Preise"
 URL = "pricing"
 weight = 4
 
-[[Languages.fr.menu.footer]]
-name = "FAQ"
+[[languages.de.menu.footer]]
+name = "Häufige Fragen"
 URL = "faq"
 weight = 5
 
-[[Languages.fr.menu.footer]]
-name = "Contact"
+[[languages.de.menu.footer]]
+name = "Kontakt"
 URL = "contact"
 weight = 6

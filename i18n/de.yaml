@@ -1,0 +1,44 @@
+- id: 404_go_home
+  translation: Zur Startseite
+- id: 404_message
+  translation: Tut uns leid – diese Seite scheint nicht (mehr) hier zu sein.
+- id: address_title
+  translation: Adresse
+- id: all
+  translation: Alle
+- id: buy_now
+  translation: Kaufen
+- id: categories
+  translation: Kategorien
+- id: contact_form_email
+  translation: Ihre E-Mail-Adresse
+- id: contact_form_message
+  translation: Nachricht
+- id: contact_form_name
+  translation: Ihr Name
+- id: contact_form_subject
+  translation: Betreff
+- id: email
+  translation: E-Mail
+- id: faq_toc_title
+  translation: Inhalt
+- id: last_update
+  translation: Letzte Aktualisierung
+- id: latest_posts
+  translation: Letzte Einträge
+- id: location
+  translation: Ort
+- id: page_next
+  translation: Ältere
+- id: page_prev
+  translation: Neuere
+- id: phone
+  translation: Telefon
+- id: posted_by
+  translation: Von
+- id: read_more
+  translation: Weiterlesen
+- id: submit
+  translation: Nachricht senden
+- id: tags
+  translation: Schlagwörter
