@@ -25,11 +25,11 @@ unsafe = true
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/css/bootstrap.min.css"
 attributes = "media='screen'"
 
 [[params.plugins.css]]
-link = "plugins/Ionicons/css/ionicons.min.css"
+link = "plugins/ionicons/css/ionicons.min.css"
 attributes = ""
 
 [[params.plugins.css]]
@@ -42,11 +42,11 @@ attributes = ""
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+link = "plugins/jquery/jquery.min.js"
 attributes = ""
 
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/bootstrap/js/bootstrap.min.js"
 attributes = ""
 
 [[params.plugins.js]]
@@ -191,7 +191,7 @@ hasChildren = true
   parent = "Pages"
   name = "Service"
   URL = "service"
-  
+
 [[Languages.en.menu.main]]
 name = "Contact"
 URL = "contact"
@@ -280,7 +280,7 @@ hasChildren = true
   parent = "Pages"
   name = "Un service"
   URL = "service"
-  
+
 [[Languages.fr.menu.main]]
 name = "Contact"
 URL = "contact"
