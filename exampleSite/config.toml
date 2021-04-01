@@ -19,7 +19,7 @@ googleAnalytics = ""
 # Documentation: https://gohugo.io/templates/output-formats/#customizing-output-formats
 
 [outputs]
-home = ["HTML"]
+home = [ "HTML" ]
 
 
 ################################# Markup ######################################
@@ -44,8 +44,6 @@ title = "Airspace Hugo Template"
 description = "This is meta description"
 author = "Themefisher"
 images = [ "images/logo.png" ] # First image here will be used as fallback if a page has no images of its own
-# multi-author support (if set to true, you must use an Array in the author field)
-multi_author = false
 
 
 ################################# Sidebar widgets #############################
@@ -119,13 +117,13 @@ link = "#"
 
 
 ################################# Plugins #####################################
-# CSS plugins
+# CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap/css/bootstrap.min.css"
 attributes = "media='screen'"
 
 [[params.plugins.css]]
-link = "plugins/Ionicons/css/ionicons.min.css"
+link = "plugins/ionicons/css/ionicons.min.css"
 attributes = ""
 
 [[params.plugins.css]]
@@ -136,13 +134,13 @@ attributes = ""
 link = "plugins/slick/slick.css"
 attributes = ""
 
-# JS plugins
+# JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+link = "plugins/jquery/jquery.min.js"
 attributes = ""
 
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/bootstrap/js/bootstrap.min.js"
 attributes = ""
 
 [[params.plugins.js]]
