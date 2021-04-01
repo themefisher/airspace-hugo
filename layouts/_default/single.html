@@ -16,11 +16,8 @@
               <li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
               <li><i class="ion-android-people"></i>
                 {{ i18n "posted_by" }}
-                {{if site.Params.multi_author}}
-                {{ range $index, $elements:= .Params.Author }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-                {{else}}
-                <a class="text-primary" href="{{ `author/` | relLangURL }}{{ .Params.Author | urlize }}">{{ .Params.Author }}</a>
-                {{end}}
+                {{ $scratch := newScratch }}{{ if reflect.IsSlice .Params.author }}{{ $scratch.Set "authors" .Params.author }}{{ else }}{{ $scratch.Set "authors" (slice .Params.author) }}{{ end }}
+                {{ range $index, $elements := $scratch.Get "authors" }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
               </li>
               <li><i class="ion-pricetags"></i>
                 {{ range $index, $elements:= .Params.Tags }}
