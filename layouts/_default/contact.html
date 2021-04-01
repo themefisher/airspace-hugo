@@ -4,39 +4,47 @@
 
 <section class="contact-form">
   <div class="container">
+    {{ with site.Params.contact.form }}{{ if .enable }}
     <div class="row">
-      <form method="POST" action="{{ site.Params.contact_form_action | safeURL }}">
+      <form name="contact" method="POST" action="{{ .action | safeURL }}" {{ if .use_netlify }}netlify netlify-honeypot="nhp"{{ end }}>
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group">
-              <input name="user_name" type="text" class="form-control" placeholder="Your Name">
+              <input name="user_name" type="text" class="form-control" placeholder="{{ i18n "contact_form_name" }}" required>
             </div>
             <div class="form-group">
-              <input name="user_email" type="text" class="form-control" placeholder="Email Address">
+              <input name="user_email" type="text" class="form-control" placeholder="{{ i18n "contact_form_email" }}" required>
             </div>
             <div class="form-group">
-              <input name="user_subject" type="text" class="form-control" placeholder="Subject">
+              <input name="user_subject" type="text" class="form-control" placeholder="{{ i18n "contact_form_subject" }}" required>
             </div>
+            {{ if .use_netlify }}
+            <div class="form-group-h">
+              <input name="nhp" type="text" class="form-control" placeholder="Are you a made of flesh and bone?">
+            </div>
+            {{ end -}}
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group-2">
-              <textarea name="user_message" class="form-control" rows="4" placeholder="Your Message"></textarea>
+              <textarea name="user_message" class="form-control" rows="4" placeholder="{{ i18n "contact_form_message" }}" required></textarea>
             </div>
             <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
           </div>
         </div>
       </form>
     </div>
+    {{ end }}{{ end }}
     <div class="contact-box row">
+      {{ with site.Params.contact }}
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <h2>{{ i18n "address_title" }}</h2>
           <ul class="address-block">
-            <li><i class="ion-ios-location-outline"></i>{{i18n "location"}}: {{ site.Params.location }}</li>
-            <li><i class="ion-ios-email-outline"></i>{{i18n "email"}}: {{ site.Params.email }}</li>
-            <li><i class="ion-ios-telephone-outline"></i>{{i18n "phone"}}: {{ site.Params.mobile }}</li>
+            {{ if isset . "location" }}<li><i class="ion-ios-location-outline"></i>{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}{{ .location }}</li>{{ end }}
+            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ .email }}</li>{{ end }}
+            {{ if isset . "phone" }}<li><i class="ion-ios-telephone-outline"></i>{{ if .address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ .phone }}</li>{{ end }}
           </ul>
           <ul class="social-icons">
             {{ range site.Params.social }}
@@ -45,6 +53,7 @@
           </ul>
         </div>
       </div>
+      {{ end }}
       {{ if site.Params.gmap.enable }}
       <div class="col-md-6 col-sm-12">
         <div class="block">

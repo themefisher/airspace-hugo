@@ -8,10 +8,9 @@
       <div class="col-md-4 sticky-top">
         <h2>{{ .Title }}</h2>
         <p>{{ .Params.Subtitle | markdownify }}</p>
-        <p>{{ i18n "last_update" }}: {{ .PublishDate.Format "January 2, 2006" }}{{ if ne .PublishDate .Lastmod }}, last updated {{ .Lastmod.Format "January 2, 2006" }}{{ end }}</p>
-        <p>{{ i18n "phone" }}: <a href="tel:{{ site.Params.mobile }}">{{ site.Params.mobile }}</a></p>
-        <p>{{ i18n "email" }}: <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a></p>
-        <p>{{ i18n "location" }}: {{ site.Params.location }}</p>
+        <p>{{ i18n "last_update" }}: {{ .Lastmod.Format "January 2, 2006" }}</p>
+        <h3>{{ i18n "faq_toc_title" }}</h3>
+        <p>{{ .TableOfContents }}</p>
       </div>
       <div class="col-md-8">
         {{ .Content }}
