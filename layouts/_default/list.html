@@ -27,7 +27,7 @@
                 {{ range $index, $elements := $scratch.Get "authors" }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
               </li>
               <li><i class="ion-pricetags"></i>
-                {{ range $index, $elements:= .Params.Tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . | humanize }}</a>{{ end }}
+                {{ range $index, $elements:= .Params.Tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>{{ end }}
               </li>
             </ul>
           </div>
