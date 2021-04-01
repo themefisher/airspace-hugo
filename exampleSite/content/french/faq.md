@@ -2,6 +2,7 @@
 title: "Frequently Asked Questions"
 description: "this is meta description"
 subtitle : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, repudiandae."
+lastmod: 2021-04-01T00:00:00
 bg_image: "images/featue-bg.jpg"
 layout: "faq"
 draft: false
@@ -59,4 +60,3 @@ Quod inventore quis quos, molestias nostrum tempora quae adipisci dolorem ipsam 
 voluptatem assumenda porro possimus, eius eum enim qui natus! Quas numquam voluptas reiciendis eveniet ab at
 provident omnis mollitia ipsa. Asperiores vero rem cum minima voluptas, vitae magni accusantium quae. Sed,
 expedita, ad.
-  
