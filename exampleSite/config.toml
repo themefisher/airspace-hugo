@@ -80,7 +80,8 @@ map_marker = "images/marker.png"
 enable = true
 preloader = "" # use .png , .svg or .gif image
 
-# Cookies
+
+################################# Cookies #####################################
 [params.cookies]
 enable = true
 expire_days = 2
