@@ -1,0 +1,71 @@
+# Regular translations
+[404_go_home]
+other = "Zur Startseite"
+[404_message]
+other = "Tut uns leid – diese Seite scheint nicht (mehr) hier zu sein."
+[address_title]
+other = "Adresse"
+[all]
+other = "Alle"
+[buy_now]
+other = "Kaufen"
+[categories]
+other = "Kategorien"
+[contact_form_email]
+other = "Ihre E-Mail-Adresse"
+[contact_form_message]
+other = "Nachricht"
+[contact_form_name]
+other = "Ihr Name"
+[contact_form_subject]
+other = "Betreff"
+[email]
+other = "E-Mail"
+[faq_toc_title]
+other = "Inhalt"
+[last_update]
+other = "Letzte Aktualisierung"
+[latest_posts]
+other = "Letzte Einträge"
+[location]
+other = "Ort"
+[page_next]
+other = "Ältere"
+[page_prev]
+other = "Neuere"
+[phone]
+other = "Telefon"
+[posted_by]
+other = "Von"
+[read_more]
+other = "Weiterlesen"
+[submit]
+other = "Nachricht senden"
+[tags]
+other = "Schlagwörter"
+
+# Dates
+[january]
+other = "Januar"
+[february]
+other = "Februar"
+[march]
+other = "März"
+[april]
+other = "April"
+[may]
+other = "Mai"
+[june]
+other = "Juni"
+[july]
+other = "Juli"
+[august]
+other = "August"
+[september]
+other = "September"
+[october]
+other = "Oktober"
+[november]
+other = "November"
+[december]
+other = "Dezember"

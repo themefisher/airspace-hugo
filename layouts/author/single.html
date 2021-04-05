@@ -54,7 +54,7 @@
 					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
 					<div class="post-meta">
 						<ul>
-							<li><i class="ion-calendar"></i> {{ .PublishDate.Format "January 2, 2006" }}</li>
+							<li><i class="ion-calendar"></i> {{ partial "date_i18n.html" . }}</li>
               <li><i class="ion-android-people"></i>
                 {{ i18n "posted_by" }}
                 {{ $scratch := newScratch }}{{ if reflect.IsSlice .Params.author }}{{ $scratch.Set "authors" .Params.author }}{{ else }}{{ $scratch.Set "authors" (slice .Params.author) }}{{ end }}

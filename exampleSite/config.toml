@@ -332,6 +332,92 @@ URL = "contact"
 weight = 6
 
 
+################################# Italian translation ##########################
+[languages.it]
+languageName = "Italiano"
+languageCode = "it-IT"
+contentDir = "content/italian"
+weight = 2
+copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tutti i diritti riservati."
+
+# Main menu
+[[languages.it.menu.main]]
+name = "Pagina iniziale"
+URL = "/"
+weight = 1
+
+[[languages.it.menu.main]]
+name = "Chi siamo"
+URL = "about"
+weight = 2
+
+[[languages.it.menu.main]]
+name = "Progetto"
+URL = "project"
+weight = 3
+
+[[languages.it.menu.main]]
+name = "Blog"
+URL = "blog"
+weight = 4
+
+[[languages.it.menu.main]]
+weight = 5
+name = "Più"
+hasChildren = true
+
+  [[languages.it.menu.main]]
+  parent = "Più"
+  name = "Domande frequenti"
+  URL = "faq"
+
+  [[languages.it.menu.main]]
+  parent = "Più"
+  name = "Tariffazione"
+  URL = "pricing"
+
+  [[languages.it.menu.main]]
+  parent = "Più"
+  name = "Servizio"
+  URL = "service"
+
+[[languages.it.menu.main]]
+name = "Contatta"
+URL = "contact"
+weight = 6
+
+# Footer menu
+[[languages.it.menu.footer]]
+name = "Chi siamo"
+URL = "about"
+weight = 1
+
+[[languages.it.menu.footer]]
+name = "Progetto"
+URL = "project"
+weight = 2
+
+[[languages.it.menu.footer]]
+name = "Servizio"
+URL = "service"
+weight = 3
+
+[[languages.it.menu.footer]]
+name = "Tariffazione"
+URL = "pricing"
+weight = 4
+
+[[languages.it.menu.footer]]
+name = "Domande frequenti"
+URL = "faq"
+weight = 5
+
+[[languages.it.menu.footer]]
+name = "Contatta"
+URL = "contact"
+weight = 6
+
+
 ################################# German translation ##########################
 [languages.de]
 languageName = "Deutsch"

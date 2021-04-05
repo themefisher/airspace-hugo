@@ -3,7 +3,7 @@ title: "Rio Furniture"
 description: "this is meta description"
 draft: false
 image : "images/portfolio/work6.jpg"
-bg_image: "images/featue-bg.jpg"
+bg_image: "images/feature-bg.jpg"
 category: "Video"
 information:
   - label : "Client"
