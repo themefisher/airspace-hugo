@@ -1,7 +1,7 @@
 ---
 title: "Our Pricing"
 description: "this is meta description"
-bg_image: "images/featue-bg.jpg"
+bg_image: "images/feature-bg.jpg"
 layout: "pricing"
 draft: false
 

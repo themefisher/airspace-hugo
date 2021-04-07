@@ -1,0 +1,5 @@
+<!-- {{/*
+Localize a date string like "2006-01-02"; returns the standard English "January 2, 2006" format, if no language-specific override is defined in the shortcode's source
+
+Usage: {{< date_i18n DATE >}}
+*/}}-->{{ $lang := $.Site.Language.Lang }}{{ $date := time (.Get 0) }}{{ if eq $lang "de" }}{{ $date.Day }}. {{ i18n (lower $date.Month) }} {{ $date.Year }}{{ else if in (slice "fr" "it") $lang }}{{ $date.Day }} {{ i18n (lower $date.Month) }} {{ $date.Year }}{{ else }}{{ $date.Format "January 2, 2006" }}{{ end }}

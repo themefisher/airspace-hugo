@@ -1,0 +1,71 @@
+# Regular translations
+[404_go_home]
+other = "To the home page"
+[404_message]
+other = "Sorry – this page does not seem to exist (anymore)."
+[address_title]
+other = "Address"
+[all]
+other = "All"
+[buy_now]
+other = "Buy now"
+[categories]
+other = "Categories"
+[contact_form_email]
+other = "Your e-mail address"
+[contact_form_message]
+other = "Message"
+[contact_form_name]
+other = "Your name"
+[contact_form_subject]
+other = "Subject"
+[email]
+other = "E-mail"
+[faq_toc_title]
+other = "Outline"
+[last_update]
+other = "Last updated"
+[latest_posts]
+other = "Latest Posts"
+[location]
+other = "Location"
+[page_next]
+other = "Older"
+[page_prev]
+other = "Newer"
+[phone]
+other = "Phone"
+[posted_by]
+other = "Posted by"
+[read_more]
+other = "Continue reading"
+[submit]
+other = "Send message"
+[tags]
+other = "Tags"
+
+# Dates
+[january]
+other = "January"
+[february]
+other = "February"
+[march]
+other = "March"
+[april]
+other = "April"
+[may]
+other = "May"
+[june]
+other = "June"
+[july]
+other = "July"
+[august]
+other = "August"
+[september]
+other = "September"
+[october]
+other = "October"
+[november]
+other = "November"
+[december]
+other = "December"
