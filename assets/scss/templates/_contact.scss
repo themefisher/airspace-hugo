@@ -46,12 +46,20 @@
 
 .address-block {
   li {
+    position: relative;
+    padding-left: 30px;
     margin-bottom: 10px;
 
     i {
-      margin-right: 15px;
+      position: absolute;
+      left: 0;
       font-size: 20px;
-      width: 20px;
+      line-height: 20px;
+    }
+
+    div {
+      display: inline-block;
+      vertical-align: top;
     }
   }
 }

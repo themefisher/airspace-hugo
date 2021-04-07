@@ -332,7 +332,7 @@ input[type="tel"] {
   padding: 70px 0;
 }
 
-// Social Media Icons 
+// Social Media Icons
 .social-media-icons {
   ul {
     li {
@@ -609,10 +609,17 @@ input[type="tel"] {
   display: none;
 }
 
-.sticky-top{
+.sticky-top {
   position: sticky;
   top: 0;
   @include desktop {
     position: static;
   }
+}
+
+
+span.cloaked-e-mail:before {
+  content: attr(data-domain) "\0040" attr(data-user);
+  unicode-bidi: bidi-override;
+  direction: rtl;
 }
