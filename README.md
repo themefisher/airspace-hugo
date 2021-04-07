@@ -3,11 +3,11 @@ Build your website with airspace hugo theme by following this easy steps (No Cod
 
 <a href="http://bit.ly/meghna-hugo-installation" target="_blank" title="meghna hugo installation" rel="nofollow"><img width="100%" src="https://user-images.githubusercontent.com/37659754/70844354-4028be00-1e6a-11ea-8d84-02e9a25e7db8.png"></a>
 
-In this tutorial we will show you to make your website live without buying any hosting and touching a single line of code. We made this tutorial based on [meghna hugo](https://github.com/themefisher/meghna-hugo) but you can setup everithing like this.
+In this tutorial we will show you to make your website live without buying any hosting and touching a single line of code. We made this tutorial based on [meghna hugo](https://github.com/themefisher/meghna-hugo) but you can setup everything like this.
 
 ### What you need !!
 
-1. Git acccount (Ex: Github, Gitlab etc ). In our case we use github.
+1. Git account (Ex: Github, Gitlab etc ). In our case we use github.
 2. [Netlify](https://bit.ly/netlify-account) account to host files and add custom domain.
 3. [Forestry](https://bit.ly/forestry-account) account to maintain whole project without code.
 
@@ -26,9 +26,9 @@ Now mark everything as done, then go to configuration to change the base url. Yo
 
 ### Step 3 : Setup and host website with Netlify
 
-Here comes the last step. Go to your [netlify](https://bit.ly/netlify-account) account and click add new site. Choose your git repository to import your website in netlify.  And now you can see the forked `airspace hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdoamin name here what you puted on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you puted as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
+Here comes the last step. Go to your [netlify](https://bit.ly/netlify-account) account and click add new site. Choose your git repository to import your website in netlify.  And now you can see the forked `airspace hugo` theme. select it and follow the steps. Then go to `site settings` for change the site name and put your subdomain name here what you put on forestry as base url. save it and go to `deploy` from top menu, Wait a while and click on `site preview` or just simply go to the subdomain you put as base url. **BOOM! Your site is live.** Now you can go to forestry and add, remove or customize every setting and content.
 
-> If you face any issue regarding the installation feel free to onen [open a new issue](https://github.com/themefisher/airspace-hugo/issues)
+> If you face any issue regarding the installation feel free to [open a new issue](https://github.com/themefisher/airspace-hugo/issues)
 
 ## Table of Contents
 
@@ -67,9 +67,9 @@ $ hugo server --themesDir ../..
 
 * **SEO Friendly** All codes are seo friendly. There are fields to put meta data and other seo parameters in every page.
 * **Multi Language** We have multi language support in premium version. Right now there are two languages included in the theme, they are French and English. If you need more we can help you out.
-* **Google insights score 90** To rank higher in google your webpage needs a score above 90. Our template meets that requirment [Google score](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fdemo.themefisher.com%2Fairspace-hugo%2F)
+* **Google insights score 90** To rank higher in google your webpage needs a score above 90. Our template meets that requirement [Google score](https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fdemo.themefisher.com%2Fairspace-hugo%2F)
 
-* **Google Analytics** You can add your google analytics code in theme config file to connect with your google anlytics account.
+* **Google Analytics** You can add your google analytics code in theme config file to connect with your google analytics account.
 
 ## Reporting Issues
 
