@@ -1,0 +1,9 @@
+<!-- {{/*
+Cloak an e-mail address
+
+Usage: {{< cloak_email EMAIL >}}
+*/}}-->
+{{- $address_parts := split (.Get 0) "@" -}}
+{{- $user := index $address_parts 0 -}}
+{{- $domain := index $address_parts 1 -}}
+<span class="cloaked-e-mail" data-user="{{ range $index := seq (sub (len $user) 1) 0}}{{ substr $user $index 1}}{{ end }}" data-domain="{{ range $index := seq (sub (len $domain) 1) 0}}{{ substr $domain $index 1}}{{ end }}"></span>
