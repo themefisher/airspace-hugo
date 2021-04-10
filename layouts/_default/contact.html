@@ -10,17 +10,20 @@
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group">
-              <input name="user_name" type="text" class="form-control" placeholder="{{ i18n "contact_form_name" }}" required>
+              <label for="name" hidden>{{ i18n "contact_form_name" }}</label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="{{ i18n "contact_form_name" }}" required>
             </div>
             <div class="form-group">
-              <input name="user_email" type="text" class="form-control" placeholder="{{ i18n "contact_form_email" }}" required>
+              <label for="email" hidden>{{ i18n "contact_form_email" }}</label>
+              <input id="email" name="email" type="email" autocomplete="email" class="form-control" placeholder="{{ i18n "contact_form_email" }}" required>
             </div>
             <div class="form-group">
-              <input name="user_subject" type="text" class="form-control" placeholder="{{ i18n "contact_form_subject" }}" required>
+              <label for="subject" hidden>{{ i18n "contact_form_subject" }}</label>
+              <input id="subject" name="subject" type="text" class="form-control" placeholder="{{ i18n "contact_form_subject" }}" required>
             </div>
             {{ if .use_netlify }}
             <div class="form-group-h">
-              <input name="nhp" type="text" class="form-control" placeholder="Are you a made of flesh and bone?">
+              <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
             </div>
             {{ end -}}
           </div>
@@ -28,7 +31,8 @@
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group-2">
-              <textarea name="user_message" class="form-control" rows="4" placeholder="{{ i18n "contact_form_message" }}" required></textarea>
+              <label for="message" hidden>{{ i18n "contact_form_message" }}</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="{{ i18n "contact_form_message" }}" required></textarea>
             </div>
             <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
           </div>
@@ -42,8 +46,8 @@
         <div class="block">
           <h2>{{ i18n "address_title" }}</h2>
           <ul class="address-block">
-            {{ if isset . "location" }}<li><i class="ion-ios-location-outline"></i>{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}{{ .location }}</li>{{ end }}
-            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ .email }}</li>{{ end }}
+            {{ if isset . "location" }}<li><i class="ion-ios-location-outline"></i>{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}<div>{{ .location | markdownify }}</div></li>{{ end }}
+            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ partial "cloak_email" .email }}</li>{{ end }}
             {{ if isset . "phone" }}<li><i class="ion-ios-telephone-outline"></i>{{ if .address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ .phone }}</li>{{ end }}
           </ul>
           <ul class="social-icons">
