@@ -1,6 +1,4 @@
 # Regular translations
-[404_go_home]
-other = "Alla pagina iniziale"
 [404_message]
 other = "Spiacente – questa pagina non sembra esistere (più)."
 [address_title]
@@ -23,6 +21,12 @@ other = "Oggetto"
 other = "E-mail"
 [faq_toc_title]
 other = "Sommario"
+[form_respond]
+other = "Grazie per il suo messaggio. Vi risponderemo il più presto possibile."
+[form_submitted]
+other = "Il suo messaggio è stato trasmesso con successo"
+[go_home]
+other = "Alla pagina iniziale"
 [last_update]
 other = "Ultimo aggiornamento"
 [latest_posts]

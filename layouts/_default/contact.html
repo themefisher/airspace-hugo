@@ -6,7 +6,7 @@
   <div class="container">
     {{ with site.Params.contact.form }}{{ if .enable }}
     <div class="row">
-      <form name="contact" method="POST" action="{{ .action | safeURL }}" {{ if .use_netlify }}netlify netlify-honeypot="nhp"{{ end }}>
+      <form name="contact" method="POST" {{ if .use_netlify }}action="{{ "/message_sent" | relLangURL }}" netlify netlify-honeypot="nhp"{{ else }}action="{{ .action | safeURL }}"{{ end }}>
         <div class="col-md-6 col-sm-12">
           <div class="block">
             <div class="form-group">
