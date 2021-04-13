@@ -1,4 +1,4 @@
-.page-404 {
+.page-message-sent {
 	display: flex;
 	align-items: center;
 	min-height: calc(100vh - (100px + 205px));
@@ -7,27 +7,30 @@
   }
 	text-align: center;
 	h1 {
-		font-size: 300px;
+		font-size: 50px;
 		font-weight: bold;
-		@include tablet {
-			font-size: 150px;
-		}
 		@include mobile {
-			font-size: 130px;
+			font-size: 40px;
 		}
 		@include mobile-xs {
-			font-size: 90px;
+			font-size: 30px;
 		}
 	}
 	h2 {
 		text-transform:uppercase;
 		font-size: 20px;
-		letter-spacing: 4px;
 		font-weight: bold;
+		letter-spacing: 1px;
 		margin-top: 30px;
 	}
 	.btn-main {
 		margin-top: 40px;
     margin-bottom: 50px;
 	}
+  img {
+    width: 50%;
+    max-height: 200px;
+		margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }

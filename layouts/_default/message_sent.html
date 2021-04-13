@@ -1,11 +1,12 @@
 {{ define "main" }}
 
-<section class="page-404">
+<section class="page-message-sent">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <h1>404</h1>
-        <h2 class="text-muted">{{ i18n "404_message" | markdownify }}</h2>
+        <img src="{{ site.Params.contact.form.success_image | relURL }}" alt="Paper plane">
+        <h1>{{ i18n "form_submitted" | markdownify }}</h1>
+        <h2 class="text-muted">{{ i18n "form_respond" | markdownify }}</h2>
         <a href="{{ "/" | relLangURL }}" class="btn btn-main"><i class="tf-ion-android-arrow-back"></i> {{ i18n "go_home" | markdownify }}</a>
       </div>
     </div>

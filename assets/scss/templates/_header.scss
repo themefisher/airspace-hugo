@@ -1,29 +1,33 @@
 /*--
-	Header Start 
+	Header Start
 --*/
 
-header{
+header {
+  min-height: 100px;
+  @include desktop {
+    min-height: 90px;
+  }
 	background: #fff;
 	padding: 20px 0;
-	.navbar{
+	.navbar {
 		margin-bottom: 0px;
 		border: 0px;
 	}
 	.navbar-brand {
 		padding-top: 5px;
 	}
-	.navbar-default{
+	.navbar-default {
 		background: none;
 		border: 0px;
-		.navbar-nav{
+		.navbar-nav {
 			  padding-top: 10px;
-			li{
-			  a{
+			li {
+			  a {
 			  	color: #333333;
 			  	padding: 10px 26px;
 			  	font-size: 15px;
 			  	font
-			  	&:hover{
+			  	&:hover {
 			  		color: #000;
 			  	}
 			  }

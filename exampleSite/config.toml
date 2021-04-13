@@ -67,11 +67,13 @@ address_descriptors = false
 [params.contact.form]
 enable = true
 # Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
-use_netlify = false
+use_netlify = true
 # Form action
-## For Formspree.io: Your Form ID URL, e.g. `https://formspree.io/f/{form_id}`
-## For Netlify Forms: Path to a custom [success page](https://docs.netlify.com/forms/setup/#success-messages)
+## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
 action = "#"
+# Image on custom success page `/message_sent.html`
+success_image = "images/paper-plane.svg"
 
 
 ################################# Google map ##################################

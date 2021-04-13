@@ -15,7 +15,7 @@
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/google_analytics.html" . }}
 
-  {{ "<!-- plugins -->" | safeHTML }}
+  {{ "<!-- Plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css}}
   <link rel="stylesheet" href="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}>
   {{ end }}
