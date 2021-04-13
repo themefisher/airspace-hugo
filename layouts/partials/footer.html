@@ -16,9 +16,9 @@
 </footer>
 
 <!-- Google Map API -->
-{{ if eq .Permalink ("contact/" | absURL) }}
 {{ if site.Params.gmap.enable }}
-<script defer src="https://maps.googleapis.com/maps/api/js?key={{site.Params.gmap.gmap_api}}&libraries=places"></script>
+{{ if ("contact/" | relLangURL | eq .RelPermalink) }}
+<script defer src="https://maps.googleapis.com/maps/api/js?key={{ site.Params.gmap.gmap_api }}&libraries=places"></script>
 {{ end }}
 {{ end }}
 
