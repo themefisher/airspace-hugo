@@ -5,11 +5,11 @@
 		background: transparent;
 
 		li {
-			color: $black;
+			color: $color-dark;
 			font-weight: 200;
 
 			a {
-				color: $black;
+				color: $color-dark;
 				font-weight: 200;
 			}
 		}
@@ -27,7 +27,7 @@
 			}
 
 			a {
-				color: $black;
+				color: $color-dark;
 				font-weight: 200;
 
 				i {
@@ -52,7 +52,7 @@
 				h1 {
 					font-size: 50px;
 					font-weight: 100;
-					color: $black;
+					color: $color-dark;
 				}
 
 				p {
@@ -68,7 +68,7 @@
 
 		.carousel-control {
 			bottom: auto;
-			background: $light;
+			background: $color-light;
 			width: 6%;
 			padding: 10px 0;
 

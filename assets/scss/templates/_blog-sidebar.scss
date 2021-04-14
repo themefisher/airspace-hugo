@@ -8,7 +8,7 @@
     font-size: 16px;
     color: #333;
     font-weight: 500;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $color-border;
   }
 
   // latest Posts
@@ -21,7 +21,7 @@
 
       .media-heading {
         a {
-          color: $black;
+          color: $color-dark;
           font-size: 16px;
         }
       }
@@ -50,7 +50,7 @@
           }
 
           &:hover {
-            color: $primary-color;
+            color: $color-primary;
             padding-left: 5px;
           }
         }
@@ -78,9 +78,9 @@
           @include transition (all, 0.3s, ease);
 
           &:hover {
-            color: $light;
-            background: $primary-color;
-            border: 1px solid $primary-color;
+            color: $color-light;
+            background: $color-primary;
+            border: 1px solid $color-primary;
           }
         }
       }

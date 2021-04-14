@@ -10,13 +10,13 @@
 
 				label {
 					display: inline-block;
-					border: 1px solid $border-color;
+					border: 1px solid $color-border;
 					padding: 8px 25px;
 					cursor: pointer;
 					font-size: 15px;
 					color: #333333;
 					outline: 0;
-					background: $light;
+					background: $color-light;
 					margin: 2px;
 					border-radius: 0;
 					@include transition (all, 0.3s, ease);
@@ -71,7 +71,7 @@
 		transition: inherit;
 
 		* {
-			color: $light;
+			color: $color-light;
 		}
 
 		a {
@@ -98,7 +98,7 @@
 		h4 {
 			margin-bottom: 20px;
 			padding-bottom: 10px;
-			border-bottom: 2px dashed $border-color;
+			border-bottom: 2px dashed $color-border;
 		}
 
 		span {

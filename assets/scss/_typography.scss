@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.5;
-  font-family: $primary-font;
+  font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
 
 }
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+  font-family: $font-primary;
 }
 
 h1,
@@ -50,5 +50,5 @@ h4 {
 p {
   color: #7B7B7B;
   font-size: 15px;
-  font-family: $primary-font;
+  font-family: $font-primary;
 }

@@ -21,8 +21,9 @@
   {{ end }}
 
   {{ "<!-- Main Stylesheet -->" | safeHTML }}
-  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
   {{ $styles := resources.Get "scss/style.scss" }}
+  {{ $styles := $styles | resources.ExecuteAsTemplate "scss/compiled.scss" . | toCSS | minify }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
 
   {{ "<!--Favicon-->" | safeHTML }}
   <link rel="shortcut icon" href="{{ `images/favicon.png` | relURL }}" type="image/x-icon">

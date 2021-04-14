@@ -1,13 +1,13 @@
-$primary-font: 'Playfair Display',
+$font-primary: 'Playfair Display',
 serif;
-$secondary-font: 'Poppins',
+$font-secondary: 'Poppins',
 serif;
-$light: #fff;
-$primary-color:#655E7A;
-$secondary-color:#2E7EED;
+$color-light: #fff;
+$color-primary:#655E7A;
+$color-secondary:#2E7EED;
 
 body {
-	font-family: $primary-font;
+	font-family: $font-primary;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -17,7 +17,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: $primary-font;
+	font-family: $font-primary;
 }
 
 h2 {
@@ -26,7 +26,7 @@ h2 {
 
 p,
 .btn {
-	font-family: $secondary-font;
+	font-family: $font-secondary;
 	color: #777;
 	font-size: 16px;
 }
@@ -115,8 +115,8 @@ a {
 				@include transition (all, 0.3s, ease);
 
 				&:hover {
-					background: $primary-color;
-					color: $light;
+					background: $color-primary;
+					color: $color-light;
 					padding-left: 25px;
 				}
 			}
@@ -213,7 +213,7 @@ a {
 	background-color: #1A1B1F;
 
 	h2 {
-		color: $light;
+		color: $color-light;
 		margin-bottom: 30px;
 
 	}
@@ -226,12 +226,12 @@ a {
 	}
 
 	.btn-blue {
-		color: $light;
-		background: $primary-color;
+		color: $color-light;
+		background: $color-primary;
 	}
 
 	.btn-gray {
-		background: $secondary-color;
-		color: $light;
+		background: $color-secondary;
+		color: $color-light;
 	}
 }

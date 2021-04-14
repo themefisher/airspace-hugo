@@ -14,8 +14,8 @@
       position: absolute;
       top: 12px;
       right: 12px;
-      background: $black;
-      color: $light;
+      background: $color-dark;
+      color: $color-light;
       font-size: 12px;
       padding: 4px 12px;
       font-weight: 300;
@@ -50,15 +50,15 @@
 
         a,
         span {
-          background: $light;
+          background: $color-light;
           padding: 10px 16px;
           cursor: pointer;
           display: inline-block;
           font-size: 18px;
 
           &:hover {
-            background: $primary-color;
-            color: $light;
+            background: $color-primary;
+            color: $color-light;
           }
         }
       }
@@ -87,7 +87,7 @@
       margin-bottom: 6px;
 
       a {
-        color: $black;
+        color: $color-dark;
       }
     }
   }
@@ -159,7 +159,7 @@
           font-weight: 400;
 
           a {
-            color: $black;
+            color: $color-dark;
           }
 
           @include mobile {
@@ -215,7 +215,7 @@
         color: #666;
 
         &:hover {
-          color: $black;
+          color: $color-dark;
         }
       }
     }
