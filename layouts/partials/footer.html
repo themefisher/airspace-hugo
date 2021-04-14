@@ -23,15 +23,15 @@
 {{ end }}
 
 <!-- JS Plugins -->
-{{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}></script>
+{{ range site.Params.plugins.js }}
+<script src="{{ .link | relURL }}" {{ .attributes | safeHTMLAttr }}></script>
 {{ end }}
 
 <!-- Main Script -->
-{{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+{{ $script := resources.Get "js/script.js" | minify }}
+<script src="{{ $script.RelPermalink }}"></script>
 
-<!-- cookie -->
+<!-- Cookie -->
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
@@ -53,7 +53,7 @@
 	})(jQuery);
 </script>
 
-<!-- cookie style -->
+<!-- Cookie style -->
 <style>
 .cookie-box {
   position: fixed;

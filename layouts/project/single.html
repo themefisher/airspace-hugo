@@ -8,13 +8,13 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <img class="img-responsive w-100" src="{{ .Params.Image | relURL }}" alt="">
+        <img class="img-responsive w-100" src="{{ .Params.image | relURL }}" alt="">
       </div>
       <div class="col-md-4">
         <div class="project-details">
           <h4>Project Details</h4>
           <ul>
-            {{ range .Params.Information }}
+            {{ range .Params.information }}
             <li><span>{{ .label }} :</span> <strong>{{ .info | markdownify }}</strong></li>
             {{ end }}
           </ul>

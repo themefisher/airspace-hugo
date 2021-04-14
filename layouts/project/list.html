@@ -17,7 +17,7 @@
               </label>
               {{ $categories := slice }}
               {{ range .Data.Pages }}
-              {{ $categories = $categories | append .Params.Category }}
+              {{ $categories = $categories | append .Params.category }}
               {{ end }}
               {{ range ( $categories | uniq ) }}
               <label class="btn btn-sm btn-primary">
@@ -28,13 +28,13 @@
           </div>
           <div class="row shuffle-wrapper">
             {{ range .Data.Pages }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
-              <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.category | urlize }}&quot;]">
+              <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
               <div class="portfolio-hover">
                 <div class="portfolio-content">
-                  <a href="{{ .Params.Image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                  <a class="h3" href="{{ .Permalink }}">{{ .Title }}</a>
-                  <p>{{ .Params.Description }}</p>
+                  <a href="{{ .Params.image | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
+                  <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  <p>{{ .Params.description }}</p>
                 </div>
               </div>
             </div>

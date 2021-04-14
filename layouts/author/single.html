@@ -8,15 +8,15 @@
 			<div class="col-md-8 col-md-offset-2">
 				<div class="text-center">
 					<figure>
-						{{ if .Params.Photo }}
-						<img style="border-radius: 50%;" class="img-fluid" src="{{.Params.Photo}}">
-						{{else if .Params.Email}}
+						{{ if .Params.photo }}
+						<img style="border-radius: 50%;" class="img-fluid" src="{{ .Params.photo }}">
+						{{ else if .Params.email }}
 						<img style="border-radius: 50%;" class="img-fluid"
 							src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
 						{{ end }}
 						<figcaption>
 							<h5 class="font-weight-bold">
-								{{ .Params.Name }}
+								{{ .Params.name }}
 							</h5>
 						</figcaption>
 					</figure>
@@ -24,8 +24,8 @@
 					{{ .Content }}
 					<hr>
 					<ul class="list-inline">
-						{{ range .Params.Social }}
-						<li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL}}"><i
+						{{ range .Params.social }}
+						<li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL }}"><i
 									class="{{ .icon }}"></i></a></li>
 						{{ end }}
 					</ul>
@@ -47,11 +47,11 @@
 			<div class="col-md-6">
 				<div class="post">
 					<div class="post-thumb">
-						<a href="{{ .Permalink }}">
-							<img class="img-responsive" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+						<a href="{{ .RelPermalink }}">
+							<img class="img-responsive" src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
 						</a>
 					</div>
-					<h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+					<h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
 					<div class="post-meta">
 						<ul>
 							<li><i class="ion-calendar"></i> {{ partial "date_i18n.html" . }}</li>
@@ -61,13 +61,13 @@
                 {{ range $index, $elements := $scratch.Get "authors" }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
               </li>
               <li><i class="ion-pricetags"></i>
-                {{ range $index, $elements:= .Params.Tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>{{ end }}
+                {{ range $index, $elements:= .Params.tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>{{ end }}
               </li>
 						</ul>
 					</div>
 					<div class="post-content">
 						<p>{{ .Summary }}</p>
-						<a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+						<a href="{{ .RelPermalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
 					</div>
 				</div>
 			</div>
