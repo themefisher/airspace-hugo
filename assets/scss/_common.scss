@@ -48,7 +48,6 @@ input[type="tel"] {
   }
 }
 
-
 .form-control {
   box-shadow: none;
   border-radius: 0;
@@ -59,14 +58,13 @@ input[type="tel"] {
   }
 }
 
-
 .slick-slide {
   outline: 0
 }
 
 
-// Button Style
 
+// Buttons
 .btn-main {
   background: $primary-color;
   color: $light;
@@ -92,7 +90,6 @@ input[type="tel"] {
   }
 }
 
-
 .btn-solid-border {
   border: 1px solid $light;
   background: transparent;
@@ -103,7 +100,6 @@ input[type="tel"] {
     background: $primary-color;
   }
 }
-
 
 .btn-transparent {
   @extend .btn-main;
@@ -143,19 +139,11 @@ input[type="tel"] {
   border-radius: 50px;
 }
 
-
 .btn.active:focus,
 .btn:active:focus,
 .btn:focus {
   outline: 0;
 }
-
-
-
-
-
-
-
 
 
 
@@ -192,8 +180,8 @@ input[type="tel"] {
 }
 
 
-/* preloader */
 
+// Preloader
 .preloader {
   position: fixed;
   top: 0;
@@ -235,6 +223,7 @@ input[type="tel"] {
 }
 
 
+
 .section {
   padding: 100px 0;
 }
@@ -270,36 +259,12 @@ input[type="tel"] {
   }
 }
 
-
 .section-subtitle {
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 30px;
 
 }
-
-
-.page-title {
-  padding: 100px 0;
-  @extend .overly;
-
-  .block {
-    text-align: center;
-
-    h1 {
-      color: $light;
-      font-weight: 200;
-      letter-spacing: 6px;
-      margin-top: 0;
-      text-transform: capitalize;
-    }
-
-    p {
-      color: $light;
-    }
-  }
-}
-
 
 .heading {
   padding-bottom: 60px;
@@ -322,17 +287,41 @@ input[type="tel"] {
 
 
 
+// Page
+.page-responsive-height {
+	display: flex;
+	align-items: center;
+	min-height: calc(100vh - (#{$height-nav-bar} + #{$min-height-footer}));
+}
 
+.page-title {
+  padding: 100px 0;
+  @extend .overly;
 
+  .block {
+    text-align: center;
 
+    h1 {
+      color: $color-light;
+      font-weight: 200;
+      letter-spacing: 6px;
+      margin-top: 0;
+      text-transform: capitalize;
+    }
 
-
+    p {
+      color: $color-light;
+    }
+  }
+}
 
 .page-wrapper {
   padding: 70px 0;
 }
 
-// Social Media Icons
+
+
+// Social media icons
 .social-media-icons {
   ul {
     li {
@@ -423,7 +412,6 @@ input[type="tel"] {
 
 
 
-
 .commonSelect {
   margin-left: 10px;
   padding-right: 6px;
@@ -486,6 +474,7 @@ input[type="tel"] {
     border: 1px solid $border-color;
   }
 }
+
 
 
 .commonAccordion {
@@ -618,6 +607,8 @@ input[type="tel"] {
 }
 
 
+
+// E-mail obfuscation
 span.cloaked-e-mail:before {
   content: attr(data-domain) "\0040" attr(data-user);
   unicode-bidi: bidi-override;
