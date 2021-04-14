@@ -38,7 +38,6 @@ unsafe = true
 ################################# Default parameters ##########################
 [params]
 logo = "images/logo.png"
-logo_width = "150px"
 # OpenGraph / Twitter Card metadata
 title = "Airspace Hugo Template"
 description = "This is meta description"
