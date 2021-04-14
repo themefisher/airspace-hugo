@@ -16,27 +16,27 @@
   transform: $transforms;
 }
 
-// rotate
+// Rotate
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
 }
 
-// scale
+// Scale
 @mixin scale($scale) {
   @include transform(scale($scale));
 }
 
-// translate
+// Translate
 @mixin translate ($x, $y) {
   @include transform(translate($x, $y));
 }
 
-// skew
+// Skew
 @mixin skew ($x, $y) {
   @include transform(skew(#{$x}deg, #{$y}deg));
 }
 
-//transform origin
+// Transform origin
 @mixin transform-origin ($origin) {
   moz-transform-origin: $origin;
   -o-transform-origin: $origin;

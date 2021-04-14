@@ -1,61 +1,49 @@
-@import 'variables.scss';
+// Variables; they must be defined here and not in a SASS partial since Hugo's templating can only be applied to a directly sourced SASS file
+//   Colors
+$color-primary: {{ .Param "style.color_primary" | default "#655E7A" }};
+$color-secondary: {{ .Param "style.color_secondary" | default "#1BBB1B" }};
+$color-light: {{ .Param "style.color_light" | default "#FFF" }};
+$color-dark: {{ .Param "style.color_dark" | default "#000" }};
+$color-border: {{ .Param "style.color_border" | default "#DEDEDE" }};
+$color-alert: {{ .Param "style.color_alert" | default "#C7254E" }};
+$color-success: {{ .Param "style.color_success" | default "#1BBB1B" }};
+//   Fonts
+$font-primary: {{ .Param "style.font_primary" | default "'Roboto', sans-serif" }};
+$font-secondary: {{ .Param "style.font_secondary" | default "'Volkhov', serif" }};
+$font-icon: {{ .Param "style.font_icon" | default "'themefisher-font'" }};
+//   Page element sizes
+$height-nav-bar: {{ .Param "style.height_nav_bar" | default "90px" }};
+$min-height-footer: {{ .Param "style.min_height_footer" | default "205px" }};
 
-@import 'mixins.scss';
 
-@import 'media-query.scss';
-
-@import 'typography.scss';
-
-@import 'common.scss';
-
-@import 'main.scss';
-
-@import 'templates/_header.scss';
-
-@import 'templates/_navigation.scss';
-
-@import 'templates/_slider.scss';
-
-@import 'templates/_call-to-action.scss';
-
-@import 'templates/_service.scss';
-
-@import 'templates/_feature.scss';
-
-@import 'templates/_portfolio.scss';
-
-@import 'templates/_testimonial.scss';
-
-@import 'templates/_contact.scss';
-
-@import 'templates/_pricing.scss';
-
-@import 'templates/_products.scss';
-
-@import 'templates/_single-product.scss';
-
-@import 'templates/_clients.scss';
-
-@import 'templates/_about.scss';
-
-@import 'templates/_instagram.scss';
-
-@import 'templates/_user-dashboard.scss';
-
-@import 'templates/_single-post.scss';
-
-@import 'templates/_backgrounds.scss';
-
-@import 'templates/_blog-sidebar.scss';
-
-@import 'templates/_blog.scss';
-
-@import 'templates/_coming-soon.scss';
-
-@import 'templates/_shopping.scss';
-
-@import 'templates/_404.scss';
-
-@import 'templates/_message-sent.scss';
-
-@import 'templates/_footer.scss';
+// SASS partials
+@import 'mixins';
+@import 'media-query';
+@import 'typography';
+@import 'common';
+@import 'main';
+@import 'templates/header';
+@import 'templates/navigation';
+@import 'templates/slider';
+@import 'templates/call-to-action';
+@import 'templates/service';
+@import 'templates/feature';
+@import 'templates/portfolio';
+@import 'templates/testimonial';
+@import 'templates/contact';
+@import 'templates/pricing';
+@import 'templates/products';
+@import 'templates/single-product';
+@import 'templates/clients';
+@import 'templates/about';
+@import 'templates/instagram';
+@import 'templates/user-dashboard';
+@import 'templates/single-post';
+@import 'templates/backgrounds';
+@import 'templates/blog-sidebar';
+@import 'templates/blog';
+@import 'templates/coming-soon';
+@import 'templates/shopping';
+@import 'templates/404';
+@import 'templates/message-sent';
+@import 'templates/footer';

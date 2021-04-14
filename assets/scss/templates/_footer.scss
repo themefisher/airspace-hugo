@@ -1,27 +1,36 @@
 .footer {
+  // ensure constant footer height
+  min-height: $min-height-footer;
+
   background: #F5F5F5;
-  min-height: 205px;
   text-align: center;
   padding-top: 67px;
+
   p {
     font-size: 13px;
     line-height: 25px;
     color: #919191;
   }
+
   a {
     color: #595959;
   }
+
   .footer-menu {
     padding-bottom: 25px;
+
     ul {
       margin: 0px;
       padding: 0px;
+
       li {
         display: inline-block;
         padding: 0px 20px;
+
         a {
           display: inline-block;
           color: #494949;
+
           &:hover {
             color: #000;
           }
@@ -29,6 +38,7 @@
       }
     }
   }
+
   .copyright {
     a {
       font-weight: 600;

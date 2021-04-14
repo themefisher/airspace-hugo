@@ -2,7 +2,7 @@
   background: url("../images/backgrounds/coming-soon.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: $light;
+  color: $color-light;
   display: flex;
   align-items: center;
 
@@ -36,7 +36,7 @@
     }
 
     p {
-      color: $light;
+      color: $color-light;
       margin-top: 10px;
       font-size: 16px;
     }
@@ -121,7 +121,7 @@
       font-size: 12px;
 
       a {
-        color: $light;
+        color: $color-light;
         font-weight: 600;
       }
     }

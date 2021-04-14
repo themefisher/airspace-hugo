@@ -24,7 +24,7 @@
 	}
 
 	.testimonial-carousel {
-		border: 1px solid $border-color;
+		border: 1px solid $color-border;
 		padding: 24px;
 
 		i {
@@ -32,7 +32,7 @@
 		}
 
 		p {
-			font-family: $secondary-font;
+			font-family: $font-secondary;
 			line-height: 28px;
 			padding-bottom: 20px;
 		}
@@ -46,7 +46,7 @@
 			}
 
 			p {
-				font-family: $primary-font;
+				font-family: $font-primary;
 				padding-bottom: 0;
 				margin-top: 6px;
 				font-size: 12px;

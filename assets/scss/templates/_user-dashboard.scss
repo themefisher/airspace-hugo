@@ -1,8 +1,8 @@
 .dashboard-menu {
 	.active {
-		background: $primary-color;
-		color: $light;
-		border: 1px solid $primary-color;
+		background: $color-primary;
+		color: $color-light;
+		border: 1px solid $color-primary;
 	}
 
 	li {
@@ -11,7 +11,7 @@
 
 		a {
 			padding: 10px 20px;
-			border: 1px solid $border-color;
+			border: 1px solid $color-border;
 
 			@include tablet {
 				padding: 10px 15px;
@@ -30,7 +30,7 @@
 }
 
 .dashboard-wrapper {
-	border: 1px solid $border-color;
+	border: 1px solid $color-border;
 	margin-top: 30px;
 	padding: 20px;
 

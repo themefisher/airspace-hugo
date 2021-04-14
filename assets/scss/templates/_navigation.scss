@@ -56,8 +56,8 @@
         @include transition (all, 0.3s, ease);
 
         &:hover {
-          background: $primary-color;
-          color: $light;
+          background: $color-primary;
+          color: $color-light;
           padding-left: 25px;
         }
       }
@@ -65,7 +65,7 @@
   }
 }
 
-.nav .open>a {
+.nav .open > a {
   background: transparent;
 }
 

@@ -39,7 +39,7 @@
     font-weight: 500;
 
     a {
-      color: $primary-color;
+      color: $color-primary;
       font-size: 14px;
       text-transform: uppercase;
     }
@@ -53,7 +53,7 @@
   }
 
   .comment-button {
-    color: $primary-color;
+    color: $color-primary;
     display: inline-block;
     margin-left: 5px;
     font-size: 12px;
@@ -64,7 +64,7 @@
     }
 
     &:hover {
-      color: $primary-color;
+      color: $color-primary;
     }
   }
 }
@@ -88,7 +88,7 @@
     p {
       line-height: 30px;
       font-size: 20px;
-      color: $primary-color;
+      color: $color-primary;
     }
   }
 }
@@ -118,7 +118,7 @@
     color: #000;
 
     &:hover {
-      color: $primary-color;
+      color: $color-primary;
     }
   }
 
@@ -144,7 +144,7 @@
 
         i {
           &:hover {
-            color: $primary-color;
+            color: $color-primary;
           }
         }
       }
@@ -202,7 +202,7 @@
       margin-bottom: 8px;
 
       a {
-        color: $primary-color;
+        color: $color-primary;
         font-size: 13px;
       }
     }
@@ -231,7 +231,7 @@
 
     &:focus {
       box-shadow: none;
-      border: 1px solid $primary-color;
+      border: 1px solid $color-primary;
     }
   }
 
