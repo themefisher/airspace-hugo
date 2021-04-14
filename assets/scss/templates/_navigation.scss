@@ -1,39 +1,66 @@
 .navigation {
   background: #fff;
-  padding: 20px 0;
 
   .navbar {
-    margin-bottom: 0px;
-    border: 0px;
-  }
-
-  .navbar-brand {
-    padding-top: 5px;
-  }
-
-  .navbar {
+    margin: 0px;
     background: none;
     border: 0px;
 
-    .navbar-nav {
-      padding-top: 10px;
+    button.navbar-toggle {
+      border: 0px;
+      margin: 0px;
+      padding-top: calc((#{$height-nav-bar} - 14px) / 2);
+      padding-right: 23px;
+      padding-bottom: 0px;
+    }
 
+    .navbar-brand {
+      padding: 0px;
+
+      img {
+        display: inline-block;
+        vertical-align: middle;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        max-height: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .navbar-collapse.in,
+    .navbar-collapse.collapsing {
+      li {
+        a {
+          line-height: 40px;
+        }
+      }
+    }
+
+    .navbar-nav {
       >li {
+
         >a {
           color: #5C5C5C;
-          padding: 10px 15px;
+          text-transform: uppercase;
 
           font : {
             weight: 500;
             size: 14px;
           }
 
-          text-transform:uppercase;
-
-          &:hover,
           &:focus {
             color: #000;
-            background: transparent;
+            background: none;
+          }
+
+          &:hover {
+            background: rgba($color-primary, 0.5);
+            color: #000;
+            @include transition (all, 0.3s, ease);
+          }
+
+          &:hover:active {
+            color: #000;
           }
         }
 
@@ -56,8 +83,8 @@
         @include transition (all, 0.3s, ease);
 
         &:hover {
-          background: $color-primary;
-          color: $color-light;
+          background: rgba($color-primary, 0.5);
+          color: #000;
           padding-left: 25px;
         }
       }
@@ -80,18 +107,9 @@
     float: none !important;
   }
 
-  .navbar-toggle {
-    display: block;
-  }
-
   .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-  }
-
-  .navbar-fixed-top {
-    top: 0;
-    border-width: 0 0 1px;
   }
 
   .navbar-collapse.collapse {
@@ -100,16 +118,14 @@
 
   .navbar-nav {
     float: none!important;
-    margin-top: 7.5px;
   }
 
   .navbar-nav > li {
     float: none;
   }
 
-  .navbar-nav > li > a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  .navbar-toggle {
+    display: block;
   }
 
   .collapse.in {
