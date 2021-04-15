@@ -1,1 +1,3 @@
-{{/* Localize .PublishDate; returns the standard English "January 2, 2006" format, if no specific override is defined */}}{{ $lang := $.Site.Language.Lang }}{{ $date := .PublishDate }}{{ if eq $lang "de" }}{{ $date.Day }}. {{ i18n (lower $date.Month) }} {{ $date.Year }}{{ else if in (slice "fr" "it") $lang }}{{ $date.Day }} {{ i18n (lower $date.Month) }} {{ $date.Year }}{{ else }}{{ $date.Format "January 2, 2006" }}{{ end }}
+{{/* Localize .PublishDate; returns the standard English "January 2, 2006" format, if no language-specific override exists */ -}}
+{{ $lang := $.Page.Language.Lang }}{{ $date := .PublishDate }}{{ if eq $lang "de" }}{{ $date.Day }}. {{ i18n (lower $date.Month) }} {{ $date.Year }}{{ else if in (slice "fr" "it") $lang }}{{ $date.Day }} {{ i18n (lower $date.Month) }} {{ $date.Year }}{{ else }}{{ $date.Format "January 2, 2006" }}{{ end }}
+{{- /* Dummy comment to strip trailing newline */ -}}
