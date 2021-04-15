@@ -13,6 +13,12 @@
   to = "/fr/404.html"
   status = 404
 
+# Italian subpages 404
+[[redirects]]
+  from = "/it/*"
+  to = "/it/404.html"
+  status = 404
+
 # all other pages 404 (incl. those in `defaultContentLanguage`)
 # NOTE that in case you've set `defaultContentLanguageInSubdir = true` in `config.toml`, you need to change the destination below to point to the `defaultContentLanguage` subdir, e.g. `to = "/en/404.html"`
 [[redirects]]
