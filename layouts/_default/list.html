@@ -13,11 +13,11 @@
         {{ range $paginator.Pages }}
         <div class="post">
           <div class="post-media post-thumb">
-            <a href="{{ .Permalink }}">
+            <a href="{{ .RelPermalink }}">
               <img src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
             </a>
           </div>
-          <h3 class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <div class="post-meta">
             <ul>
               <li><i class="ion-calendar"></i> {{ partial "date_i18n.html" . }}</li>
@@ -33,7 +33,7 @@
           </div>
           <div class="post-content">
             <p>{{ .Summary }}</p>
-            <a href="{{ .Permalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
+            <a href="{{ .RelPermalink }}" class="btn btn-main">{{ i18n "read_more" }}</a>
           </div>
         </div>
         {{ end }}
