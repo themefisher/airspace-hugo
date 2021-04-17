@@ -2,7 +2,7 @@
 {{ "<!-- preloader start -->" | safeHTML }}
 <div class="preloader">
   {{ if ne site.Params.preloader.preloader "" }}
-  <img src="{{ site.Params.preloader.preloader | absURL }} " alt="preloader">
+  <img src="{{ site.Params.preloader.preloader | relURL }} " alt="preloader">
   {{ end }}
 </div>
 {{ "<!-- preloader end -->" | safeHTML }}

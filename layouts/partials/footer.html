@@ -24,12 +24,12 @@
 
 <!-- JS Plugins -->
 {{ range site.Params.plugins.js}}
-<script src="{{ .link | absURL }}" {{.attributes | safeHTMLAttr}}></script>
+<script src="{{ .link | relURL }}" {{.attributes | safeHTMLAttr}}></script>
 {{ end }}
 
 <!-- Main Script -->
 {{ $script := resources.Get "js/script.js" | minify}}
-<script src="{{ $script.Permalink }}"></script>
+<script src="{{ $script.RelPermalink }}"></script>
 
 <!-- cookie -->
 {{ if site.Params.cookies.enable }}
