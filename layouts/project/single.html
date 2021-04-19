@@ -8,7 +8,9 @@
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <img class="img-responsive w-100" src="{{ .Params.Image | relURL }}" alt="">
+        {{ if isset .Params "images" }}
+        <img class="img-responsive w-100" src="{{ index .Params.images 0 | relURL }}" alt="">
+        {{ end }}
       </div>
       <div class="col-md-4">
         <div class="project-details">

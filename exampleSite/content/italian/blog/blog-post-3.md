@@ -2,7 +2,7 @@
 title: "How To Wear Bright Shoes"
 date: 2018-09-24T11:07:10+06:00
 author: Mark Dinn
-image : "images/blog/blog-post-3.jpg"
+images: [ "images/blog/blog-post-3.jpg" ]
 bg_image: "images/feature-bg.jpg"
 categories: ["Legacy Support"]
 tags: ["Android","Retro"]

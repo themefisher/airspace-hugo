@@ -48,7 +48,9 @@
 				<div class="post">
 					<div class="post-thumb">
 						<a href="{{ .RelPermalink }}">
-							<img class="img-responsive" src="{{ .Params.Image | relURL }}" alt="{{ .Title }}">
+              {{ if isset .Params "images" }}
+							<img class="img-responsive" src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}">
+              {{ end }}
 						</a>
 					</div>
 					<h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
