@@ -15,6 +15,16 @@
   {{ template "_internal/twitter_cards.html" . }}
   {{ template "_internal/google_analytics.html" . }}
 
+  {{- with site.Params.counter -}}
+  {{ if .enable -}}
+  {{ with .username -}}
+  {{ "<!-- counter.dev analytics -->" | safeHTML }}
+  {{ $counterjs := resources.Get "js/counter.min.js" | resources.ExecuteAsTemplate "js/counter.min.js" . -}}
+  <script src="{{ $counterjs.RelPermalink }}"></script>
+  {{- end }}
+  {{- end }}
+  {{- end }}
+
   {{ "<!-- Plugins -->" | safeHTML }}
   {{ range site.Params.plugins.css}}
   <link rel="stylesheet" href="{{ .link | relURL }}" {{.attributes | safeHTMLAttr}}>
