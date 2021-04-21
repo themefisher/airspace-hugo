@@ -4,8 +4,8 @@
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .description | markdownify }}</p>
+        {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+        {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
       </div>
     </div>
     <div class="row">

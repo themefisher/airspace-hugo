@@ -8,10 +8,10 @@
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h1>{{ .title | markdownify }}</h1>
-          <p>{{ .content | markdownify }}</p>
-          {{ if .button.enable }}
+          {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
+          {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
           {{ with .button }}
+          {{ if .enable }}
           <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
           {{ end }}
           {{ end }}
@@ -24,19 +24,19 @@
 {{ end }}
 <!-- /banner -->
 
+<!-- about -->
 {{ with .Params.about }}
 {{ if .enable }}
-<!-- about -->
 <section class="about section">
   <div class="container">
     <div class="row">
       <div class="col-md-7 col-sm-12">
         <div class="block">
           <div class="section-title">
-            <h2>{{ .title | markdownify }}</h2>
-            <p>{{ .description | markdownify }}</p>
+            {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+            {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
           </div>
-          <p>{{ .content | markdownify }}</p>
+          {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
         </div>
       </div>
       <div class="col-md-5 col-sm-12">
@@ -47,21 +47,21 @@
     </div>
   </div>
 </section>
+{{ end }}
+{{ end }}
 <!-- /about -->
-{{ end }}
-{{ end }}
 
+<!-- portfolio -->
 {{ with .Params.portfolio }}
 {{ if .enable }}
-<!-- portfolio -->
 <section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL}}')">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-6">
-        <h2 class="section-subtitle">{{ .title | markdownify }}</h2>
-        {{ .content | markdownify }}
-        {{ if .button.enable }}
+        {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
         {{ with .button }}
+        {{ if .enable }}
         <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
         {{ end }}
         {{ end }}
@@ -69,31 +69,31 @@
     </div>
   </div>
 </section>
+{{ end }}
+{{ end }}
 <!-- /portfolio -->
-{{ end }}
-{{ end }}
 
-<!-- Service -->
+<!-- service -->
 {{ if .Params.service.enable }}
 {{ partial "service.html" . }}
 {{ end }}
 <!-- /service -->
 
-<!-- Call to action -->
+<!-- call to action -->
 {{ if .Params.cta.enable }}
 {{ partial "cta.html" . }}
 {{ end }}
-<!-- /Call to action -->
+<!-- /call to action -->
 
+<!-- funfacts -->
 {{ with .Params.funfacts }}
 {{ if .enable }}
-<!-- Content Start -->
 <section class="testimonial">
   <div class="container">
     <div class="row">
       <div class="section-title text-center">
-        <h2>{{ .title | markdownify }}</h2>
-        <p>{{ .description | markdownify }}</p>
+        {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
+        {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
       </div>
     </div>
     <div class="row">
@@ -116,7 +116,7 @@
             {{ range .testimonial_slider }}
             <div>
               <i class="ion-quote"></i>
-              <p>"{{ .content | markdownify }}"</p>
+              {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
               <div class="user">
                 <img src="{{ .image | relURL }}" alt="client">
                 <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
@@ -131,5 +131,6 @@
 </section>
 {{ end}}
 {{ end}}
+<!-- /funfacts -->
 
 {{ end }}
