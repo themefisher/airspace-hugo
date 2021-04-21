@@ -8,13 +8,14 @@ fields:
 - type: datetime
   name: date
   label: date
+- type: image_gallery
+  name: images
+  label: post image(s)
+  description: Post image(s); the 1st image is visible, the others are only used for Open Graph metadata
 - type: file
   name: bg_image
-  label: bg image
-  description: page header background image
-- type: file
-  name: image
-  label: image
+  label: background image
+  description: Page header background image
 - type: text
   name: author
   label: author

@@ -5,11 +5,14 @@ fields:
 - type: text
   name: title
   label: title
-- name: image
-  type: file
-  config:
-    maxSize: 250
-  label: image
+- type: image_gallery
+  name: images
+  label: post image(s)
+  description: Author image(s); the 1st image is visible, the others are only used for Open Graph metadata
+- type: file
+  name: bg_image
+  label: background image
+  description: Page header background image
 - type: text
   name: email
   label: email
