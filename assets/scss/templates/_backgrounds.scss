@@ -1,18 +1,19 @@
 .bg-1 {
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-	@include tablet {
-		background-attachment: scroll;
-	}
+  @include tablet {
+    background-attachment: scroll;
+  }
 }
 
 .bg-2 {
-	background-size: cover;
-	background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
 
-	@include tablet {
-		background-attachment: scroll;
-	}
+  @include tablet {
+    background-attachment: scroll;
+  }
 }
