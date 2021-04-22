@@ -10,6 +10,12 @@
 
   {{ with .Params.image }}
   <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}"/>
+  {{ else }}
+  {{ with site.Params.image }}
+  <meta property="og:image" content="{{ . | absURL }}" />
+  <meta name="twitter:image" content="{{ . | absURL }}"/>
+  {{ end }}
   {{ end }}
   {{ template "_internal/opengraph.html" . }}
   {{ template "_internal/twitter_cards.html" . }}

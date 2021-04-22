@@ -30,9 +30,9 @@ home = [ "HTML" ]
 unsafe = true
 
 [markup.tableOfContents]
-  startLevel = 2
-  endLevel = 6
-  ordered = false
+startLevel = 2
+endLevel = 6
+ordered = false
 
 
 ################################# Default parameters ##########################
@@ -40,10 +40,9 @@ unsafe = true
 logo = "images/logo.png"
 logo_width = "150px"
 # OpenGraph / Twitter Card metadata
-title = "Airspace Hugo Template"
 description = "This is meta description"
 author = "Themefisher"
-images = [ "images/logo.png" ] # First image here will be used as fallback if a page has no images of its own
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 
 
 ################################# Sidebar widgets #############################
