@@ -1,4 +1,4 @@
-// Fonts 
+// Fonts
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Oswald:300,400,500,600);
 @import url(https://fonts.googleapis.com/css?family=Volkhov:400italic);
@@ -33,10 +33,26 @@ h6 {
 
 h1 {
   font-size: 40px;
+
+  @include tablet {
+    font-size: 34px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+  }
+
+  @include mobile-xs {
+    font-size: 26px;
+  }
 }
 
 h2 {
   font-size: 28px;
+
+  @include mobile {
+    font-size: 22px;
+  }
 }
 
 h3 {
