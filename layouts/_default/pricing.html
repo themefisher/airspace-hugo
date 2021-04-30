@@ -12,9 +12,9 @@
       <div class="col-md-4 col-sm-6 col-xs-12">
         <div class="pricing-item text-center">
           <div class="price-title">
-            <h3>{{ .name }}</h3>
-            <strong class="value">{{ .price }}</strong>
-            <p>{{ .content | markdownify }}</p>
+            {{ with .name }}<h3>{{ . | markdownify }}</h3>{{ end }}
+            {{ with .price }}<strong class="value">{{ . }}</strong>{{ end }}
+            {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           </div>
           <ul>
             {{ range .services }}
