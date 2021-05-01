@@ -4,7 +4,7 @@
 
   {{ "<!-- Mobile responsive metadata -->" | safeHTML }}
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Params.Description }}{{ . }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}">
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
   {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
   {{ hugo.Generator }}
 
@@ -27,8 +27,8 @@
     {{ end -}}
     <meta property="og:image:type" content="image/{{ if eq $image_ext "svg" }}svg+xml{{ else }}{{ replaceRE "^jpg$" "jpeg" $image_ext }}{{ end }}">
   {{ end -}}
-  <meta name="twitter:title" content="{{ .Title }}"/>
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end -}}"/>
+  <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}"/>
+  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
   {{ with site.Social.twitter -}}<meta name="twitter:site" content="@{{ . }}"/>{{ end -}}
   {{ range site.Authors }}
     {{ with .twitter -}}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
