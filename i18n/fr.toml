@@ -1,75 +1,75 @@
 # Regular translations
 [404_message]
-other = "Désolé – cette page ne semble pas exister (plus)."
+one = "Désolé – cette page ne semble pas exister (plus)."
 [address_title]
-other = "Adresse"
+one = "Adresse"
 [all]
-other = "Tous"
+one = "Tous"
 [buy_now]
-other = "Acheter"
+one = "Acheter"
 [categories]
-other = "Catégories"
+one = "Catégories"
 [contact_form_email]
-other = "Votre adresse e-mail"
+one = "Votre adresse e-mail"
 [contact_form_message]
-other = "Message"
+one = "Message"
 [contact_form_name]
-other = "Votre nom"
+one = "Votre nom"
 [contact_form_subject]
-other = "Objet"
+one = "Objet"
 [email]
-other = "E-mail"
+one = "E-mail"
 [faq_toc_title]
-other = "Sommaire"
+one = "Sommaire"
 [form_respond]
-other = "Merci pour votre message. Nous vous répondrons dans les plus brefs délais."
+one = "Merci pour votre message. Nous vous répondrons dans les plus brefs délais."
 [form_submitted]
-other = "Votre message a été transmis avec succès"
+one = "Votre message a été transmis avec succès"
 [go_home]
-other = "À la page d'accueil"
+one = "À la paaaage d'accueil"
 [last_update]
-other = "Dernière mise à jour"
+one = "Dernière mise à jour"
 [latest_posts]
-other = "Derniers articles"
+one = "Derniers articles"
 [location]
-other = "Lieu"
+one = "Lieu"
 [page_next]
-other = "Plus anciens"
+one = "Plus anciens"
 [page_prev]
-other = "Plus récents"
+one = "Plus récents"
 [phone]
-other = "Téléphone"
+one = "Téléphone"
 [posted_by]
-other = "Par"
+one = "Par"
 [read_more]
-other = "Lire la suite"
+one = "Lire la suite"
 [submit]
-other = "Envoyer le message"
+one = "Envoyer le message"
 [tags]
-other = "Mots clefs"
+one = "Mots clefs"
 
 # Dates
 [january]
-other = "janvier"
+one = "janvier"
 [february]
-other = "février"
+one = "février"
 [march]
-other = "mars"
+one = "mars"
 [april]
-other = "avril"
+one = "avril"
 [may]
-other = "mai"
+one = "mai"
 [june]
-other = "juin"
+one = "juin"
 [july]
-other = "juillet"
+one = "juillet"
 [august]
-other = "août"
+one = "août"
 [september]
-other = "septembre"
+one = "septembre"
 [october]
-other = "octobre"
+one = "octobre"
 [november]
-other = "novembre"
+one = "novembre"
 [december]
-other = "décembre"
+one = "décembre"
