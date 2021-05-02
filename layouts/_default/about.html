@@ -13,10 +13,10 @@
         </div>
       </div>
       <div class="col-md-6">
-        <h2 class="mt-40">{{ .title | markdownify }}</h2>
-        {{ .content | markdownify }}
-        {{ if .button.enable }}
+        {{ with .title }}<h2 class="mt-40">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
         {{ with .button }}
+        {{ if .enable }}
         <a href="{{ .link | relURL }}" class="btn btn-small mt-20">{{ .label }}</a>
         {{ end }}
         {{ end }}
@@ -26,9 +26,9 @@
       {{ range .funfacts }}
       <div class="col-md-2">
         <div class="counter-item">
-          <i class="{{ .icon }}"></i>
-          <h4 class="count" data-count="{{ .count }}">0</h4>
-          <span>{{ .name }}</span>
+          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+          {{ with .count }}<h4 class="count" data-count="{{ . }}">0</h4>{{ end }}
+          {{ with .name }}<span>{{ . }}</span>{{ end }}
         </div>
       </div>
       {{ end }}
@@ -55,9 +55,9 @@
       {{ range .feature_item }}
       <div class="col-md-4">
         <div class="service-item">
-          <i class="{{ .icon }}"></i>
-          <h4>{{ .name | markdownify }}</h4>
-          <p>{{ .content | markdownify }}</p>
+          {{ with .icon }}<i class="{{ . }}"></i>{{ end }}
+          {{ with .name }}<h4>{{ . | markdownify }}</h4>{{ end }}
+          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
         </div>
       </div>
       {{ end }}
@@ -78,9 +78,9 @@
             {{ range .Params.funfacts.testimonial_slider }}
             <div>
               <i class="ion-quote"></i>
-              <p>"{{ .content | markdownify }}"</p>
+              {{ with .content }}<p>"{{ . | markdownify }}"</p>{{ end }}
               <div class="user">
-                <img src="{{ .image | relURL }}" alt="client">
+                {{ with .image }}<img src="{{ . | relURL }}" alt="client">{{ end }}
                 <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
               </div>
             </div>
@@ -104,7 +104,7 @@
           <div class="tab-content">
             {{ range $index, $elements := .tabs }}
             <div id="{{.name | urlize}}" class="tab-pane fade {{ if eq $index 0}} active in {{ end }}">
-              <p>{{ .content | markdownify }}</p>
+              {{ .content | $.Page.RenderString (dict "display" "block") }}
             </div>
             {{ end }}
           </div>

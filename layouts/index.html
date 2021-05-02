@@ -9,7 +9,7 @@
       <div class="col-md-12">
         <div class="block">
           {{ with .title }}<h1>{{ . | markdownify }}</h1>{{ end }}
-          {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           {{ with .button }}
           {{ if .enable }}
           <a href="{{ .link | relLangURL }}" class="btn btn-main animated fadeInUp">{{ .label }}</a>
@@ -34,9 +34,9 @@
         <div class="block">
           <div class="section-title">
             {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-            {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
+            {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
           </div>
-          {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
+          {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
         </div>
       </div>
       <div class="col-md-5 col-sm-12">
@@ -59,7 +59,7 @@
     <div class="row">
       <div class="col-md-6 col-md-offset-6">
         {{ with .title }}<h2 class="section-subtitle">{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
+        {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
         {{ with .button }}
         {{ if .enable }}
         <a href="{{ .link | relLangURL }}" class="btn btn-view-works">{{ .label }}</a>
@@ -93,7 +93,7 @@
     <div class="row">
       <div class="section-title text-center">
         {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-        {{ with .description }}<p>{{ . | markdownify }}</p>{{ end }}
+        {{ with .description }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
       </div>
     </div>
     <div class="row">
@@ -116,7 +116,7 @@
             {{ range .testimonial_slider }}
             <div>
               <i class="ion-quote"></i>
-              {{ with .content }}<p>{{ . | markdownify }}</p>{{ end }}
+              {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
               <div class="user">
                 <img src="{{ .image | relURL }}" alt="client">
                 <p><span>{{ .name | markdownify }}</span> {{ .designation | markdownify }}</p>
