@@ -1,28 +1,34 @@
 .about{
 	.block{
-		
-		h2{
-			padding-top: 35px;
+		h2 {
+			padding-top: 30px;
+      padding-bottom: 30px;
 			margin:0;
 		}
-		p{
-			padding-top: 20px;
+
+		p {
+			padding-top: 0px;
 			line-height:28px;
 		}
-		img{
+
+		img {
 			width: 100%;
 		}
 	}
+
 	.about-img {
 		overflow:hidden;
+
 		&:hover img {
 			transform: scale3D(1.1,1.1,1);
 		}
+
 		img {
 			opacity: .6;
 			@include transition (all, 0.5s, ease-out);
 		}
 	}
+
 	.section-title {
 		margin-bottom: 0px;
 	}
