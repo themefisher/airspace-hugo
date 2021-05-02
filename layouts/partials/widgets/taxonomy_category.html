@@ -1,12 +1,12 @@
 <div class="widget widget-category">
-    <h4 class="widget-title">{{ i18n "categories" }}</h4>
-    {{- if isset site.Taxonomies "categories" }}
-    {{- if not (eq (len site.Taxonomies.categories) 0) }}
-    <ul class="widget-category-list">
-      {{- range $name := site.Taxonomies.categories }}
-      <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
-      {{- end }}
-    </ul>
+  <h4 class="widget-title">{{ i18n "categories" }}</h4>
+  {{- if isset site.Taxonomies "categories" }}
+  {{- if not (eq (len site.Taxonomies.categories) 0) }}
+  <ul class="widget-category-list">
+    {{- range $name := site.Taxonomies.categories }}
+    <li><a href="{{ .Page.RelPermalink }}"{{ if (and (eq $.Page.Kind "term") (eq $.Page.Type "categories") (eq $.Page.Title .Page.Title)) }} class="current"{{ end }}>{{ .Page.Title }}</a></li>
     {{- end }}
-    {{- end }}
-  </div>
+  </ul>
+  {{- end }}
+  {{- end }}
+</div>
