@@ -1,4 +1,9 @@
 ---
+menu:
+  main:
+    name: "Startseite"
+    weight: 1
+
 ############################### Banner ##############################
 banner:
   enable: true
@@ -66,17 +71,17 @@ funfacts:
   - icon: "ion-ios-chatboxes-outline" #ionicon pack v2: https://ionicons.com/v2/
     name: "Cups Of Coffee"
     count: "99"
-    
+
   # funfacts item loop
   - icon: "ion-ios-glasses-outline" #ionicon pack v2: https://ionicons.com/v2/
     name: "Article Written"
     count: "45"
-    
+
   # funfacts item loop
   - icon: "ion-ios-compose-outline" #ionicon pack v2: https://ionicons.com/v2/
     name: "Projects Completed"
     count: "125"
-    
+
   # funfacts item loop
   - icon: "ion-ios-timer-outline" #ionicon pack v2: https://ionicons.com/v2/
     name: "Combined Projects"
@@ -88,13 +93,13 @@ funfacts:
     image: "images/clients/avater-1.jpg"
     designation: "CEO-Themefisher"
     content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-              
+
   # testimonial item loop
   - name: "Randi Renin"
     image: "images/clients/avater-1.jpg"
     designation: "CEO-Themefisher"
     content: "This Company created an e-commerce site with the tools to make our business a success, with innovative ideas we feel that our site has unique elements that make us stand out from the crowd."
-              
+
   # testimonial item loop
   - name: "Rose Rio"
     image: "images/clients/avater-3.jpg"
