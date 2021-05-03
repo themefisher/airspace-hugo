@@ -8,8 +8,11 @@
 
 .post {
   background: $light;
-  margin-bottom: 40px;
-  padding-bottom: 20px;
+  margin-bottom: 55px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
 
   .post-media {
     &.post-thumb {
@@ -104,7 +107,15 @@
 }
 
 .post-pagination {
-  margin-top: 70px;
+  margin: 0px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+
+  @include tablet {
+    margin-bottom: 15px;
+  }
 
   >li {
     margin: 0 2px;

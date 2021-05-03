@@ -1,18 +1,10 @@
 .testimonial {
 	padding: 100px 0;
 
-	.block {
-		h2 {
-			line-height: 27px;
-			color: #5C5C5C;
-			padding-top: 110px;
-		}
-
-		p {
-			padding-top: 50px;
-			color: #7B7B7B;
-		}
-	}
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 
 	.counter-box {
 		li {
@@ -20,6 +12,10 @@
 			float: left;
 			text-align: center;
 			margin: 30px 0 30px;
+
+      @include tablet {
+        margin-top: 0px;
+      }
 		}
 	}
 
