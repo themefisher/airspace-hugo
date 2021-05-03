@@ -4,6 +4,11 @@ description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "service"
 draft: false
+menu:
+  main:
+    parent: "More"
+    name: "Service"
+    weight: 1
 
 ########################### about service #############################
 about:
@@ -29,20 +34,20 @@ featured_service:
       icon : "ion-erlenmeyer-flask"
       color : "primary"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
-      
+
     # featured service item loop
     - name : "Product Branding"
       icon : "ion-leaf"
       color : "primary-dark"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
-      
+
     # featured service item loop
     - name : "Game Development"
       icon : "ion-lightbulb"
       color : "primary-darker"
       content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe enim impedit repudiandae omnis est temporibus."
 
-      
+
 ############################# Service ###############################
 service:
   enable : true
@@ -89,7 +94,7 @@ service:
     - icon : ion-earth #ionicon pack v2 : https://ionicons.com/v2/
       name: Brand Identity
       content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut"
-      
+
 ############################# call to action #################################
 cta:
   enable : true
