@@ -7,14 +7,13 @@
 
   .widget-title {
     margin-bottom: 15px;
-    padding-bottom: 10px;
     font-size: 16px;
     color: #333;
     font-weight: 500;
     border-bottom: 1px solid $border-color;
   }
 
-  // latest Posts
+  // Latest Posts
   &.widget-latest-post {
     .media {
       .media-object {
@@ -35,18 +34,21 @@
       }
     }
   }
+  //end Latest Posts
 
-  //end latest posts
-
-  // Caterogry
+  // Categories
   &.widget-category {
     ul {
       li {
-        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
 
         a {
           color: #837f7e;
-          @include transition (all, 0.3s, ease);
+          padding: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          @include transition-multi (padding 0.3s ease, border 0.3s ease);
 
           &:before {
             padding-right: 10px;
@@ -54,16 +56,31 @@
 
           &:hover {
             color: $primary-color;
-            padding-left: 5px;
+            padding-left: 25px;
           }
+
+          &:active {
+            padding-left: 24px;
+            border: 1px solid $primary-color;
+            border-radius: 30px;
+            @include transition (padding, 0s);
+          }
+        }
+
+        a.current {
+          color: #fff;
+          background: $primary-color;
+          border: 1px solid $primary-color;
+          border-radius: 30px;
+          pointer-events: none;
+          cursor: default;
         }
       }
     }
   }
+  // end Categories
 
-  //end caterogry
-
-  // Tag Cloud
+  // Tags
   &.widget-tag {
     ul {
       li {
@@ -78,16 +95,31 @@
           border: 1px solid #dedede;
           border-radius: 30px;
           font-size: 14px;
-          @include transition (all, 0.3s, ease);
+          @include transition-multi (background-color 0.3s ease, border 0.3s ease, color 0.1s ease);
 
           &:hover {
-            color: $light;
-            background: $primary-color;
-            border: 1px solid $primary-color;
+            color: $primary-color;
+            background: rgba($primary-color, 0.3);
+            border: 1px solid rgba($primary-color, 0.3);
           }
+
+          &:active {
+            color: $primary-color;
+            border: 1px solid $primary-color;
+            background: #fff;
+            @include transition (background-color, 0.1s, ease);
+          }
+        }
+
+        a.current {
+          color: #fff;
+          background: $primary-color;
+          border: 1px solid $primary-color;
+          pointer-events: none;
+          cursor: default;
         }
       }
     }
   }
-
+  // end Tags
 }
