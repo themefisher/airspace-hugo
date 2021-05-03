@@ -4,6 +4,11 @@ description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "pricing"
 draft: false
+menu:
+  main:
+    parent: "More"
+    name: "Preise"
+    weight: 2
 
 ################################ pricing ################################
 pricing:
@@ -21,7 +26,7 @@ pricing:
     - Basic SEO
     - Email Marketing
     - 24/7 Tech Support
-      
+
   # pricing table loop
   - name : "Premium"
     price: "$199"
@@ -34,7 +39,7 @@ pricing:
     - Basic SEO
     - Email Marketing
     - 24/7 Tech Support
-      
+
   # pricing table loop
   - name : "Advance"
     price: "$299"
@@ -47,7 +52,7 @@ pricing:
     - Basic SEO
     - Email Marketing
     - 24/7 Tech Support
-        
+
 ############################# call to action #################################
 cta:
   enable : true

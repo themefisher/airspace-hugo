@@ -18,28 +18,36 @@
     .navbar-nav {
       padding-top: 10px;
 
-      >li {
-        >a {
-          color: #5C5C5C;
-          padding: 10px 15px;
+      a {
+        color: #5C5C5C;
+        padding: 10px 15px;
 
-          font : {
-            weight: 500;
-            size: 14px;
-          }
-
-          text-transform:uppercase;
-
-          &:hover,
-          &:focus {
-            color: #000;
-            background: transparent;
-          }
+        font : {
+          weight: 500;
+          size: 14px;
         }
 
-        select {
-          margin: 10px 15px;
+        text-transform:uppercase;
+
+        &:hover,
+        &:focus {
+          color: #000;
+          background: transparent;
         }
+      }
+
+      a.current {
+        color: #000;
+        pointer-events: none;
+        cursor: default;
+      }
+
+      a.current-parent {
+        color: #000;
+      }
+
+      select {
+        margin: 10px 15px;
       }
     }
 
@@ -50,16 +58,23 @@
       box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.08);
 
       a {
+        text-transform: none;
         font-weight: normal;
         color: #808080;
         padding: 10px 20px;
-        @include transition (all, 0.3s, ease);
+        @include transition-multi (color 0.1s ease, padding 0.3s ease);
 
         &:hover {
           background: $primary-color;
           color: $light;
           padding-left: 25px;
         }
+      }
+
+      a.current {
+        padding-left: 25px;
+        color: $light;
+        background: $primary-color;
       }
     }
   }

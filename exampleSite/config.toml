@@ -183,50 +183,11 @@ weight = 1
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). All Rights Reserved."
 
 # Main menu
+# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.en.menu.main]]
-name = "Home"
-URL = "/"
-weight = 1
-
-[[languages.en.menu.main]]
-name = "About"
-URL = "about"
-weight = 2
-
-[[languages.en.menu.main]]
-name = "Project"
-URL = "project"
-weight = 3
-
-[[languages.en.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[languages.en.menu.main]]
-weight = 5
-name = "More"
 hasChildren = true
-
-  [[languages.en.menu.main]]
-  parent = "More"
-  name = "FAQ"
-  URL = "faq"
-
-  [[languages.en.menu.main]]
-  parent = "More"
-  name = "Pricing"
-  URL = "pricing"
-
-  [[languages.en.menu.main]]
-  parent = "More"
-  name = "Service"
-  URL = "service"
-
-[[languages.en.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
+name = "More"
+weight = 5
 
 # Footer menu
 [[languages.en.menu.footer]]
@@ -269,50 +230,11 @@ weight = 2
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
 
 # Main menu
+# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.fr.menu.main]]
-name = "Accueil"
-URL = "/"
-weight = 1
-
-[[languages.fr.menu.main]]
-name = "À propos"
-URL = "about"
-weight = 2
-
-[[languages.fr.menu.main]]
-name = "Projet"
-URL = "project"
-weight = 3
-
-[[languages.fr.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[languages.fr.menu.main]]
+hasChildren = true
 weight = 5
 name = "Plus"
-hasChildren = true
-
-  [[languages.fr.menu.main]]
-  parent = "Plus"
-  name = "Questions fréquentes"
-  URL = "faq"
-
-  [[languages.fr.menu.main]]
-  parent = "Plus"
-  name = "Tarification"
-  URL = "pricing"
-
-  [[languages.fr.menu.main]]
-  parent = "Plus"
-  name = "Service"
-  URL = "service"
-
-[[languages.fr.menu.main]]
-name = "Contact"
-URL = "contact"
-weight = 6
 
 # Footer menu
 [[languages.fr.menu.footer]]
@@ -355,50 +277,11 @@ weight = 2
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tutti i diritti riservati."
 
 # Main menu
+# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.it.menu.main]]
-name = "Pagina iniziale"
-URL = "/"
-weight = 1
-
-[[languages.it.menu.main]]
-name = "Chi siamo"
-URL = "about"
-weight = 2
-
-[[languages.it.menu.main]]
-name = "Progetto"
-URL = "project"
-weight = 3
-
-[[languages.it.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[languages.it.menu.main]]
+hasChildren = true
 weight = 5
 name = "Più"
-hasChildren = true
-
-  [[languages.it.menu.main]]
-  parent = "Più"
-  name = "Domande frequenti"
-  URL = "faq"
-
-  [[languages.it.menu.main]]
-  parent = "Più"
-  name = "Tariffazione"
-  URL = "pricing"
-
-  [[languages.it.menu.main]]
-  parent = "Più"
-  name = "Servizio"
-  URL = "service"
-
-[[languages.it.menu.main]]
-name = "Contatta"
-URL = "contact"
-weight = 6
 
 # Footer menu
 [[languages.it.menu.footer]]
@@ -441,50 +324,11 @@ weight = 3
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Alle Rechte vorbehalten."
 
 # Main menu
+# NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.de.menu.main]]
-name = "Startseite"
-URL = "/"
-weight = 1
-
-[[languages.de.menu.main]]
-name = "Über"
-URL = "about"
-weight = 2
-
-[[languages.de.menu.main]]
-name = "Projekt"
-URL = "project"
-weight = 3
-
-[[languages.de.menu.main]]
-name = "Blog"
-URL = "blog"
-weight = 4
-
-[[languages.de.menu.main]]
-name = "Mehr"
 hasChildren = true
+name = "Mehr"
 weight = 5
-
-  [[languages.de.menu.main]]
-  parent = "Mehr"
-  name = "Häufige Fragen"
-  URL = "faq"
-
-  [[languages.de.menu.main]]
-  parent = "Mehr"
-  name = "Preise"
-  URL = "pricing"
-
-  [[languages.de.menu.main]]
-  parent = "Mehr"
-  name = "Dienstleistung"
-  URL = "service"
-
-[[languages.de.menu.main]]
-name = "Kontakt"
-URL = "contact"
-weight = 6
 
 # Footer menu
 [[languages.de.menu.footer]]
