@@ -9,8 +9,15 @@
 	background-size: cover;
 	padding: 100px 0;
 
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
 	h2 {
-		margin-bottom: 30px;
+		margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 	}
 
 	p {
@@ -22,5 +29,6 @@
 		background: #655E7A;
 		color: #fff;
 		padding: 10px 20px;
+		margin-bottom: 30px;
 	}
 }

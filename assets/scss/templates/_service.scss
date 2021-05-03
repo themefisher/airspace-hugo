@@ -2,6 +2,11 @@
   text-align: center;
   padding: 90px 0;
 
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .service-item {
     padding-bottom: 30px;
 

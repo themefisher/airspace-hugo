@@ -237,6 +237,11 @@ input[type="tel"] {
 
 .section {
   padding: 100px 0;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 .section-sm {
@@ -257,9 +262,15 @@ input[type="tel"] {
 .section-title {
   margin-bottom: 70px;
 
+  @include tablet {
+    margin-bottom: 20px;
+  }
+
   h2 {
     text-transform: uppercase;
     font-weight: 600;
+    margin: 0px;
+    padding: 30px 0px;
   }
 
   p {
@@ -336,6 +347,11 @@ input[type="tel"] {
 
 .page-wrapper {
   padding: 70px 0;
+
+  @include tablet {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
 
 // Social Media Icons
