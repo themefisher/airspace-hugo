@@ -1,9 +1,9 @@
-<!-- Header Start -->
+<!-- Header -->
 <header class="navigation">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
-        <!-- header Nav Start -->
+        <!-- Header Nav -->
         <nav class="navbar">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -23,12 +23,13 @@
               {{ range site.Menus.main -}}
               {{ if .HasChildren -}}
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle{{ if $currentPage.HasMenuCurrent "main" . }} current-parent{{ end }}" data-toggle="dropdown" role="button" aria-haspopup="true"
-                  aria-expanded="false">{{ .Name }} <span class="ion-ios-arrow-down"></span></a>
+                <a href="#" class="dropdown-toggle{{ if $currentPage.HasMenuCurrent "main" . }} current-parent{{ end }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  {{ .Name }} <span class="ion-ios-arrow-down"></span>
+                </a>
                 <ul class="dropdown-menu">
                   {{ range .Children -}}
                   <li><a href="{{ .URL | relLangURL }}"{{ if $currentPage.IsMenuCurrent "main" . }} class="current"{{ end }}>{{ .Name }}</a></li>
-                  {{ end -}}
+                  {{- end }}
                 </ul>
               </li>
               {{ else -}}
@@ -42,8 +43,8 @@
                 <select id="select-language" onchange="location = this.value;">
                   {{ $siteLanguages := site.Languages -}}
                   {{ $pageLang := .Page.Lang -}}
-                  {{ $scratch := newScratch }}{{ if eq .Page.Kind "404" }}{{ $scratch.Set "translations" site.Home.AllTranslations }}{{ else }}{{ $scratch.Set "translations" .Page.AllTranslations }}{{ end -}}
-                  {{ range ($scratch.Get "translations") -}}
+                  {{ $translations := "" }}{{ if eq .Page.Kind "404" }}{{ $translations = site.Home.AllTranslations }}{{ else }}{{ $translations = .Page.AllTranslations }}{{ end -}}
+                  {{ range $translations -}}
                   {{ $translation := . -}}
                   {{ range $siteLanguages -}}
                   {{ if eq $translation.Lang .Lang -}}
@@ -63,10 +64,13 @@
                 </select>
               </li>
               {{- end }}
+              <!-- /Language List -->
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div>
         </nav>
+        <!-- /Header Nav -->
       </div>
     </div>
   </div>
-</header><!-- header close -->
+</header>
+<!-- /Header -->
