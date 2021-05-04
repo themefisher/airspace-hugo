@@ -3,6 +3,15 @@
 ==================================================================*/
 .post.post-single {
   border: none;
+  margin-bottom: 0px;
+
+  .post-title {
+    margin-top: 0px;
+
+    @include tablet {
+      margin-top: 20px;
+    }
+  }
 
   .post-thumb {
     margin-top: 30px;
@@ -70,8 +79,6 @@
 }
 
 .post-excerpt {
-  margin-bottom: 60px;
-
   h3 {
     a {
       color: #000;
