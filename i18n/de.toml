@@ -1,75 +1,40 @@
-# Regular translations
-[404_message]
-other = "Tut uns leid – diese Seite scheint nicht (mehr) hier zu sein."
-[address_title]
-other = "Adresse"
-[all]
-other = "Alle"
-[buy_now]
-other = "Kaufen"
-[categories]
-other = "Kategorien"
-[contact_form_email]
-other = "Ihre E-Mail-Adresse"
-[contact_form_message]
-other = "Nachricht"
-[contact_form_name]
-other = "Ihr Name"
-[contact_form_subject]
-other = "Betreff"
-[email]
-other = "E-Mail"
-[faq_toc_title]
-other = "Inhalt"
-[form_respond]
-other = "Vielen Dank für Ihre Nachricht. Wir werden uns so bald als möglich bei Ihnen melden."
-[form_submitted]
-other = "Ihre Nachricht wurde erfolgreich übermittelt"
-[go_home]
-other = "Zur Startseite"
-[last_update]
-other = "Letzte Aktualisierung"
-[latest_posts]
-other = "Letzte Einträge"
-[location]
-other = "Ort"
-[page_next]
-other = "Ältere"
-[page_prev]
-other = "Neuere"
-[phone]
-other = "Telefon"
-[posted_by]
-other = "Von"
-[read_more]
-other = "Weiterlesen"
-[submit]
-other = "Nachricht senden"
-[tags]
-other = "Schlagwörter"
+# Simple translations without pluralization rules
+## Regular
+404_message = "Tut uns leid – diese Seite scheint nicht (mehr) hier zu sein."
+address_title = "Adresse"
+all = "Alle"
+buy_now = "Kaufen"
+categories = "Kategorien"
+contact_form_email = "Ihre E-Mail-Adresse"
+contact_form_message = "Nachricht"
+contact_form_name = "Ihr Name"
+contact_form_subject = "Betreff"
+email = "E-Mail"
+faq_toc_title = "Inhalt"
+form_respond = "Vielen Dank für Ihre Nachricht. Wir werden uns so bald als möglich bei Ihnen melden."
+form_submitted = "Ihre Nachricht wurde erfolgreich übermittelt"
+go_home = "Zur Startseite"
+last_update = "Letzte Aktualisierung"
+latest_posts = "Letzte Einträge"
+location = "Ort"
+page_next = "Ältere"
+page_prev = "Neuere"
+phone = "Telefon"
+posted_by = "Von"
+read_more = "Weiterlesen"
+submit = "Nachricht senden"
+tags = "Schlagwörter"
 
-# Dates
-[january]
-other = "Januar"
-[february]
-other = "Februar"
-[march]
-other = "März"
-[april]
-other = "April"
-[may]
-other = "Mai"
-[june]
-other = "Juni"
-[july]
-other = "Juli"
-[august]
-other = "August"
-[september]
-other = "September"
-[october]
-other = "Oktober"
-[november]
-other = "November"
-[december]
-other = "Dezember"
+## Dates
+january = "Januar"
+february = "Februar"
+march = "März"
+april = "April"
+may = "Mai"
+june = "Juni"
+july = "Juli"
+august = "August"
+september = "September"
+october = "Oktober"
+november = "November"
+december = "Dezember"
