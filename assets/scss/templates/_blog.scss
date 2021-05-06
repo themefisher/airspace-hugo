@@ -30,8 +30,7 @@
   }
 
   .post-title {
-    margin-top: 10px;
-    margin: 25px 0 0;
+    margin-top: 25px;
     text-transform: uppercase;
 
     a {
@@ -110,11 +109,11 @@
   margin: 0px;
 
   @include desktop {
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 
   @include tablet {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   >li {
