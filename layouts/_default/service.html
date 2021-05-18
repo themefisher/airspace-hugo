@@ -28,7 +28,7 @@
   <div class="container-fluid">
     <div class="row">
       {{ range .service_item }}
-      <div class="col-md-4 bg-primary bg-{{ .color }}">
+      <div class="col-md-4 bg-primary bg-{{ .color }} no-float">
         <div class="block">
           <i class="{{ .icon }}"></i>
           {{ with .name }}<h3>{{ . | markdownify }}</h3>{{ end }}

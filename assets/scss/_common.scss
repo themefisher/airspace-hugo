@@ -645,3 +645,10 @@ span.cloaked-e-mail:before {
   unicode-bidi: bidi-override;
   direction: rtl;
 }
+
+@media (min-width: 992px) {
+  .row .no-float {
+      display: table-cell;
+      float: none;
+  }
+}
