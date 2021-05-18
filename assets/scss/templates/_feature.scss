@@ -1,34 +1,34 @@
 .feature {
-	background: url("../img/feature-bg.jpg");
-	background-position: 50% 94px;
-	display: block;
-	position: relative;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-position: center center;
-	background-size: cover;
-	padding: 100px 0;
+  background: url("../img/feature-bg.jpg");
+  background-position: 50% 94px;
+  display: block;
+  position: relative;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0;
 
   @include tablet {
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-	h2 {
-		margin: 0px;
+  h2 {
+    margin: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
-	}
+  }
 
-	p {
-		color: #8d8f92;
-		margin-bottom: 20px;
-	}
+  p {
+    color: #8d8f92;
+    margin-bottom: 20px;
+  }
 
-	.btn-view-works {
-		background: #655E7A;
-		color: #fff;
-		padding: 10px 20px;
-		margin-bottom: 30px;
-	}
+  .btn-view-works {
+    background: #655E7A;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
 }
