@@ -1,12 +1,12 @@
 ---
-title: "Our Pricing"
+title: "Unsere Preise"
 description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "pricing"
 draft: false
 menu:
   main:
-    parent: "More"
+    parent: "Mehr"
     name: "Preise"
     weight: 2
 

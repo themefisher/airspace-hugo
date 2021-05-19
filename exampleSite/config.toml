@@ -332,7 +332,7 @@ weight = 5
 
 # Footer menu
 [[languages.de.menu.footer]]
-name = "Über"
+name = "Über uns"
 URL = "about"
 weight = 1
 

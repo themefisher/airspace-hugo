@@ -1,12 +1,12 @@
 ---
-title: "About Our Company"
+title: "Über uns"
 description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "about"
 draft: false
 menu:
   main:
-    name: "Über"
+    name: "Über uns"
     weight: 2
 
 

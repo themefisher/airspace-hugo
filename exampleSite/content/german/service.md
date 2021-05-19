@@ -1,12 +1,12 @@
 ---
-title: "Service"
+title: "Dienstleistungen"
 description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "service"
 draft: false
 menu:
   main:
-    parent: "More"
+    parent: "Mehr"
     name: "Dienstleistung"
     weight: 1
 
