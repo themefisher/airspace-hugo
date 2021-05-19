@@ -1,35 +1,35 @@
 .about{
-	.block{
-		h2 {
-			padding-top: 30px;
+  .block{
+    h2 {
+      padding-top: 30px;
       padding-bottom: 30px;
-			margin:0;
-		}
+      margin:0;
+    }
 
-		p {
-			padding-top: 0px;
-			line-height:28px;
-		}
+    p {
+      padding-top: 0px;
+      line-height:28px;
+    }
 
-		img {
-			width: 100%;
-		}
-	}
+    img {
+      width: 100%;
+    }
+  }
 
-	.about-img {
-		overflow:hidden;
+  .about-img {
+    overflow:hidden;
 
-		&:hover img {
-			transform: scale3D(1.1,1.1,1);
-		}
+    &:hover img {
+      transform: scale3D(1.1,1.1,1);
+    }
 
-		img {
-			opacity: .6;
-			@include transition (all, 0.5s, ease-out);
-		}
-	}
+    img {
+      opacity: .6;
+      @include transition (all, 0.5s, ease-out);
+    }
+  }
 
-	.section-title {
-		margin-bottom: 0px;
-	}
+  .section-title {
+    margin-bottom: 0px;
+  }
 }

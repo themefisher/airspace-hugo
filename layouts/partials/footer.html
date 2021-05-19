@@ -1,18 +1,18 @@
 <footer class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="footer-menu">
-					<ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-menu">
+          <ul>
             {{ range site.Menus.footer }}
             <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
             {{ end }}
-					</ul>
-				</div>
-				<p class="copyright">{{ site.Params.copyright | markdownify }}</p>
-			</div>
-		</div>
-	</div>
+          </ul>
+        </div>
+        <p class="copyright">{{ site.Params.copyright | markdownify }}</p>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <!-- Google Maps API -->
@@ -35,22 +35,22 @@
 {{ if site.Params.cookies.enable }}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
-	This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-main btn-solid-border">I Accept</span>
+  This site uses cookies. By continuing to use this website, you agree to their use. <span id="js-cookie-button" class="btn btn-main btn-solid-border">I Accept</span>
 </div>
 <script>
-	(function ($) {
-		const cookieBox = document.getElementById('js-cookie-box');
-		const cookieButton = document.getElementById('js-cookie-button');
-		if (!Cookies.get('cookie-box')) {
-			cookieBox.classList.remove('cookie-box-hide');
-			cookieButton.onclick = function () {
-				Cookies.set('cookie-box', true, {
-					expires: {{ site.Params.cookies.expire_days }}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
-		}
-	})(jQuery);
+  (function ($) {
+    const cookieBox = document.getElementById('js-cookie-box');
+    const cookieButton = document.getElementById('js-cookie-button');
+    if (!Cookies.get('cookie-box')) {
+      cookieBox.classList.remove('cookie-box-hide');
+      cookieButton.onclick = function () {
+        Cookies.set('cookie-box', true, {
+          expires: {{ site.Params.cookies.expire_days }}
+        });
+        cookieBox.classList.add('cookie-box-hide');
+      };
+    }
+  })(jQuery);
 </script>
 
 <!-- Cookie style -->

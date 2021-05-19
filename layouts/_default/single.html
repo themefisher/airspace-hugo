@@ -6,13 +6,13 @@
 {{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
 
 <section class="page-wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8">
-				<div class="post post-single">
-					<h2 class="post-title">{{ .Title }}</h2>
-					<div class="post-meta">
-						<ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="post post-single">
+          <h2 class="post-title">{{ .Title }}</h2>
+          <div class="post-meta">
+            <ul>
               <li><i class="ion-calendar"></i> {{ partial "date_i18n.html" (dict "date" .PublishDate "lang" .Page.Language.Lang) }}</li>
               <li><i class="ion-android-people"></i>
                 {{ i18n "posted_by" }}
@@ -23,27 +23,27 @@
                 {{ range $index, $elements:= .Params.Tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>{{ end }}
               </li>
             </ul>
-					</div>
-					<div class="post-thumb">
+          </div>
+          <div class="post-thumb">
             {{ with .Params.image -}}
-						<img class="img-responsive" src="{{ . | relURL }}" alt="{{ $.Title }}">
+            <img class="img-responsive" src="{{ . | relURL }}" alt="{{ $.Title }}">
             {{- end }}
-					</div>
-					<div class="post-content post-excerpt">
-						{{ .Content }}
-					</div>
+          </div>
+          <div class="post-content post-excerpt">
+            {{ .Content }}
+          </div>
           {{ with site.DisqusShortname -}}
-					<div class="post-comments">
-						{{ template "_internal/disqus.html" . }}
-					</div>
+          <div class="post-comments">
+            {{ template "_internal/disqus.html" . }}
+          </div>
           {{- end }}
-				</div>
-			</div>
+        </div>
+      </div>
       <div class="col-md-4">
         {{ partial "blog-sidebar.html" . }}
       </div>
-		</div>
-	</div>
+    </div>
+  </div>
 </section>
 
 <!-- regular page -->
