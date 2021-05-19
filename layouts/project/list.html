@@ -17,7 +17,7 @@
               </label>
               {{ $categories := slice }}
               {{ range .Data.Pages }}
-              {{ $categories = $categories | append .Params.Category }}
+              {{ $categories = $categories | append .Params.category }}
               {{ end }}
               {{ range ( $categories | uniq ) }}
               <label class="btn btn-sm btn-primary">
@@ -28,7 +28,7 @@
           </div>
           <div class="row shuffle-wrapper">
             {{ range .Data.Pages }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.Category | urlize }}&quot;]">
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.category | urlize }}&quot;]">
               {{ if isset .Params "image" }}
               <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
               {{ end }}
@@ -38,7 +38,7 @@
                   <a href="{{ . | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
                   {{ end }}
                   <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                  <p>{{ .Params.Description }}</p>
+                  <p>{{ .Params.description }}</p>
                 </div>
               </div>
             </div>
