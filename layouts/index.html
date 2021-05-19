@@ -3,7 +3,7 @@
 <!-- banner -->
 {{ with .Params.banner }}
 {{ if .enable }}
-<section class="slider {{if .bg_overlay}}overly{{end}}" style="background-image: url('{{ .bg_image | relURL }}');">
+<section class="slider {{ if .bg_overlay }}overly{{ end }}" style="background-image: url('{{ .bg_image | relURL }}');">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -54,7 +54,7 @@
 <!-- portfolio -->
 {{ with .Params.portfolio }}
 {{ if .enable }}
-<section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL}}')">
+<section class="feature bg-2" style="background-image: url('{{ .bg_image | relURL }}')">
   <div class="container">
     <div class="row">
       <div class="col-md-6 col-md-offset-6">
@@ -129,8 +129,8 @@
     </div>
   </div>
 </section>
-{{ end}}
-{{ end}}
+{{ end }}
+{{ end }}
 <!-- /funfacts -->
 
 {{ end }}

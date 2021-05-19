@@ -9,7 +9,7 @@
         <div class="text-center">
           <figure>
             {{ if .Params.Photo -}}
-            <img style="border-radius: 50%;" class="img-fluid" src="{{.Params.Photo}}">
+            <img style="border-radius: 50%;" class="img-fluid" src="{{ .Params.Photo }}">
             {{ else if .Params.Email -}}
             <img style="border-radius: 50%;" class="img-fluid"
               src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
@@ -25,7 +25,7 @@
           <hr>
           <ul class="list-inline">
             {{ range .Params.Social -}}
-            <li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+            <li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
             {{- end }}
           </ul>
         </div>
