@@ -8,15 +8,15 @@
       <div class="col-md-8 col-md-offset-2">
         <div class="text-center">
           <figure>
-            {{ if .Params.Photo -}}
-            <img style="border-radius: 50%;" class="img-fluid" src="{{.Params.Photo}}">
-            {{ else if .Params.Email -}}
+            {{ if .Params.photo -}}
+            <img style="border-radius: 50%;" class="img-fluid" src="{{ .Params.photo }}">
+            {{ else if .Params.email -}}
             <img style="border-radius: 50%;" class="img-fluid"
               src="https://www.gravatar.com/avatar/{{ md5 .Params.email }}?s=128&pg&d=identicon">
             {{- end }}
             <figcaption>
               <h5 class="font-weight-bold">
-                {{ .Params.Name }}
+                {{ .Params.name }}
               </h5>
             </figcaption>
           </figure>
@@ -24,8 +24,8 @@
           {{ .Content }}
           <hr>
           <ul class="list-inline">
-            {{ range .Params.Social -}}
-            <li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+            {{ range .Params.social -}}
+            <li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
             {{- end }}
           </ul>
         </div>
@@ -62,7 +62,7 @@
                 {{ range $index, $elements := $authors }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
               </li>
               <li><i class="ion-pricetags"></i>
-                {{ range $index, $elements:= .Params.Tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>{{ end }}
+                {{ range $index, $elements:= .Params.tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | lower }}">{{ . }}</a>{{ end }}
               </li>
             </ul>
           </div>
