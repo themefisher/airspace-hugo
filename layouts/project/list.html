@@ -15,34 +15,37 @@
               <label class="btn btn-sm btn-primary active">
                 <input type="radio" name="shuffle-filter" value="all" checked="checked">{{ i18n "all" }}
               </label>
-              {{ $categories := slice }}
-              {{ range .Data.Pages }}
-              {{ $categories = $categories | append .Params.category }}
-              {{ end }}
-              {{ range ( $categories | uniq ) }}
+              {{ $categories := slice -}}
+              {{ range .Data.Pages -}}
+              {{ $categories = $categories | append .Params.category -}}
+              {{ end -}}
+              {{ range ( $categories | uniq ) -}}
               <label class="btn btn-sm btn-primary">
                 <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . | humanize }}
               </label>
-              {{ end }}
+              {{- end }}
             </div>
           </div>
           <div class="row shuffle-wrapper">
-            {{ range .Data.Pages }}
-            <div class="col-md-4 portfolio-item shuffle-item" data-groups="[&quot;{{ .Params.category | urlize }}&quot;]">
-              {{ if isset .Params "image" }}
+            {{ range .Data.Pages -}}
+            {{ $cats := .Params.category -}}
+            {{ if not (reflect.IsSlice $cats) }}{{ $cats = slice ($cats) }}{{ end -}}
+            {{ $cats = apply $cats "urlize" "." | jsonify -}}
+            <div class="col-md-4 portfolio-item shuffle-item" data-groups="{{ $cats }}">
+              {{ if isset .Params "image" -}}
               <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}">
-              {{ end }}
+              {{- end }}
               <div class="portfolio-hover">
                 <div class="portfolio-content">
-                  {{ with .Params.image }}
+                  {{ with .Params.image -}}
                   <a href="{{ . | relURL }}" class="portfolio-popup"><i class="icon ion-search"></i></a>
-                  {{ end }}
+                  {{- end }}
                   <a class="h3" href="{{ .RelPermalink }}">{{ .Title }}</a>
                   <p>{{ .Params.description }}</p>
                 </div>
               </div>
             </div>
-            {{ end }}
+            {{- end }}
           </div>
         </div>
       </div>
