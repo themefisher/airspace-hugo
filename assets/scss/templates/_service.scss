@@ -10,6 +10,11 @@
   .service-item {
     padding-bottom: 30px;
 
+    img {
+      max-width: 60px;
+      max-height: 60px;
+    }
+
     i {
       font-size: 60px;
       color: $primary-color;
