@@ -21,7 +21,7 @@
               {{ end -}}
               {{ range ( $categories | uniq ) -}}
               <label class="btn btn-sm btn-primary">
-                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . | humanize }}
+                <input type="radio" name="shuffle-filter" value="{{ . | urlize }}">{{ . }}
               </label>
               {{- end }}
             </div>
