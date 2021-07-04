@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-md-6">
         {{ with .title }}<h2>{{ . | markdownify }}</h2>{{ end }}
-        {{ with .content }}<p class="mt-30">{{ . | markdownify }}</p>{{ end }}
+        {{ with .content }}<div class="mt-30">{{ . | $.Page.RenderString (dict "display" "block") }}</div>{{ end }}
       </div>
       {{ with .image -}}
       <div class="col-md-6">
