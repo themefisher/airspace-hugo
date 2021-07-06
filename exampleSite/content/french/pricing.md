@@ -9,6 +9,9 @@ menu:
     parent: "Plus"
     name: "Tarification"
     weight: 2
+  footer:
+    name: "Tarification"
+    weight: 4
 
 ################################ pricing ################################
 pricing:

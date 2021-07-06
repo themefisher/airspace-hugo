@@ -7,4 +7,7 @@ menu:
   main:
     name: "Progetto"
     weight: 3
+  footer:
+    name: "Progetto"
+    weight: 2
 ---

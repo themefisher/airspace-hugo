@@ -9,6 +9,9 @@ menu:
     parent: "Mehr"
     name: "Dienstleistung"
     weight: 1
+  footer:
+    name: "Dienstleistung"
+    weight: 3
 
 ########################### about service #############################
 about:

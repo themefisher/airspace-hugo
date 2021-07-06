@@ -8,6 +8,9 @@ menu:
   main:
     name: "À propos"
     weight: 2
+  footer:
+    name: "À propos"
+    weight: 1
 
 
 ################################## About #####################################

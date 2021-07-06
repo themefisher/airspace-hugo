@@ -8,6 +8,9 @@ menu:
   main:
     name: "Chi siamo"
     weight: 2
+  footer:
+    name: "Chi siamo"
+    weight: 1
 
 
 ################################## About #####################################

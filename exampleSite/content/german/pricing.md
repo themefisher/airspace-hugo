@@ -9,6 +9,9 @@ menu:
     parent: "Mehr"
     name: "Preise"
     weight: 2
+  footer:
+    name: "Preise"
+    weight: 4
 
 ################################ pricing ################################
 pricing:

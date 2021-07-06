@@ -182,43 +182,12 @@ contentDir = "content/english"
 weight = 1
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). All Rights Reserved."
 
-# Main menu
+# Navigation menus
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.en.menu.main]]
 hasChildren = true
 name = "More"
 weight = 5
-
-# Footer menu
-[[languages.en.menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
-
-[[languages.en.menu.footer]]
-name = "Project"
-URL = "project"
-weight = 2
-
-[[languages.en.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[languages.en.menu.footer]]
-name = "Pricing"
-URL = "pricing"
-weight = 4
-
-[[languages.en.menu.footer]]
-name = "FAQ"
-URL = "faq"
-weight = 5
-
-[[languages.en.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
 
 
 ################################# French translation ##########################
@@ -229,43 +198,12 @@ contentDir = "content/french"
 weight = 2
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tous droits réservés."
 
-# Main menu
+# Navigation menus
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.fr.menu.main]]
 hasChildren = true
 weight = 5
 name = "Plus"
-
-# Footer menu
-[[languages.fr.menu.footer]]
-name = "À propos"
-URL = "about"
-weight = 1
-
-[[languages.fr.menu.footer]]
-name = "Projet"
-URL = "project"
-weight = 2
-
-[[languages.fr.menu.footer]]
-name = "Service"
-URL = "service"
-weight = 3
-
-[[languages.fr.menu.footer]]
-name = "Tarification"
-URL = "pricing"
-weight = 4
-
-[[languages.fr.menu.footer]]
-name = "Questions fréquentes"
-URL = "faq"
-weight = 5
-
-[[languages.fr.menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 6
 
 
 ################################# Italian translation ##########################
@@ -276,43 +214,12 @@ contentDir = "content/italian"
 weight = 2
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Tutti i diritti riservati."
 
-# Main menu
+# Navigation menus
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.it.menu.main]]
 hasChildren = true
 weight = 5
 name = "Più"
-
-# Footer menu
-[[languages.it.menu.footer]]
-name = "Chi siamo"
-URL = "about"
-weight = 1
-
-[[languages.it.menu.footer]]
-name = "Progetto"
-URL = "project"
-weight = 2
-
-[[languages.it.menu.footer]]
-name = "Servizio"
-URL = "service"
-weight = 3
-
-[[languages.it.menu.footer]]
-name = "Tariffazione"
-URL = "pricing"
-weight = 4
-
-[[languages.it.menu.footer]]
-name = "Domande frequenti"
-URL = "faq"
-weight = 5
-
-[[languages.it.menu.footer]]
-name = "Contatta"
-URL = "contact"
-weight = 6
 
 
 ################################# German translation ##########################
@@ -323,40 +230,9 @@ contentDir = "content/german"
 weight = 3
 copyright = "Copyright &copy; 2021 [Themefisher](https://themefisher.com). Alle Rechte vorbehalten."
 
-# Main menu
+# Navigation menus
 # NOTE: Leaf entries linking to content should be defined in the content file's respective front matter.
 [[languages.de.menu.main]]
 hasChildren = true
 name = "Mehr"
 weight = 5
-
-# Footer menu
-[[languages.de.menu.footer]]
-name = "Über uns"
-URL = "about"
-weight = 1
-
-[[languages.de.menu.footer]]
-name = "Projekt"
-URL = "project"
-weight = 2
-
-[[languages.de.menu.footer]]
-name = "Dienstleistung"
-URL = "service"
-weight = 3
-
-[[languages.de.menu.footer]]
-name = "Preise"
-URL = "pricing"
-weight = 4
-
-[[languages.de.menu.footer]]
-name = "Häufige Fragen"
-URL = "faq"
-weight = 5
-
-[[languages.de.menu.footer]]
-name = "Kontakt"
-URL = "contact"
-weight = 6

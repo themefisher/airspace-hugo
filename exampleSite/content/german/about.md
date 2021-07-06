@@ -8,6 +8,9 @@ menu:
   main:
     name: "Über uns"
     weight: 2
+  footer:
+    name: "Über uns"
+    weight: 1
 
 
 ################################## About #####################################

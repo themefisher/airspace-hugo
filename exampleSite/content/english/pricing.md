@@ -9,6 +9,9 @@ menu:
     parent: "More"
     name: "Pricing"
     weight: 2
+  footer:
+    name: "Pricing"
+    weight: 4
 
 ################################ pricing ################################
 pricing:
