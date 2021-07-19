@@ -15,6 +15,12 @@ disqusShortname = "" # Get your shortname from here: https://disqus.com/profile/
 googleAnalytics = ""
 
 
+############################# Modules ##############################
+[module.hugoVersion]
+extended = true
+min = "0.83.1"
+
+
 ################################# Output formats ##############################
 # Documentation: https://gohugo.io/templates/output-formats/#customizing-output-formats
 
