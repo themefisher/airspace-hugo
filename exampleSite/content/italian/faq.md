@@ -11,6 +11,9 @@ menu:
     parent: "More"
     name: "Domande frequenti"
     weight: 3
+  footer:
+    name: "Domande frequenti"
+    weight: 5
 ---
 
 ### Welcome to Airspace!

@@ -8,4 +8,7 @@ menu:
   main:
     name: "Contact"
     weight: 6
+  footer:
+    name: "Contact"
+    weight: 6
 ---

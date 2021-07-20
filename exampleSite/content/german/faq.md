@@ -11,6 +11,9 @@ menu:
     parent: "Mehr"
     name: "Häufige Fragen"
     weight: 3
+  footer:
+    name: "Häufige Fragen"
+    weight: 5
 ---
 
 ### Welcome to Airspace!

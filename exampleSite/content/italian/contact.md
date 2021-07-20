@@ -8,4 +8,7 @@ menu:
   main:
     name: "Contatta"
     weight: 6
+  footer:
+    name: "Contatta"
+    weight: 6
 ---

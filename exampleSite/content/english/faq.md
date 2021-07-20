@@ -11,6 +11,9 @@ menu:
     parent: "More"
     name: "FAQ"
     weight: 3
+  footer:
+    name: "FAQ"
+    weight: 5
 ---
 
 ### Welcome to Airspace!
