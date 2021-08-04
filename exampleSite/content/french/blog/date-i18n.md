@@ -10,7 +10,6 @@ draft: false
 type: "post"
 ---
 
-
 Pour écrire un horodatage [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) dans la langue courante, vous pouvez utiliser le shortcode `date_l10n` :
 
 L'écriture de

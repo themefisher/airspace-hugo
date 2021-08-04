@@ -10,7 +10,6 @@ draft: false
 type: "post"
 ---
 
-
 Per scrivere un timestamp [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) nella lingua corrente, puoi usare lo shortcode `date_l10n` :
 
 Scrivendo

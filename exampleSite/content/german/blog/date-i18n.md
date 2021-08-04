@@ -10,7 +10,6 @@ draft: false
 type: "post"
 ---
 
-
 Um einen [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601)-Zeitstempel in der aktuellen Sprache auszuschreiben, kann der Shortcode `date_l10n` verwendet werden:
 
 Wenn
