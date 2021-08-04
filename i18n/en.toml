@@ -1,5 +1,4 @@
 # Simple translations without pluralization rules
-## Regular
 404_message = "Sorry – this page does not seem to exist (anymore)."
 address_title = "Address"
 all = "All"
@@ -24,17 +23,3 @@ posted_by = "Posted by"
 read_more = "Continue reading"
 submit = "Send message"
 tags = "Tags"
-
-## Dates
-january = "January"
-february = "February"
-march = "March"
-april = "April"
-may = "May"
-june = "June"
-july = "July"
-august = "August"
-september = "September"
-october = "October"
-november = "November"
-december = "December"
