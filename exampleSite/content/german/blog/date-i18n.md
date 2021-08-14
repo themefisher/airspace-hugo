@@ -10,17 +10,30 @@ draft: false
 type: "post"
 ---
 
-
-Um einen [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601)-Zeitstempel in der aktuellen Sprache auszuschreiben, kann der Shortcode `date_i18n` verwendet werden:
+Um einen [ISO-8601](https://en.wikipedia.org/wiki/ISO_8601)-Zeitstempel in der aktuellen Sprache auszuschreiben, kann der Shortcode `date_l10n` verwendet werden:
 
 Wenn
 
 ```
-{{%/* date_i18n "2020-10-20" */%}}
+{{%/* date_l10n "2020-10-20" */%}}
 ```
 
 geschrieben wird, resultiert
 
 ```
-{{% date_i18n "2020-10-20" %}}
+{{% date_l10n "2020-10-20" %}}
+```
+
+Optional kann ein anderes [Format-Layout](https://gohugo.io/functions/dateformat/#datetime-formatting-layouts) spezifiert werden:
+
+Beispielsweise resultiert folgendes
+
+```
+{{%/* date_l10n "2020-10-20" ":date_short" */%}}
+```
+
+in
+
+```
+{{% date_l10n "2020-10-20" ":date_short" %}}
 ```

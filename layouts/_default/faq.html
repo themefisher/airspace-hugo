@@ -8,7 +8,7 @@
       <div class="col-md-4 sticky-top">
         <h2>{{ .Title }}</h2>
         {{ with .Params.subtitle }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
-        <p>{{ i18n "last_update" }}: {{ partial "date_i18n.html" (dict "date" .Lastmod "lang" .Page.Language.Lang) }}</p>
+        <p>{{ i18n "last_update" }}: {{ time.Format ":date_long" .Lastmod }}</p>
         <h3>{{ i18n "faq_toc_title" }}</h3>
         {{ .TableOfContents }}
       </div>

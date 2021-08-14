@@ -1,0 +1,9 @@
+<!-- {{/*
+Localize a date string like "2006-01-02" based on the current language; returns e.g. "January 2, 2006" if current language is English
+
+Usage: {{< date_l10n INPUT [LAYOUT] >}}
+*/}} -->
+{{ $layout := ":date_long" -}}
+{{ with .Get 1 }}{{ $layout = . }}{{ end -}}
+{{ time.Format $layout (.Get 0) -}}
+{{/* Dummy comment to strip trailing newline */ -}}

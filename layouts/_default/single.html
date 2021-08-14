@@ -13,7 +13,7 @@
           <h2 class="post-title">{{ .Title }}</h2>
           <div class="post-meta">
             <ul>
-              <li><i class="ion-calendar"></i> {{ partial "date_i18n.html" (dict "date" .PublishDate "lang" .Page.Language.Lang) }}</li>
+              <li><i class="ion-calendar"></i> {{ time.Format ":date_long" .PublishDate }}</li>
               <li><i class="ion-android-people"></i>
                 {{ i18n "posted_by" }}
                 {{ $authors := slice }}{{ if reflect.IsSlice .Params.author }}{{ $authors = .Params.author }}{{ else }}{{ $authors = (slice .Params.author) }}{{ end -}}
