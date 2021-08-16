@@ -8,7 +8,7 @@ layout: "faq"
 draft: false
 menu:
   main:
-    parent: "More"
+    parent: "Più"
     name: "Domande frequenti"
     weight: 3
   footer:
