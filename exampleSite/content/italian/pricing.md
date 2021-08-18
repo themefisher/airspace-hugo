@@ -6,7 +6,7 @@ layout: "pricing"
 draft: false
 menu:
   main:
-    parent: "More"
+    parent: "Più"
     name: "Tariffazione"
     weight: 2
   footer:
