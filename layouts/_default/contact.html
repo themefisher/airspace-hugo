@@ -4,7 +4,7 @@
 
 <section class="contact-form">
   <div class="container">
-    {{ with site.Params.contact.form }}{{ if .enable }}
+    {{ with site.Params.contact.form }}{{ if .enable -}}
     <div class="row">
       <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="{{ "/message_sent" | relLangURL }}" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
         <div class="col-md-6 col-sm-12">
@@ -21,11 +21,11 @@
               <label for="subject" hidden>{{ i18n "contact_form_subject" }}</label>
               <input id="subject" name="subject" type="text" class="form-control" placeholder="{{ i18n "contact_form_subject" }}" required>
             </div>
-            {{ if .use_netlify }}
+            {{ if .use_netlify -}}
             <div class="form-group-h">
               <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
             </div>
-            {{ end -}}
+            {{- end }}
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
@@ -39,26 +39,27 @@
         </div>
       </form>
     </div>
-    {{ end }}{{ end }}
+    {{- end }}{{ end }}
     <div class="contact-box row">
-      {{ with site.Params.contact }}
+      {{ with site.Params.contact -}}
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <h2>{{ i18n "address_title" }}</h2>
           <ul class="address-block">
-            {{ if isset . "location" }}<li><i class="ion-ios-location-outline"></i>{{ if .address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}<div>{{ .location | markdownify }}</div></li>{{ end }}
-            {{ if isset . "email" }}<li><i class="ion-ios-email-outline"></i>{{ if .address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ partial "cloak_email" .email }}</li>{{ end }}
-            {{ if isset . "phone" }}<li><i class="ion-ios-telephone-outline"></i>{{ if .address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ .phone }}</li>{{ end }}
+            {{ $add_address_descriptors := .address_descriptors }}
+            {{ with .location }}<li><i class="ion-ios-location-outline"></i>{{ if $add_address_descriptors }}{{ i18n "location" | printf "%s: " }}{{ end }}<div>{{ . | markdownify }}</div></li>{{ end }}
+            {{ with .email }}<li><i class="ion-ios-email-outline"></i>{{ if $add_address_descriptors }}{{ i18n "email" | printf "%s: " }}{{ end }}{{ partial "cloak_email" . }}</li>{{ end }}
+            {{ with .phone }}<li><i class="ion-ios-telephone-outline"></i>{{ if $add_address_descriptors }}{{ i18n "phone" | printf "%s: " }}{{ end }}{{ . }}</li>{{ end }}
           </ul>
           <ul class="social-icons">
-            {{ range site.Params.social }}
+            {{ range site.Params.social -}}
             <li><a href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-            {{ end }}
+            {{- end }}
           </ul>
         </div>
       </div>
-      {{ end }}
-      {{ if site.Params.gmap.enable }}
+      {{- end }}
+      {{ if site.Params.gmap.enable -}}
       <div class="col-md-6 col-sm-12">
         <div class="block">
           <div class="google-map">
@@ -66,7 +67,7 @@
           </div>
         </div>
       </div>
-      {{ end }}
+      {{- end }}
     </div>
   </div>
 </section>
