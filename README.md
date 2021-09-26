@@ -21,8 +21,7 @@
 ---
 
 <p align="center">
-
-![airspace](images/tn.png)
+  <img src="https://demo.gethugothemes.com/thumbnails/airspace.webp" alt="screenshot" width="100%">
 </p>
 
 ---
