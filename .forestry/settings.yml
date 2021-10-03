@@ -89,20 +89,30 @@ sections:
   templates:
   - new-page
 - type: heading
-  label: Translations
+  label: Configuration
+- type: document
+  path: exampleSite/config/_default/config.toml
+  label: Configuration
+- type: document
+  path: exampleSite/config/_default/params.toml
+  label: Parameters
+- type: document
+  path: config.toml
+  label: Variables & Plugins
+- type: document
+  path: exampleSite/config/_default/languages.toml
+  label: Languages
+- type: document
+  path: exampleSite/config/_default/menus.en.toml
+  label: Menu (en)
+- type: document
+  path: exampleSite/config/_default/menus.fr.toml
+  label: Menu (fr)
 - type: directory
   path: exampleSite/i18n
-  label: i18n
-  create: documents
-  match: "**/*"
-- type: heading
-  label: Configuration
-- type: directory
-  path: exampleSite
-  label: Configuration
+  label: i18n Translations
   create: all
-  match: "*.toml"
-  new_doc_ext: toml
+  match: "**/*"
 upload_dir: exampleSite/static/images
 public_path: "/images"
 front_matter_path: ''
