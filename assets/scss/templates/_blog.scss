@@ -3,11 +3,11 @@
 ==================================================================*/
 
 .blog {
-  background: #F6F6F6;
+  background: darken( $light, 1.17);
 }
 
 .post {
-  background: $light;
+  background: $white;
   margin-bottom: 55px;
 
   @include tablet {
@@ -34,10 +34,10 @@
     text-transform: uppercase;
 
     a {
-      color: $primary-color;
+      color: $color-primary;
 
       &:hover {
-        color: $primary-color;
+        color: $color-primary;
       }
     }
   }
@@ -49,16 +49,16 @@
     ul {
       li {
         display: inline-block;
-        color: #909090;
+        color: lighten( $black, 56.47 );
         margin-right: 20px;
         font-size: 12px;
         letter-spacing: .5px;
 
         a {
-          color: #909090;
+          color: lighten( $black, 56.47 );
 
           &:hover {
-            color: $primary-color;
+            color: $color-primary;
           }
         }
       }
@@ -79,22 +79,22 @@
     ul {
       font-size: 15px;
       padding: 10px 20px;
-      font-family: $primary-font;
+      font-family: $font-primary;
       list-style: circle;
     }
     ol {
       font-size: 15px;
       padding: 10px 20px;
-      font-family: $primary-font;
+      font-family: $font-primary;
     }
 
     blockquote {
       margin-top: 20px;
       font-size: 18px;
-      border-color: $primary-color;
+      border-color: $color-primary;
       padding: 10px 20px;
       text-align: left;
-      color: #777;
+      color: darken( $light, 50.98);
     }
 
     .btn-main {
@@ -126,15 +126,15 @@
       @include transition (all, 0.3s, ease);
 
       &:hover {
-        color: $light;
-        background: $primary-color;
-        border: 1px solid $primary-color;
+        color: $white;
+        background: $color-primary;
+        border: 1px solid $color-primary;
       }
     }
 
     &.active>a {
-      background: $primary-color !important;
-      border: 1px solid $primary-color !important;
+      background: $color-primary !important;
+      border: 1px solid $color-primary !important;
     }
   }
 

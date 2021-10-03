@@ -17,7 +17,7 @@
     }
 
     p {
-      color: #555;
+      color: lighten( $black, 33.3 );
       font-size: 16px;
     }
   }
@@ -25,7 +25,7 @@
 
 .counters-item {
   padding-bottom: 30px;
-  color: #444;
+  color: lighten( $black, 26.6 );
   position: relative;
 
   &.kill-border:before {
@@ -33,7 +33,7 @@
   }
 
   &:before {
-    background: #e5e5e5;
+    background: darken( $light, 7.843137254901947);
     content: "";
     margin-top: -27.5px;
     height: 55px;
@@ -56,7 +56,7 @@
   i {
     font-size: 40px;
     display: inline-block;
-    color: $primary-color;
+    color: $color-primary;
   }
 
   h3 {

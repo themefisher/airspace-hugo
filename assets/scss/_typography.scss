@@ -8,7 +8,7 @@
 
 body {
   line-height: 1.5;
-  font-family: $primary-font;
+  font-family: $font-primary;
   -webkit-font-smoothing: antialiased;
 
 }
@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $primary-font;
+  font-family: $font-primary;
 }
 
 h1,
@@ -32,39 +32,39 @@ h6 {
 }
 
 h1 {
-  font-size: 40px;
+  font-size: $h1;
 
   @include tablet {
-    font-size: 34px;
+    font-size: $h1-md;
   }
 
   @include mobile {
-    font-size: 28px;
+    font-size: $h2;
   }
 
   @include mobile-xs {
-    font-size: 26px;
+    font-size: $h2-md;
   }
 }
 
 h2 {
-  font-size: 28px;
+  font-size: $h2;
 
   @include mobile {
-    font-size: 22px;
+    font-size: $h2-sm;
   }
 }
 
 h3 {
-  font-size: 20px;
+  font-size: $h3;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: $h4;
 }
 
 p {
-  color: #7B7B7B;
+  color: darken( $light, 49.41);
   font-size: 15px;
-  font-family: $primary-font;
+  font-family: $font-primary;
 }

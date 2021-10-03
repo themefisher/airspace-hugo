@@ -19,7 +19,7 @@
 }
 
 .post-sub-heading {
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid $border-color;
   padding-bottom: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -48,7 +48,7 @@
     font-weight: 500;
 
     a {
-      color: $primary-color;
+      color: $color-primary;
       font-size: 14px;
       text-transform: uppercase;
     }
@@ -57,12 +57,12 @@
   time {
     margin: 0 0 5px;
     display: inline-block;
-    color: #808080;
+    color: darken( $light, 47.45);
     font-size: 12px;
   }
 
   .comment-button {
-    color: $primary-color;
+    color: $color-primary;
     display: inline-block;
     margin-left: 5px;
     font-size: 12px;
@@ -73,7 +73,7 @@
     }
 
     &:hover {
-      color: $primary-color;
+      color: $color-primary;
     }
   }
 }
@@ -81,7 +81,7 @@
 .post-excerpt {
   h3 {
     a {
-      color: #000;
+      color: $black;
     }
   }
 
@@ -95,7 +95,7 @@
     p {
       line-height: 30px;
       font-size: 20px;
-      color: $primary-color;
+      color: $color-primary;
     }
   }
 }
@@ -110,22 +110,22 @@
 .blog-subtitle {
   font-size: 15px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 25px;
   text-transform: uppercase;
 }
 
 .next-prev {
-  border-bottom: 1px solid #dedede;
-  border-top: 1px solid #dedede;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
   margin: 20px 0;
   padding: 25px 0;
 
   a {
-    color: #000;
+    color: $black;
 
     &:hover {
-      color: $primary-color;
+      color: $color-primary;
     }
   }
 
@@ -145,13 +145,13 @@
       display: inline-block;
 
       a {
-        color: #4e595f;
+        color: lighten( $black, 33.92 );
         display: block;
         font-size: 16px;
 
         i {
           &:hover {
-            color: $primary-color;
+            color: $color-primary;
           }
         }
       }
@@ -173,7 +173,7 @@
 }
 
 .post-author>img {
-  border: 1px solid #dedede;
+  border: 1px solid $border-color;
   max-width: 120px;
   padding: 5px;
   width: 100%;
@@ -193,7 +193,7 @@
 
 
 .comment-wrap {
-  border: 1px solid #dedede;
+  border: 1px solid $border-color;
   border-radius: 1px;
   margin-left: 20px;
   padding: 10px;
@@ -209,7 +209,7 @@
       margin-bottom: 8px;
 
       a {
-        color: $primary-color;
+        color: $color-primary;
         font-size: 13px;
       }
     }
@@ -238,7 +238,7 @@
 
     &:focus {
       box-shadow: none;
-      border: 1px solid $primary-color;
+      border: 1px solid $color-primary;
     }
   }
 

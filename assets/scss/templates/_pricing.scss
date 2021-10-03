@@ -5,7 +5,7 @@
 .pricing-table {
   .pricing-item {
     padding: 40px 20px;
-    background: $light;
+    background: $white;
     box-shadow: 0 8px 15px 0 rgba(5, 57, 106, .06);
 
     a.btn-main {
@@ -16,11 +16,11 @@
     li {
       font-weight: 400;
       padding: 6px 0;
-      color: #666;
+      color: darken( $light, 57.64);
 
       i {
         margin-right: 6px;
-        color: $primary-color;
+        color: $color-primary;
       }
     }
   }
@@ -43,7 +43,7 @@
     }
 
     .value {
-      color: $primary-color;
+      color: $color-primary;
       font-size: 50px;
       padding: 10px 0;
     }

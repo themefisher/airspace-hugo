@@ -1,0 +1,82 @@
+############# French navigation ##############
+
+# main menu
+[[main]]
+name = "Accueil"
+url = ""
+weight = 1
+
+[[main]]
+name = "À propos"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Projet"
+url = "project/"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 4
+
+[[main]]
+weight = 5
+name = "Plus"
+hasChildren = true
+
+  [[main]]
+  parent = "Plus"
+  name = "Service"
+  url = "service/"
+  weight = 1
+
+  [[main]]
+  parent = "Plus"
+  name = "Tarification"
+  url = "pricing/"
+  weight = 2
+
+  [[main]]
+  parent = "Plus"
+  name = "Questions fréquentes"
+  url = "faq/"
+  weight = 3
+  
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 6
+
+
+# footer menu
+[[footer]]
+name = "À propos"
+url = "about/"
+weight = 2
+
+[[footer]]
+name = "Projet"
+url = "project/"
+weight = 3
+
+[[footer]]
+name = "Service"
+url = "service/"
+weight = 4
+
+[[footer]]
+name = "Tarification"
+url = "pricing/"
+weight = 5
+
+[[footer]]
+name = "Questions fréquentes"
+url = "faq/"
+weight = 6
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 7

@@ -1,4 +1,32 @@
-@import 'variables.scss';
+// Color Variables
+{{ with site.Params.variables }}
+$color-primary: {{.color_primary | default "#777"}};
+$color-secondary: {{.color_secondary | default "#0AA8A7"}};
+$text-color: {{.text_color | default "#777"}};
+$text-dark: {{.text_dark | default "#222"}};
+$text-light: {{.text_light | default "#999"}};
+$body-bg: {{.body_color | default "#fff"}};
+$border-color: {{.border_color | default "#ECECEC"}};
+$black: {{.black | default "#000"}};
+$white: {{.white | default "#fff"}};
+$light: {{.light | default "#EDF6F5"}};
+
+
+// Font Variables
+$font-size: {{.font_size | default "16px"}};
+$font-scale: {{.font_scale | default "1.25"}};
+$font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_primary | default "Lato") "+" " "}}', {{.font_primary_type | default "sans-serif"}};
+$font-secondary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', {{.font_secondary_type | default "sans-serif"}};
+$font-icon: '{{.font_icon | default "Font Awesome 5 Free"}}';
+{{ end }}
+
+$h1: 40px;
+$h1-md: 34px;
+$h2: 28px;
+$h2-md: 26px;
+$h2-sm: 22px;
+$h3: 20px;
+$h4: 18px;
 
 @import 'mixins.scss';
 

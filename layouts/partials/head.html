@@ -1,62 +1,175 @@
-<head>
-  <meta charset="utf-8">
-  <title>{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}</title>
+<meta charset="utf-8">
+<title>{{.Title | default site.Title}}</title>
 
-  {{ "<!-- Mobile responsive metadata -->" | safeHTML }}
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}">
-  {{ with site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-  {{ hugo.Generator }}
+<!-- base url -->
+{{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
+<base href="{{ .Permalink }}">
+{{ end }}
 
-  {{ "<!-- Open Graph image and Twitter Card metadata -->" | safeHTML }}
-  {{ $image_path := .Params.image | default site.Params.image -}}
-  {{ $image_path_local :=  printf "static/%s" $image_path -}}
-  {{ $image_ext := trim (path.Ext $image_path | lower) "." -}}
-  {{ if fileExists $image_path_local -}}
-    <meta property="og:image" content="{{ $image_path | absURL }}" />
-    {{/* If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  */ -}}
-    {{ if ne $image_ext "svg" -}}
-      {{ with (imageConfig $image_path_local) -}}
-      {{ if (and (gt .Width 144) (gt .Height 144)) -}}
-        <meta name="twitter:image" content="{{ $image_path | absURL }}"/>
-        <meta name="twitter:card" content="summary{{ if (and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height))) }}_large_image{{ end }}">
-      {{ end -}}
-      <meta property="og:image:width" content="{{ .Width }}">
-      <meta property="og:image:height" content="{{ .Height }}">
-      {{ end -}}
-    {{ end -}}
-    <meta property="og:image:type" content="image/{{ if eq $image_ext "svg" }}svg+xml{{ else }}{{ replaceRE "^jpg$" "jpeg" $image_ext }}{{ end }}">
-  {{ end -}}
-  <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}"/>
-  <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}"/>
-  {{ with site.Social.twitter -}}<meta name="twitter:site" content="@{{ . }}"/>{{ end -}}
-  {{ range site.Authors }}
-    {{ with .twitter -}}<meta name="twitter:creator" content="@{{ . }}"/>{{ end -}}
-  {{ end -}}
+<!-- multilingual SEO optimizations -->
+{{ if .IsTranslated }}
+{{ range .AllTranslations }}
+<link rel="alternate" hreflang="{{.Lang}}" href="{{ .RelPermalink | absLangURL }}">
+{{ end }}
+<link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
+{{ end }}
 
-  {{ template "_internal/opengraph.html" . }}
-  {{ template "_internal/google_analytics.html" . }}
+<!-- mobile responsive meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="description" content="{{ .Params.Description | default site.Params.description }}">
+{{ with site.Params.author }}
+<meta name="author" content="{{ . }}">{{ end }}
+{{ hugo.Generator }}
 
-  {{- with site.Params.counter -}}
-  {{ if .enable -}}
-  {{ with .username -}}
-  {{ "<!-- counter.dev analytics -->" | safeHTML }}
-  {{ $counterjs := resources.Get "js/counter.min.js" | resources.ExecuteAsTemplate "js/counter.min.js" . -}}
-  <script src="{{ $counterjs.RelPermalink }}"></script>
-  {{- end }}
-  {{- end }}
-  {{- end }}
+<!-- google site verification -->
+{{ with site.Params.site_verification.google }}
+<meta name="google-site-verification" content="{{ . }}" />
+{{ end }}
 
-  {{ "<!-- Plugins -->" | safeHTML }}
-  {{ range site.Params.plugins.css -}}
-  <link rel="stylesheet" href="{{ .link | relURL }}" {{ .attributes | safeHTMLAttr }}>
-  {{ end }}
+<!-- bing site verification -->
+{{ with site.Params.site_verification.baidu }}
+<meta name="msvalidate.01" content="{{ . }}" />
+{{ end }}
 
-  {{ "<!-- Main stylesheet -->" | safeHTML }}
-  {{ $styles := slice (resources.Get "scss/style.scss") (resources.Get "scss/custom.scss") | resources.Concat "scss/bundled.scss" | toCSS | minify -}}
-  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
+<!-- baidu site verification -->
+{{ with site.Params.site_verification.baidu }}
+<meta name="baidu-site-verification" content="{{ . }}" />
+{{ end }}
 
-  {{ "<!-- Favicon -->" | safeHTML }}
-  {{ partial "favicon.html" . }}
+<!-- favicon -->
+{{ $favicon:= site.Params.favicon }}
+{{ if $favicon }}
+{{ if fileExists (add `assets/` $favicon) }}
+{{ $favicon:= resources.Get $favicon }}
+{{ $favicon_16:= $favicon.Resize "16x png"}}
+{{ $favicon_32:= $favicon.Resize "32x png"}}
+{{ $favicon_180:= $favicon.Resize "180x png"}}
+<link rel="shortcut icon" href="{{$favicon_32.RelPermalink}}" type="image/x-icon">
+<link rel="icon" href="{{$favicon_32.RelPermalink}}" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="16x16" href="{{$favicon_16.RelPermalink}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{$favicon_32.RelPermalink}}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{$favicon_180.RelPermalink}}">
+{{ end }}
+{{ end }}
+<link rel="manifest" href="{{`manifest.webmanifest` | relURL }}">
+<meta name="msapplication-TileColor" content="{{site.Params.variables.color_primary | default `#da532c`}}">
+<meta name="theme-color" content="{{site.Params.variables.body_color | default `#ffffff` }}">
 
-</head>
+
+<!-- Open Graph image and Twitter Card meta-data -->
+{{ $image_path := .Params.image | default site.Params.image }}
+{{ $image_path_local :=  printf "assets/%s" $image_path }}
+{{ $image_ext := trim (path.Ext $image_path | lower) "." }}
+{{ if fileExists $image_path_local }}
+<meta property="og:image" content="{{ $image_path | absURL }}" />
+<!-- If not SVG, read image aspect ratio and define Twitter Card and Open Graph width and height  -->
+{{ if ne $image_ext "svg" }}
+{{ with (imageConfig $image_path_local) }}
+{{ if (and (gt .Width 144) (gt .Height 144)) }}
+<meta name="twitter:image" content="{{ $image_path | absURL }}" />
+<meta name="twitter:card"
+  content="summary{{ if (and (gt .Width 300) (gt .Height 157) (not (eq .Width .Height))) }}_large_image{{ end }}">
+{{ end }}
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+{{ end }}
+{{ end }}
+<meta property="og:image:type"
+  content="image/{{ if eq $image_ext `svg` }}svg+xml{{ else }}{{ replaceRE `^jpg$` `jpeg` $image_ext }}{{ end }}">
+{{ end }}
+<meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}" />
+<meta name="twitter:description"
+  content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+{{ with site.Social.twitter }}
+<meta name="twitter:site" content="@{{ . }}" />{{ end }}
+{{ range site.Authors }}
+{{ with .twitter }}
+<meta name="twitter:creator" content="@{{ . }}" />{{ end }}
+{{ end }}
+
+{{ template "_internal/opengraph.html" . }}
+
+<!-- google analytics -->
+{{ template "_internal/google_analytics.html" . }}
+
+<!-- google tag manager -->
+{{ with site.Params.google_tag_manager }}
+<script>
+  var dataLayer = window.dataLayer = window.dataLayer || [];
+  dataLayer.push({
+    page: '{{ .Title }}',
+    categories: 'only examples about your dataLayer'
+  });
+</script>
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', '{{ . }}');
+</script>
+{{ end }}
+
+<!-- matomo analytics -->
+{{ with site.Params.matomo }}
+{{ if .enable }}
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function () {
+    var u = "{{.url|safeURL}}";
+    _paq.push(['setTrackerUrl', u + 'piwik.php']);
+    _paq.push(['setSiteId', '{{.id}}']);
+    var d = document,
+      g = d.createElement('script'),
+      s = d.getElementsByTagName('script')[0];
+    g.type = 'text/javascript';
+    g.async = true;
+    g.src = u + 'piwik.js';
+    s.parentNode.insertBefore(g, s);
+  })();
+</script>
+{{ end }}
+{{ end }}
+
+<!--  Baidu analytics -->
+{{ if site.Params.baidu.enable }}
+{{ with site.Params.baidu.analytics_id }}
+<script>
+  var _hmt = _hmt || [];
+  (function () {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?{{ . }}";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+{{ end }}
+{{ end }}
+
+<!-- Plausible Analytics -->
+{{ if site.Params.plausible.enable }}
+{{ with site.Params.plausible.domain }}
+<script defer data-domain="{{ . }}" src="https://plausible.io/js/plausible.js"></script>
+{{ end }}
+{{ end }}
+
+<!-- Counter Analytics -->
+{{ with site.Params.counter }}
+{{ if .enable }}
+{{ with .username }}
+<script>
+  if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ . }}",utcoffset:"0"}))};sessionStorage.setItem("_swa","1");
+</script>
+{{ end }}
+{{ end }}
+{{ end }}

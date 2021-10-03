@@ -15,7 +15,7 @@
       top: 12px;
       right: 12px;
       background: $black;
-      color: $light;
+      color: $white;
       font-size: 12px;
       padding: 4px 12px;
       font-weight: 300;
@@ -50,15 +50,15 @@
 
         a,
         span {
-          background: $light;
+          background: $white;
           padding: 10px 16px;
           cursor: pointer;
           display: inline-block;
           font-size: 18px;
 
           &:hover {
-            background: $primary-color;
-            color: $light;
+            background: $color-primary;
+            color: $white;
           }
         }
       }
@@ -185,8 +185,8 @@
         }
 
         .btn-transparent {
-          color: #444;
-          border-bottom: 1px solid #dedede;
+          color: lighten( $black, 26.6 );
+          border-bottom: 1px solid $border-color;
         }
       }
 
@@ -212,7 +212,7 @@
       margin-bottom: 4px;
 
       a {
-        color: #666;
+        color: darken( $light, 57.64);
 
         &:hover {
           color: $black;

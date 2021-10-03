@@ -1,0 +1,50 @@
+{{ $logoPath:= site.Params.logo }}
+{{ $logoWidth:= replace site.Params.logo_width "px" "x" }}
+
+<!-- checking logo existance -->
+{{ if $logoPath }}
+{{ if fileExists (add `assets/` $logoPath) }}
+{{ $logo:= resources.Get $logoPath }}
+
+<!-- logo extention -->
+{{ $logoExt := path.Ext $logo }}
+
+<!-- logo height, width (if not svg) -->
+{{ if eq $logoExt `.svg` }}
+{{ .Scratch.Set "logo-width" "" }}
+{{ .Scratch.Set "logo-height" "" }}
+{{ else }}
+{{ .Scratch.Set "logo-width" $logo.Width }}
+{{ .Scratch.Set "logo-height" $logo.Height }}
+{{ end }}
+{{ $logoDefaultWidth:= .Scratch.Get "logo-width" }}
+{{ $logoDefaultHeight:= .Scratch.Get "logo-height" }}
+
+<!-- checking gif -->
+{{ if eq $logoExt ".gif" }}
+{{ .Scratch.Set "logo" ($logo.Resize $logoWidth).RelPermalink }}
+<!-- checking svg -->
+{{ else if eq $logoExt ".svg"}}
+{{ .Scratch.Set "logo" $logo.RelPermalink }}
+<!-- logo processing to webp -->
+{{ else }}
+{{ $logoDefaultWidth:= add (string $logoDefaultWidth) "x"}}
+{{ $logoWidth:= $logoWidth | default $logoDefaultWidth }}
+{{ $options := add (string $logoWidth) " webp" }}
+{{ .Scratch.Set "logo" ($logo.Resize $options).RelPermalink }}
+<!-- logo fallback -->
+{{ .Scratch.Set "logo_fallback" ($logo.Resize $logoWidth).RelPermalink }}
+{{ end }}
+
+<img loading="prelaod" decoding="async" class="img-fluid" width="{{replace $logoWidth `x` `` | default $logoDefaultWidth}}" height="{{$logoDefaultHeight}}" src="{{.Scratch.Get `logo`}}" alt="{{ site.Title }}" onerror="this.onerror=null;this.src='{{.Scratch.Get `logo_fallback`}}'">
+{{ else }}
+<strong class="text-danger">`{{$logoPath}}` doesn't exist</strong>
+{{ end }}
+<!-- / checking logo existance -->
+<!-- logo text -->
+{{ else if site.Params.logo_text }}
+{{ site.Params.logo_text | markdownify }}
+<!-- logo title -->
+{{ else }}
+{{ site.Title | markdownify }}
+{{ end }}

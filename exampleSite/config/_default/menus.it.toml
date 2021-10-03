@@ -1,0 +1,82 @@
+############# Italian navigation ##############
+
+# main menu
+[[main]]
+name = "Pagina iniziale"
+url = ""
+weight = 1
+
+[[main]]
+name = "Chi siamo"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Progetto"
+url = "project/"
+weight = 3
+
+[[main]]
+name = "Blog"
+url = "blog/"
+weight = 4
+
+[[main]]
+weight = 5
+name = "Più"
+hasChildren = true
+
+  [[main]]
+  parent = "Più"
+  name = "Servizio"
+  url = "service/"
+  weight = 1
+
+  [[main]]
+  parent = "Più"
+  name = "Tariffazione"
+  url = "pricing/"
+  weight = 2
+
+  [[main]]
+  parent = "Più"
+  name = "Domande frequenti"
+  url = "faq/"
+  weight = 3
+  
+[[main]]
+name = "Contatta"
+url = "contact/"
+weight = 6
+
+
+# footer menu
+[[footer]]
+name = "Chi siamo"
+url = "about/"
+weight = 2
+
+[[footer]]
+name = "Progetto"
+url = "project/"
+weight = 3
+
+[[footer]]
+name = "Servizio"
+url = "service/"
+weight = 4
+
+[[footer]]
+name = "Tariffazione"
+url = "pricing/"
+weight = 5
+
+[[footer]]
+name = "Domande frequenti"
+url = "faq/"
+weight = 6
+
+[[footer]]
+name = "Contatta"
+url = "contact/"
+weight = 7

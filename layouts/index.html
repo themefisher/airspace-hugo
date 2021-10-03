@@ -115,7 +115,7 @@
           <div class="testimonial-slider owl-carousel">
             {{ range .testimonial_slider }}
             <div>
-              <i class="ion-quote"></i>
+              <i class="fas fa-quote-left"></i>
               {{ with .content }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
               <div class="user">
                 <img src="{{ .image | relURL }}" alt="client">

@@ -1,9 +1,4 @@
 ---
-menu:
-  main:
-    name: "Startseite"
-    weight: 1
-
 ############################### Banner ##############################
 banner:
   enable: true
@@ -68,22 +63,22 @@ funfacts:
   description: "'Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <br> there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics'"
   funfact_item:
   # funfacts item loop
-  - icon: "ion-ios-chatboxes-outline" #ionicon pack v2: https://ionicons.com/v2/
+  - icon: "fas fa-glass-cheers" #https://fontawesome.com/v5.15/icons
     name: "Cups Of Coffee"
     count: "99"
 
   # funfacts item loop
-  - icon: "ion-ios-glasses-outline" #ionicon pack v2: https://ionicons.com/v2/
+  - icon: "fas fa-glasses" #https://fontawesome.com/v5.15/icons
     name: "Article Written"
     count: "45"
 
   # funfacts item loop
-  - icon: "ion-ios-compose-outline" #ionicon pack v2: https://ionicons.com/v2/
+  - icon: "fas fa-keyboard" #https://fontawesome.com/v5.15/icons
     name: "Projects Completed"
     count: "125"
 
   # funfacts item loop
-  - icon: "ion-ios-timer-outline" #ionicon pack v2: https://ionicons.com/v2/
+  - icon: "fas fa-clock" #https://fontawesome.com/v5.15/icons
     name: "Combined Projects"
     count: "200"
 

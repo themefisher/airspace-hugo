@@ -6,7 +6,7 @@
       <div class="col-md-12">
         <h1>404</h1>
         <h2 class="text-muted">{{ i18n "404_message" | markdownify }}</h2>
-        <a href="{{ "/" | relLangURL }}" class="btn btn-main"><i class="tf-ion-android-arrow-back"></i> {{ i18n "go_home" | markdownify }}</a>
+        <a href="{{site.BaseURL | relLangURL}}" class="btn btn-main">{{ i18n "go_home" | markdownify }}</a>
       </div>
     </div>
   </div>

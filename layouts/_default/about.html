@@ -77,7 +77,7 @@
           <div class="testimonial-slider owl-carousel">
             {{ range .Params.funfacts.testimonial_slider }}
             <div>
-              <i class="ion-quote"></i>
+              <i class="fas fa-quote-left"></i>
               {{ with .content }}<p>"{{ . | markdownify }}"</p>{{ end }}
               <div class="user">
                 {{ with .image }}<img src="{{ . | relURL }}" alt="client">{{ end }}

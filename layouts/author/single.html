@@ -55,13 +55,13 @@
           <h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
           <div class="post-meta">
             <ul>
-              <li><i class="ion-calendar"></i> {{ time.Format ":date_long" .PublishDate }}</li>
-              <li><i class="ion-android-people"></i>
+              <li><i class="fas fa-calendar-week"></i> {{ time.Format ":date_long" .PublishDate }}</li>
+              <li><i class="fas fa-user"></i>
                 {{ i18n "posted_by" }}
                 {{ $authors := slice }}{{ if reflect.IsSlice .Params.author }}{{ $authors = .Params.author }}{{ else }}{{ $authors = (slice .Params.author) }}{{ end -}}
                 {{ range $index, $elements := $authors }}{{ if ne $index 0 }}, {{ end }}<a class="text-primary" href="{{ `author/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
               </li>
-              <li><i class="ion-pricetags"></i>
+              <li><i class="fas fa-tags"></i>
                 {{ range $index, $elements:= .Params.tags }}{{ if ne $index 0 }}, {{ end }}<a href="{{ `tags/` | relLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
               </li>
             </ul>

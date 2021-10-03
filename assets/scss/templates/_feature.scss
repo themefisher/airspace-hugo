@@ -21,13 +21,13 @@
   }
 
   p {
-    color: #8d8f92;
+    color: darken( $light, 41.37);
     margin-bottom: 20px;
   }
 
   .btn-view-works {
-    background: #655E7A;
-    color: #fff;
+    background: lighten( $black, 42.35 );
+    color: $white;
     padding: 10px 20px;
     margin-bottom: 30px;
   }

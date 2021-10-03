@@ -70,7 +70,7 @@
     .table {
       .cart-amount {
         th {
-          background: #f9f9f9;
+          background: $light;
           padding: 10px;
           text-transform: uppercase;
         }
@@ -90,7 +90,7 @@
     }
 
     .product-remove {
-      color: $alert;
+      color: #c7254e;
     }
   }
 
@@ -127,7 +127,7 @@
     h4 {
       font-weight: 400;
       font-size: 14px;
-      color: #555;
+      color: lighten( $black, 33.3 );
     }
 
     .remove {
@@ -147,7 +147,7 @@
 
       a {
         font-weight: 400;
-        color: #555;
+        color: lighten( $black, 33.3 );
       }
     }
   }
@@ -201,7 +201,7 @@
 
     .table {
       margin: 0;
-      color: #444;
+      color: lighten( $black, 26.6 );
 
       b,
       strong {
@@ -224,8 +224,8 @@
   .block {
     i {
       font-size: 40px;
-      background: $success;
-      color: $light;
+      background: $color-secondary;
+      color: $white;
       width: 60px;
       height: 60px;
       border-radius: 100px;

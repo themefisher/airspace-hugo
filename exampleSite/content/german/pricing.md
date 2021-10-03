@@ -4,14 +4,6 @@ description: "this is meta description"
 bg_image: "images/feature-bg.jpg"
 layout: "pricing"
 draft: false
-menu:
-  main:
-    parent: "Mehr"
-    name: "Preise"
-    weight: 2
-  footer:
-    name: "Preise"
-    weight: 4
 
 ################################ pricing ################################
 pricing:

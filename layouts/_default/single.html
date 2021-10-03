@@ -32,7 +32,7 @@
           <div class="post-content post-excerpt">
             {{ .Content }}
           </div>
-          {{ with site.DisqusShortname -}}
+          {{ with site.Params.DisqusShortname -}}
           <div class="post-comments">
             {{ template "_internal/disqus.html" . }}
           </div>

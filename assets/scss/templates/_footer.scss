@@ -1,15 +1,15 @@
 .footer {
-  background: #F5F5F5;
+  background: darken( $light, 1.5);
   min-height: 205px;
   text-align: center;
   padding-top: 67px;
   p {
     font-size: 13px;
     line-height: 25px;
-    color: #919191;
+    color: lighten( $black, 56.86274509803921 );
   }
   a {
-    color: #595959;
+    color: lighten( $black, 34.9 );
   }
   .footer-menu {
     padding-bottom: 25px;
@@ -21,9 +21,9 @@
         padding: 0px 20px;
         a {
           display: inline-block;
-          color: #494949;
+          color: lighten( $black, 28.6 );
           &:hover {
-            color: #000;
+            color: $black;
           }
         }
       }

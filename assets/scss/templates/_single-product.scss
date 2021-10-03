@@ -68,14 +68,14 @@
 
     .carousel-control {
       bottom: auto;
-      background: $light;
+      background: $white;
       width: 6%;
       padding: 10px 0;
 
       i {
         font-size: 40px;
         text-shadow: none;
-        color: #555;
+        color: lighten( $black, 33.3 );
       }
     }
 
@@ -139,7 +139,7 @@
 
     span {
       width: 100px;
-      color: #000;
+      color: $black;
       font-size: 13px;
       font-weight: 600;
     }
@@ -160,7 +160,7 @@
     }
 
     .swatch-black {
-      background-color: #000;
+      background-color: $black;
     }
 
     .swatch-cream {
@@ -178,7 +178,7 @@
 
     span {
       width: 100px;
-      color: #000;
+      color: $black;
       font-size: 13px;
       font-weight: 600;
       display: inline-block;
@@ -189,9 +189,9 @@
       width: 130px;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: #000;
+      color: $black;
       font-size: 12px;
-      border: 1px solid #e5e5e5;
+      border: 1px solid darken( $light, 7.843137254901947);
       border-radius: 0px;
       box-shadow: none;
     }
@@ -202,7 +202,7 @@
 
     >span {
       width: 100px;
-      color: #000;
+      color: $black;
       font-size: 13px;
       font-weight: 600;
       display: inline-block;
@@ -229,7 +229,7 @@
 
     >span {
       width: 100px;
-      color: #000;
+      color: $black;
       font-size: 13px;
       font-weight: 600;
       display: inline-block;

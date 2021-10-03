@@ -1,0 +1,130 @@
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png"
+# logo
+logo = "images/logo.png"
+# use `px` or `x` with logo_width, example: "100px".
+# Note: logo_width is not work with .svg file
+logo_width = "150px"
+# logo text will only show when logo is missing.
+logo_text = "Airspace"
+# navbar fixed to top
+navbar_fixed = false
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "Themefisher"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+# Whether to display text descriptors (like "E-mail: ", "Phone: ") before the address block elements
+address_descriptors = false
+# contact info
+phone = "0124857985320"
+email = "demo@email.com"
+location = """
+**Themefisher**  
+North Main Street  
+Brooklyn, New South Wales  
+Australia
+"""
+# copyright
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script= ""
+# google tag manager, see https://developers.google.com/tag-manager/
+google_tag_manager = "" # example: G-XXXXXXXXXX
+
+[contact.form]
+enable = true
+# Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
+use_netlify = true
+# Form action
+## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
+## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
+action = "#"
+# Image on custom success page `/message_sent.html`
+success_image = "images/paper-plane.svg"
+
+
+# Preloader
+[preloader]
+enable = true
+preloader = "" # use jpg, png, svg or gif format.
+
+# Navigation button
+[navigation_button]
+enable = true
+label = "get a quote"
+link = "contact"
+
+
+# matomo tracking: see https://matomo.org/
+[matomo]
+enable = false
+url = "" # your matomo url
+id = "" # your matomo id
+
+# baidu analytics: see https://tongji.baidu.com/
+[baidu]
+enable = false
+analytics_id = "" # Your ID
+
+# plausible analytics: see https://plausible.io/
+[plausible]
+enable = false
+domain = "" # yourdomain.com
+
+# counter analytics: see https://counter.dev/setup.html
+[counter]
+enable = false
+username = "" # your username
+
+# site verifications
+[site_verification]
+google = "" # Your verification code
+bing = "" # Your verification code
+baidu = "" # Your verification code
+
+# google map
+[gmap]
+enable = true
+gmap_api = "AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"
+map_latitude = "51.5223477"
+map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+######################## sidebar widgets #########################
+[widgets]
+sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
+# available widget : categories,tags,recent-post
+
+############################# social site ########################
+[[social]]
+title = "facebook"
+icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "twitter"
+icon = "fab fa-twitter"  # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "instagram"
+icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "github"
+icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "linkedin"
+icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"

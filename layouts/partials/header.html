@@ -1,76 +1,83 @@
-<!-- Header -->
-<header class="navigation">
+<!-- navigation -->
+<header class="{{if site.Params.navbar_fixed}}sticky-top{{end}} navigation">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <!-- Header Nav -->
-        <nav class="navbar">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ "/" | relLangURL }}">
-              <img src="{{ site.Params.logo | relURL }}" alt="{{ site.Title }}" width="{{site.Params.logo_width}}" class="img-responsive">
-            </a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="navigation">
-            <ul class="nav navbar-nav navbar-right">
-              {{ $currentPage := . -}}
-              {{ range site.Menus.main -}}
-              {{ if .HasChildren -}}
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle{{ if $currentPage.HasMenuCurrent "main" . }} current-parent{{ end }}" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  {{ .Name }} <span class="ion-ios-arrow-down"></span>
-                </a>
-                <ul class="dropdown-menu">
-                  {{ range .Children -}}
-                  <li><a href="{{ .URL | relLangURL }}"{{ if $currentPage.IsMenuCurrent "main" . }} class="current"{{ end }}>{{ .Name }}</a></li>
-                  {{- end }}
-                </ul>
-              </li>
-              {{ else -}}
-              <li><a href="{{ .URL | relLangURL }}"{{ if $currentPage.IsMenuCurrent "main" . }} class="current"{{ else if and (in (slice "post" "categories" "tags") $currentPage.Type) (eq .Identifier "blog") }} class="current-parent"{{ end }}>{{ .Name }}</a></li>
-              {{- end }}
-              {{- end }}
+    <!-- navbar -->
+    <nav class="navbar">
 
-              <!-- Language List -->
-              {{ if site.IsMultiLingual -}}
-              <li>
-                <select id="select-language" onchange="location = this.value;">
-                  {{ $siteLanguages := site.Languages -}}
-                  {{ $pageLang := .Page.Lang -}}
-                  {{ $translations := "" }}{{ if eq .Page.Kind "404" }}{{ $translations = site.Home.AllTranslations }}{{ else }}{{ $translations = .Page.AllTranslations }}{{ end -}}
-                  {{ range $translations -}}
-                  {{ $translation := . -}}
-                  {{ range $siteLanguages -}}
-                  {{ if eq $translation.Lang .Lang -}}
-                  {{ $selected := false -}}
-                  {{ if eq $pageLang .Lang -}}
-                  <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>
-                    {{ .LanguageName }}
-                  </option>
-                  {{ else -}}
-                  <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">
-                    {{ .LanguageName }}
-                  </option>
-                  {{- end }}
-                  {{- end }}
-                  {{- end }}
-                  {{- end }}
-                </select>
-              </li>
-              {{- end }}
-              <!-- /Language List -->
-            </ul>
-          </div>
-        </nav>
-        <!-- /Header Nav -->
+      <div class="navbar-header">
+        <!-- navbar toggler -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation" aria-expanded="true">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        </button>
+        <!-- navbar brand/logo -->
+        <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+          {{ partial "logo.html" . }}
+        </a>
       </div>
-    </div>
+
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- menu active -->
+          {{ $currentPage := . }}
+          {{ range site.Menus.main }}
+          {{ $menuURL := .URL | absLangURL }}
+          {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+          {{ $active := eq $menuURL $pageURL }}
+          {{ if .HasChildren }}
+          <li class="nav-item dropdown 
+          {{ range .Children }}
+          {{ $childURL := .URL | absLangURL }}
+          {{ $active := eq $childURL $pageURL }}
+          {{ if $active }}current{{ end }}
+          {{ end }}">
+            <a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              {{ .Name }} <span class="fas fa-angle-down"></span>
+            </a>
+            <ul class="dropdown-menu">
+              {{ range .Children }}
+              {{ $childURL := .URL | absLangURL }}
+              {{ $active := eq $childURL $pageURL }}
+              <li><a class="dropdown-item {{ if $active }}current{{ end }}" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
+                href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else}}{{.URL | relLangURL}}{{end}}">{{ .Name }}</a></li>
+              {{ end }}
+            </ul>
+          </li>
+          {{ else }}
+          <li class="nav-item">
+            <a class="nav-link {{ if $active }}current{{ end }}" {{if findRE `^http` .URL}}target="_blank" rel="noopener" {{end}}
+              href="{{if findRE `^#` .URL}}{{if not $.IsHome}}{{site.BaseURL | relLangURL}}{{end}}{{.URL}}{{else}}{{.URL | relLangURL}}{{end}}">{{.Name}}</a>
+          </li>
+          {{ end }}
+          {{ end }}
+          <li>
+            <!-- Language List -->
+            {{ if .IsTranslated }}
+            <select class="m-2 border-0" id="select-language" onchange="location = this.value;">
+              {{ $siteLanguages := site.Languages}}
+              {{ $pageLang := .Page.Lang}}
+              {{ range .Page.AllTranslations }}
+              {{ $translation := .}}
+              {{ range $siteLanguages }}
+              {{ if eq $translation.Lang .Lang }}
+              {{ $selected := false }}
+              {{ if eq $pageLang .Lang}}
+              <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}" selected>{{ .LanguageName }}
+              </option>
+              {{ else }}
+              <option id="{{ $translation.Language }}" value="{{ $translation.RelPermalink }}">{{ .LanguageName }}</option>
+              {{ end }}
+              {{ end }}
+              {{ end }}
+              {{ end }}
+            </select>
+            {{ end }}
+          </li>
+        </ul>
+      </div>
+    </nav>
   </div>
 </header>
-<!-- /Header -->
+<!-- /navigation -->

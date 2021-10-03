@@ -6,14 +6,6 @@ lastmod: 2021-04-01T00:00:00
 bg_image: "images/feature-bg.jpg"
 layout: "faq"
 draft: false
-menu:
-  main:
-    parent: "Plus"
-    name: "Questions fréquentes"
-    weight: 3
-  footer:
-    name: "Questions fréquentes"
-    weight: 5
 ---
 
 ### Welcome to Airspace!

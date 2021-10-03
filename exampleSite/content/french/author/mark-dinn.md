@@ -4,11 +4,11 @@ email: "email2@example.org"
 bg_image: "images/feature-bg.jpg"
 draft: false
 social:
-  - icon : "ion-social-facebook-outline" #ionicon pack v2 : https://ionicons.com/v2/
+  - icon : "fab fa-facebook" #https://fontawesome.com/v5.15/icons
     link : "#"
-  - icon : "ion-social-twitter-outline" #ionicon pack v2 : https://ionicons.com/v2/
+  - icon : "fab fa-twitter" #https://fontawesome.com/v5.15/icons
     link : "#"
-  - icon : "ion-social-pinterest-outline" #ionicon pack v2 : https://ionicons.com/v2/
+  - icon : "fab fa-pinterest" #https://fontawesome.com/v5.15/icons
     link : "#"
 ---
 

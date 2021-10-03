@@ -11,7 +11,7 @@
   }
 
   .block {
-    color: #E3E3E4;
+    color: darken( $light, 8.4);
     text-align: center;
 
     h1 {
@@ -37,7 +37,7 @@
 
     p {
       margin-bottom: 30px;
-      color: #b9b9b9;
+      color: darken( $light, 25.09803921568627);
       font-size: 18px;
       line-height: 1.5em;
       font-weight: 300;
