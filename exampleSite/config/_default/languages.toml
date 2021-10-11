@@ -21,7 +21,7 @@ weight = 3
 
 ################ German language ##################
 [de]
-languageName = "Italiano"
-languageCode = "it-IT"
+languageName = "German"
+languageCode = "de-at"
 contentDir = "content/german"
 weight = 4
