@@ -1,7 +1,7 @@
 # Simple translations without pluralization rules
 ## Regular
 404_message = "Sorry – this page does not seem to exist (anymore)."
-address_title = "Address"
+address_title = "Contact Info"
 all = "All"
 buy_now = "Buy now"
 categories = "Categories"
