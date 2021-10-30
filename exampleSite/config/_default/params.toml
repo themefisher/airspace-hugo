@@ -31,11 +31,15 @@ copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By 
 custom_script= ""
 # google tag manager, see https://developers.google.com/tag-manager/
 google_tag_manager = "" # example: G-XXXXXXXXXX
+# recaptch v3 site key
+recaptcha_site_key = "xxx-xxxxxxxxxxxxxxxxxxxxxxxx"
 
 [contact.form]
 enable = true
 # Whether to use [Netlify Forms](https://docs.netlify.com/forms/setup/)
 use_netlify = true
+# Whether to use recaptch v3 in form
+use_recaptcha = true
 # Form action
 ## Fill in your Form ID URL for Formspree.io, e.g. `https://formspree.io/f/{form_id}`
 ## Ignored if `use_netlify = true` (custom [success page](https://docs.netlify.com/forms/setup/#success-messages) is already included) 
