@@ -173,3 +173,16 @@
 {{ end }}
 {{ end }}
 {{ end }}
+
+<!-- Google reCaptcha -->
+{{ if site.Params.contact.form.use_recaptcha }}
+<script src="https://www.google.com/recaptcha/api.js?render={{ site.Params.recaptcha_site_key }}"></script>
+<script>
+  grecaptcha.ready(function() {
+      grecaptcha.execute('{{ site.Params.recaptcha_site_key }}', {action: 'homepage'})
+      .then(function(token) {
+        document.getElementById('captchaResponse').value = token;
+      });
+    });
+</script>
+{{ end }}
