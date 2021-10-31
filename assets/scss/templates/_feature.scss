@@ -9,9 +9,10 @@
   background-size: cover;
   padding: 100px 0;
 
-  @include tablet {
+  @include large-desktop {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-attachment: unset;
   }
 
   h2 {

@@ -5,8 +5,8 @@
   background-position: center center;
   padding: 170px 0 200px;
   position: relative;
-  @include tablet {
-    background-attachment: scroll;
+  @include large-desktop {
+    background-attachment: unset;
     padding: 150px 0;
   }
 

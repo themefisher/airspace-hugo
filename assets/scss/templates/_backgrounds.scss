@@ -4,8 +4,8 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  @include tablet {
-    background-attachment: scroll;
+  @include large-desktop {
+    background-attachment: unset;
   }
 }
 
@@ -14,7 +14,7 @@
   background-position: center center;
   background-attachment: fixed;
 
-  @include tablet {
-    background-attachment: scroll;
+  @include large-desktop {
+    background-attachment: unset;
   }
 }
