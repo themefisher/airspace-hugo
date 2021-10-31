@@ -26,6 +26,11 @@
               <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
             </div>
             {{- end }}
+            {{ if .use_recaptcha -}}
+            <div class="form-group-h">
+              <input type="hidden" id="captchaResponse" name="g-recaptcha-response">
+            </div>
+            {{- end }}
           </div>
         </div>
         <div class="col-md-6 col-sm-12">
