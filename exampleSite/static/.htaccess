@@ -76,7 +76,7 @@
 </ifModule>
 
 ##### Or, compress certain file types by extension:
-<FilesMatch *.(html|css|jpg|jpeg|webp|png|gif|js|ico)>
+<FilesMatch ".(html|css|jpg|jpeg|webp|png|gif|js|ico)">
   SetOutputFilter DEFLATE
 </FilesMatch>
 
