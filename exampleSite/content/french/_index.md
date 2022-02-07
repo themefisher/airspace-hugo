@@ -9,7 +9,7 @@ banner:
   button:
     enable: true
     label: "Discover Our Project"
-    link: "project"
+    link: "project/"
 
 ############################# About #################################
 about:
@@ -36,7 +36,7 @@ portfolio:
   button:
     enable: true
     label: "View Works"
-    link: "project"
+    link: "project/"
 
 
 ############################# Service ############################
@@ -54,7 +54,7 @@ cta:
   button:
     enable: true
     label: "Tell Us Your Story"
-    link: "contact"
+    link: "contact/"
 
 ############################# Funfacts ###############################
 funfacts:
