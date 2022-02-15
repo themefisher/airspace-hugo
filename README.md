@@ -119,6 +119,6 @@ If you need to customize the theme or complete website development from scratch,
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.webp)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.webp)](https://gethugothemes.com/products/navigator/) |
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.webp)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.webp)](https://gethugothemes.com/products/navigator/) |
 |:---:|:---:|:---:|
-| **40+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |
+| **Get 50+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |
