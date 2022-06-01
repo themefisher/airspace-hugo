@@ -25,9 +25,10 @@
 </p>
 
 ---
+
 ## Features
 
-- Multiple language support (Fr, En) 
+- Multiple language support (Fr, En)
 - Google analytics  support
 - CSS and JS bundle with hugo pipe
 - Netlify settings predefine
@@ -36,11 +37,10 @@
 - Contact form Support
 - GDPR consent enable
 - Google map support
-- Fun factors counter 
+- Fun factors counter
 - Google page speed optimized ( 71% )
 - Open graph meta tag
 - Twitter card meta tag
-
 
 ## Local development
 
@@ -54,6 +54,7 @@ $ cd airspace-hugo/exampleSite/
 # Start local dev server
 $ hugo server --themesDir ../..
 ```
+
 Or Check out [Full Documentation](https://docs.gethugothemes.com/airspace/?ref=github).
 
 ## Content Management System
@@ -66,6 +67,7 @@ repository in Forestry](https://app.forestry.io/quick-start?repo=themefisher/air
 you will be able to edit and preview your site ✨.
 
 Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
+
 ## Deployment and hosting
 
 [![Deploy to
@@ -74,11 +76,13 @@ Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com
 Follow the steps.
 
 ## Prefer a video? (Hugo + Netlify + Forestry)
-Build your website with **Airspace Hugo ** theme by following these easy steps (No Coding Required!)
+
+Build your website with **Airspace Hugo** theme by following these easy steps (No Coding Required!)
 [Video Tutorial](https://youtu.be/ResipmZmpDU).
 
 <!-- reporting issue -->
 ## Reporting Issues
+
 We use GitHub Issues as the official bug tracker for the Airspace Template. Please Search [existing
 issues](https://github.com/themefisher/airspace-hugo/issues). Someone may have already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new
@@ -86,11 +90,11 @@ issue](https://github.com/themefisher/airspace-hugo/issues).
 
 <!-- ## Airspace Hugo  Powered Websites
 
-
 View all the websites powered by Airspace Hugo  [here](https://github.com/themefisher/airspace-hugo/wiki/All-Airspace-Hugo-Powered-Websites). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://github.com/themefisher/airspace-hugo/discussions/196). -->
 
 <!-- licence -->
 ## License
+
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)
 
@@ -101,6 +105,7 @@ share those images.
 
 <!-- resources -->
 ## Special Thanks
+
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
 - [Ionicons](https://ionic.io/ionicons)
@@ -110,15 +115,16 @@ share those images.
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/airspace-hugo/graphs/contributors)
 
-
 ## Hire Us
-Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo. 
+
+Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo.
 
 If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
 [Services](https://gethugothemes.com/services/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
 ## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.webp)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.webp)](https://gethugothemes.com/products/navigator/) |
+
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.png)](https://gethugothemes.com/products/navigator/) |
 |:---:|:---:|:---:|
 | **Get 50+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |
