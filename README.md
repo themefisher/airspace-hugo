@@ -22,26 +22,24 @@
 </p>
 
 ---
-
 <p align="center">
   <img src="https://demo.gethugothemes.com/thumbnails/airspace.png" alt="screenshot" width="100%">
 </p>
-
 ---
 
 ## Key Features
 
 - Multiple language support (Fr, En)
 - Google analytics  support
-- CSS and JS bundle with hugo pipe
+- CSS and JS bundle with Hugo Pipe
 - Netlify settings predefine
 - Forestry cms pre-configured
-- Multiple author  available
-- Contact form Support
-- GDPR consent enable
+- Multiple authors available
+- Contact form support
+- GDPR consent support
 - Google map support
 - Fun factors counter
-- Google page speed optimized ( 71% )
+- Google page speed optimized
 - Open graph meta tag
 - Twitter card meta tag
 
@@ -93,14 +91,12 @@ issue](https://github.com/themefisher/airspace-hugo/issues).
 
 ## Airspace Hugo  Powered Websites
 
-
 - <https://tingincs.github.io/>
 - <https://www.byte-lark.com/>
 - <https://yio.at/>
 - <http://levallon-toulouse.com/>
 
-
-View all the websites powered by Airspace Hugo  [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://gethugothemes.com/showcase).
+View all the websites powered by Airspace Hugo [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
