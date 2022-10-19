@@ -1,4 +1,7 @@
-<h1 align=center>Airspace Hugo  | <a target="_blank" href="https://demo.gethugothemes.com/airspace" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fairspace%2F">Page Speed (88%)</a></h1>
+<h1 align=center>Airspace Hugo</h1>
+<p align=center>This theme is suitable for a wide variety of businesses, including marketing, photography, and development enterprises.</p>
+
+<h2 align=center> <a target="_blank" href="https://demo.gethugothemes.com/airspace" rel="nofollow">Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fairspace%2Fsite%2F&form_factor=desktop">Page Speed (95%)</a></h2>
 
 <p align=center>
   <a href="https://github.com/gohugoio/hugo/releases/tag/v0.87.0" alt="Contributors">
@@ -26,7 +29,7 @@
 
 ---
 
-## Features
+## Key Features
 
 - Multiple language support (Fr, En)
 - Google analytics  support
@@ -88,9 +91,16 @@ issues](https://github.com/themefisher/airspace-hugo/issues). Someone may have a
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/airspace-hugo/issues).
 
-<!-- ## Airspace Hugo  Powered Websites
+## Airspace Hugo  Powered Websites
 
-View all the websites powered by Airspace Hugo  [here](https://github.com/themefisher/airspace-hugo/wiki/All-Airspace-Hugo-Powered-Websites). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://github.com/themefisher/airspace-hugo/discussions/196). -->
+
+- <https://tingincs.github.io/>
+- <https://www.byte-lark.com/>
+- <https://yio.at/>
+- <http://levallon-toulouse.com/>
+
+
+View all the websites powered by Airspace Hugo  [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://gethugothemes.com/showcase).
 
 <!-- licence -->
 ## License
@@ -127,4 +137,4 @@ If you need to customize the theme or complete website development from scratch,
 
 | [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png)](https://gethugothemes.com/bundle/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.png)](https://gethugothemes.com/products/navigator/) |
 |:---:|:---:|:---:|
-| **Get 50+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |
+| **Get 55+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |
