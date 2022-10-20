@@ -89,14 +89,16 @@ issues](https://github.com/themefisher/airspace-hugo/issues). Someone may have a
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/airspace-hugo/issues).
 
-## Airspace Hugo  Powered Websites
+## Submit Your Website To Our Showcase
 
-- <https://tingincs.github.io/>
-- <https://www.byte-lark.com/>
-- <https://yio.at/>
-- <http://levallon-toulouse.com/>
+Are you using Airspace Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
-View all the websites powered by Airspace Hugo [here](https://gethugothemes.com/showcase). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://gethugothemes.com/showcase).
+Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
+
+View all the websites powered by Airspace Hugo from [here](https://gethugothemes.com/showcase?theme=airspace). 
+
+[Submit](https://gethugothemes.com/showcase?submit=show) your Airspace Hugo powered website.
+
 
 <!-- licence -->
 ## License
