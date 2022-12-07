@@ -79,7 +79,8 @@ domain = "" # yourdomain.com
 # counter analytics: see https://counter.dev/setup.html
 [counter]
 enable = false
-username = "" # your username
+id = "" # your site's counter.dev ID (`data-id` attribute value)
+utc_offset = 0 # UTC time offset (`data-utcoffset` attribute value)
 
 # site verifications
 [site_verification]
