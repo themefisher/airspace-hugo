@@ -63,7 +63,7 @@
 # clone the repository
 git clone git@github.com:themefisher/airspace-hugo.git
 
-# cd in the project directory
+# setup project
 $ npm run project-setup
 
 # Start local dev server
