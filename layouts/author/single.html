@@ -24,9 +24,9 @@
           {{ .Content }}
           <hr>
           <ul class="list-inline">
-            {{ range .Params.social -}}
+            {{ range .Site.Params.social }}
             <li class="list-inline-item"><a class="share-icon bg-secondary" href="{{ .link | safeURL }}"><i class="{{ .icon }}"></i></a></li>
-            {{- end }}
+            {{ end }}
           </ul>
         </div>
       </div>

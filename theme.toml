@@ -8,7 +8,7 @@ homepage = "https://gethugothemes.com/products/airspace-hugo-theme/"
 demosite = "https://demo.gethugothemes.com/airspace/"
 tags = ["blog",'google-analytics', 'fast', 'modern', 'minimal', 'minimalistic', 'business', 'agency-template', 'white', 'light', 'multilingual', "bootstrap", "company", "portfolio", "projects", "responsive", "themefisher", "gethugothemes"]
 features = ["blog", "company", "responsive", "seo-friendly"]
-min_version = "0.87.0"
+min_version = "0.115.1"
 
 [author]
   name = "Themefisher"

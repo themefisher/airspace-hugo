@@ -1,8 +1,11 @@
-<h1 align=center>Airspace Hugo  | <a target="_blank" href="https://demo.gethugothemes.com/airspace" rel="nofollow">Demo</a> | <a  target="_blank" href="https://lighthouse-dot-webdotdevsite.appspot.com//lh/html?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fairspace%2F">Page Speed (88%)</a></h1>
+<h1 align=center>Airspace Hugo</h1>
+<p align=center>This theme is suitable for a wide variety of businesses, including marketing, photography, and development enterprises.</p>
+
+<h2 align=center> <a target="_blank" href="https://demo.gethugothemes.com/airspace" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fairspace%2Fsite%2F&form_factor=desktop">Page Speed (95%)🚀</a></h2>
 
 <p align=center>
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.87.0" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.87.0&color=f00&logo=hugo" />
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.115.1" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.115.1&color=f00&logo=hugo" />
   </a>
 
   <a href="https://github.com/themefisher/airspace-hugo/blob/master/LICENSE">
@@ -19,78 +22,86 @@
 </p>
 
 ---
-
 <p align="center">
-  <img src="https://demo.gethugothemes.com/thumbnails/airspace.webp" alt="screenshot" width="100%">
+  <img src="https://demo.gethugothemes.com/thumbnails/airspace.png" alt="screenshot" width="100%">
 </p>
-
 ---
-## Features
 
-- Multiple language support (Fr, En) 
-- Google analytics  support
-- CSS and JS bundle with hugo pipe
-- Netlify settings predefine
-- Forestry cms pre-configured
-- Multiple author  available
-- Contact form Support
-- GDPR consent enable
-- Google map support
-- Fun factors counter 
-- Google page speed optimized ( 71% )
-- Open graph meta tag
-- Twitter card meta tag
+## 🔑Key Features
+
+- 📄 9+ Pre-Designed Pages
+- 🌐 Multiple language support (Fr, En)
+- 📊 Google Analytics support
+- 🎨 CSS and JS bundle with Hugo Pipe
+- 🎨 Bootstrap Based
+- ⚙️ Netlify settings predefine
+- 👥 Multiple authors available
+- ✉️ Contact form support
+- 🔄 GDPR consent support
+- 🗺️ Google Maps support
+- 🎉 Fun factors counter
+- 🚀 Google Page Speed optimized
+- 🌐 Open Graph meta tag
+- 🐦 Twitter Card meta tag
+
+## 📄 9+ Pre-Designed Pages
+
+- 🏠 Home Page
+- 📚 Blog Page
+- 📝 Blog Single Page
+- 📄 Project Page
+- 🛠️ Services
+- 💰 Pricing
+- ❓ FAQ
+- ℹ️ About Page
+- 📞 Contact Page
 
 
-## Local development
+## 🖥️Local development
 
 ```bash
 # clone the repository
 git clone git@github.com:themefisher/airspace-hugo.git
 
-# cd in the project directory
-$ cd airspace-hugo/exampleSite/
+# setup project
+$ npm run project-setup
 
 # Start local dev server
-$ hugo server --themesDir ../..
+$ npm run dev
 ```
+
 Or Check out [Full Documentation](https://docs.gethugothemes.com/airspace/?ref=github).
 
-## Content Management System
 
-[![import to
-Forestry](https://assets.forestry.io/import-to-forestryK.svg)](https://app.forestry.io/quick-start?repo=themefisher/airspace-hugo&engine=hugo&version=0.87.0)
-
-This project has been pre-configured to work with [Forestry](https://forestry.io) a git-based CMS, [import your
-repository in Forestry](https://app.forestry.io/quick-start?repo=themefisher/airspace-hugo&engine=hugo&version=0.87.0) and
-you will be able to edit and preview your site ✨.
-
-Any changes you make in Forestry will be committed back to the repo and deployed if you use [Netlify](#netlify).
-## Deployment and hosting
+## ⚙️Deployment and hosting
 
 [![Deploy to
 Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/themefisher/airspace-hugo)
 
 Follow the steps.
 
-## Prefer a video? (Hugo + Netlify + Forestry)
-Build your website with **Airspace Hugo ** theme by following these easy steps (No Coding Required!)
-[Video Tutorial](https://youtu.be/ResipmZmpDU).
-
 <!-- reporting issue -->
-## Reporting Issues
+## 🐞Reporting Issues
+
 We use GitHub Issues as the official bug tracker for the Airspace Template. Please Search [existing
 issues](https://github.com/themefisher/airspace-hugo/issues). Someone may have already reported the same problem.
 If your problem or idea has not been addressed yet, feel free to [open a new
 issue](https://github.com/themefisher/airspace-hugo/issues).
 
-<!-- ## Airspace Hugo  Powered Websites
+## 📱Submit Your Website To Our Showcase
 
+Are you using Airspace Hugo theme? Submit it to our [showcase](https://gethugothemes.com/showcase). 
 
-View all the websites powered by Airspace Hugo  [here](https://github.com/themefisher/airspace-hugo/wiki/All-Airspace-Hugo-Powered-Websites). Want to submit your own website powered by Airspace Hugo? You can submit it [here](https://github.com/themefisher/airspace-hugo/discussions/196). -->
+Our showcase aims to demonstrate to the world what amazing websites people like you have created utilizing our Hugo themes and to show that Hugo has tremendous capabilities as a Static Site Generator. 
+
+View all the websites powered by Airspace Hugo from [here](https://gethugothemes.com/showcase?theme=airspace). 
+
+[Submit](https://gethugothemes.com/showcase?submit=show) your Airspace Hugo powered website.
+
 
 <!-- licence -->
-## License
+## 📄License
+
 Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed by
 [Gethugothemes](https://gethugothemes.com)
 
@@ -100,7 +111,8 @@ Copyright &copy; Designed by [Themefisher](https://themefisher.com) & Developed 
 share those images.
 
 <!-- resources -->
-## Special Thanks
+## 🙏Special Thanks
+
 - [Bootstrap](https://getbootstrap.com)
 - [Jquery](https://jquery.com)
 - [Ionicons](https://ionic.io/ionicons)
@@ -110,15 +122,16 @@ share those images.
 - [Google Fonts](https://fonts.google.com/)
 - [All Contributors](https://github.com/themefisher/airspace-hugo/graphs/contributors)
 
+## 👨‍💻Hire Us
 
-## Hire Us
-Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo. 
+Besides developing unique, blazing-fast Hugo themes, we also provide customized services. We specialize in creating affordable, high-quality static websites based on Hugo.
 
 If you need to customize the theme or complete website development from scratch, you can hire us. **Check Our
 [Services](https://gethugothemes.com/services/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme)**
 
 <!-- premium themes -->
-## Premium Themes By Us
-| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.webp)](https://gethugothemes.com/bundle) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.webp)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.webp)](https://gethugothemes.com/products/navigator/) |
+## 💎Premium Themes By Us
+
+| [![Mega-Bundle-HUGO](https://demo.gethugothemes.com/thumbnails/bundle.png?)](https://gethugothemes.com/bundle/?utm_source=airspace_github&utm_medium=referral&utm_campaign=github_theme_readme) | [![Bigspring](https://demo.gethugothemes.com/thumbnails/bigspring.png)](https://gethugothemes.com/products/reader/) | [![Navigator](https://demo.gethugothemes.com/thumbnails/navigator.png)](https://gethugothemes.com/products/navigator/) |
 |:---:|:---:|:---:|
-| **40+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |
+| **Get 55+ Premium Hugo Themes Bundle** | **Bigspring** | **Navigator** |

@@ -79,7 +79,8 @@ domain = "" # yourdomain.com
 # counter analytics: see https://counter.dev/setup.html
 [counter]
 enable = false
-username = "" # your username
+id = "" # your site's counter.dev ID (`data-id` attribute value)
+utc_offset = 0 # UTC time offset (`data-utcoffset` attribute value)
 
 # site verifications
 [site_verification]
@@ -107,7 +108,8 @@ button = "I Accept"
 sidebar = ["recent_posts", "taxonomy_category", "taxonomy_tags"]
 # available widget : categories,tags,recent-post
 
-############################# social site ########################
+
+############################# social site ########################=
 [[social]]
 title = "facebook"
 icon = "fab fa-facebook"  # fontawesome icon pack : https://fontawesome.com/icons/
@@ -132,3 +134,5 @@ link = "#"
 title = "linkedin"
 icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
 link = "#"
+
+
