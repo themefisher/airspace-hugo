@@ -1,0 +1,131 @@
+---
+new_page_extension: md
+auto_deploy: false
+admin_path: ''
+webhook_url: 
+sections:
+- type: heading
+  label: Homepage
+- type: document
+  path: exampleSite/content/english/_index.md
+  label: Homepage (en)
+- type: document
+  path: exampleSite/content/french/_index.md
+  label: Homepage (fr)
+- type: heading
+  label: Blog Post
+- type: directory
+  path: exampleSite/content/english/blog
+  label: Post (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - post
+- type: directory
+  path: exampleSite/content/french/blog
+  label: Post (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - post
+- type: heading
+  label: Author
+- type: directory
+  path: exampleSite/content/english/author
+  label: Author (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - author
+- type: directory
+  path: exampleSite/content/french/author
+  label: Author (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - author
+- type: heading
+  label: Project
+- type: directory
+  path: exampleSite/content/english/project
+  label: Project (en)
+  create: documents
+  match: "**/*"
+  templates:
+  - project
+- type: directory
+  path: exampleSite/content/french/project
+  label: Project (fr)
+  create: documents
+  match: "**/*"
+  templates:
+  - project
+- type: heading
+  label: Other Pages
+- type: directory
+  path: exampleSite/content/english
+  label: Other Pages (en)
+  create: documents
+  match: "*"
+  exclude: _index.md
+- type: directory
+  path: exampleSite/content/french
+  label: Other Pages (fr)
+  create: documents
+  match: "*"
+  exclude: _index.md
+- type: directory
+  path: exampleSite/content/english
+  label: All Pages (en)
+  create: all
+  match: "**/*"
+  templates:
+  - new-page
+- type: directory
+  path: exampleSite/content/french
+  label: All Pages (fr)
+  create: all
+  match: "**/*"
+  templates:
+  - new-page
+- type: heading
+  label: Configuration
+- type: document
+  path: exampleSite/config/_default/config.toml
+  label: Configuration
+- type: document
+  path: exampleSite/config/_default/params.toml
+  label: Parameters
+- type: document
+  path: config.toml
+  label: Variables & Plugins
+- type: document
+  path: exampleSite/config/_default/languages.toml
+  label: Languages
+- type: document
+  path: exampleSite/config/_default/menus.en.toml
+  label: Menu (en)
+- type: document
+  path: exampleSite/config/_default/menus.fr.toml
+  label: Menu (fr)
+- type: directory
+  path: exampleSite/i18n
+  label: i18n Translations
+  create: all
+  match: "**/*"
+upload_dir: exampleSite/static/images
+public_path: "/images"
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.87.0
+  preview_output_directory: public
+  preview_docker_image: forestryio/hugo:latest
+  mount_path: "/srv"
+  working_dir: "/srv"
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -d public
+version: 0.87.0
