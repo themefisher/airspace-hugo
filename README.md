@@ -4,8 +4,8 @@
 <h2 align=center> <a target="_blank" href="https://demo.gethugothemes.com/airspace" rel="nofollow">👀Demo</a> | <a  target="_blank" href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fdemo.gethugothemes.com%2Fairspace%2Fsite%2F&form_factor=desktop">Page Speed (95%)🚀</a></h2>
 
 <p align=center>
-  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.115.1" alt="Contributors">
-    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.115.1&color=f00&logo=hugo" />
+  <a href="https://github.com/gohugoio/hugo/releases/tag/v0.147.2" alt="Contributors">
+    <img src="https://img.shields.io/static/v1?label=min-HUGO-version&message=0.147.2&color=f00&logo=hugo" />
   </a>
 
   <a href="https://github.com/themefisher/airspace-hugo/blob/master/LICENSE">
