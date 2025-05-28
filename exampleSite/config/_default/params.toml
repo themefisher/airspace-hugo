@@ -84,9 +84,9 @@ utc_offset = 0 # UTC time offset (`data-utcoffset` attribute value)
 
 # umami analytics: see https://umami.is/
 [umami]
-enable = true
+enable = false # set to true to enable umami
 # url = "https://cloud.umami.is/script.js" # allows user to select a self-hosted location instead of umami cloud
-id = "fe1a3b86-8826-4231-8fff-fe0e98c970d4" # umami website ID
+id = "" # umami website ID
 
 # site verifications
 [site_verification]
