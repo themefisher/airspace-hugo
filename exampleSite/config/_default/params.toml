@@ -82,6 +82,12 @@ enable = false
 id = "" # your site's counter.dev ID (`data-id` attribute value)
 utc_offset = 0 # UTC time offset (`data-utcoffset` attribute value)
 
+# umami analytics: see https://umami.is/
+[umami]
+enable = true
+# url = "https://cloud.umami.is/script.js" # allows user to select a self-hosted location instead of umami cloud
+id = "fe1a3b86-8826-4231-8fff-fe0e98c970d4" # umami website ID
+
 # site verifications
 [site_verification]
 google = "" # Your verification code
