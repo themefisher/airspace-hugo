@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://demo.gethugothemes.com/airspace/examplesite/"
+baseURL = "/"
 title = "Airspace | Creative Agency Hugo Template"
 theme = "airspace-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
