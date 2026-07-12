@@ -191,6 +191,15 @@
 {{ end }}
 {{ end }}
 
+<!-- Umami Analytics -->
+{{ with site.Params.umami }}
+{{ if .enable }}
+{{ with .id }}
+<script defer src="{{ site.Params.umami.url | default "https://cloud.umami.is/script.js" }}" data-website-id="{{ . }}"></script>  <!-- enables user to change script location if self-hosting -->
+{{ end }}
+{{ end }}
+{{ end }}
+
 <!-- Google reCaptcha -->
 {{ if site.Params.contact.form.use_recaptcha }}
 <script src="https://www.google.com/recaptcha/api.js?render={{ site.Params.recaptcha_site_key }}"></script>
